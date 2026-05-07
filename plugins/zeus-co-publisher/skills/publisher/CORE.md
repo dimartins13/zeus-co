@@ -23,9 +23,27 @@
 **Restrição:** sem Python, Node ou root — só PHP + JSON files
 **Deploy:** via FTP (Python `ftplib` ou cliente FTP)
 
-**Aplicações no ar (mapeadas):**
-- `/dashboard-financeiro/` — Plata-ou-Plomo (já vivo, ~841KB)
-- `/{projeto}/` para CrazyFlips, 2ndStreet, LAB NoName, Creatina, Pandora, Ventage (verificar quais já existem)
+## 🚨 PRIORIDADE #1 ABSOLUTA: Dash Financeiro
+
+**`/dashboard-financeiro/`** = **Plata-ou-Plomo** = **espinha financeira de TODO o portfolio**.
+
+Confirmado por Diego em 2026-05-07: este projeto requer **atenção máxima** porque organiza gastos de TODAS as empresas. Perda de dados aqui = perda de controle financeiro multi-empresa + renegociar aportes societários + treinar 6 operadores de novo.
+
+**Regras especiais Dash Financeiro:**
+- **Backup DIÁRIO** (não 3/3 dias) — cron `backup-dashfin-daily` 5h
+- **Retenção 90 dias** local (não 30 dias)
+- **Mudança em users.json = SEMPRE alerta P0** (auth alterado)
+- **Falha 2 dias seguidos = wake up Diego** (push notification)
+- **Backup off-site secundário** (Google Drive via gdrive MCP) — recomendado adicional
+- **NUNCA executar update sem sync-aware merge** (6 operadores editam diariamente)
+
+## Outras aplicações no ar (mapeadas)
+
+- `/2ndstreet/` — site 2ndStreet + naming battle visual (`/2ndstreet/naming/`)
+- `/crazyflips/`, `/lab-noname/`, `/creatina/`, `/pandora/`, `/ventage/` — verificar quais existem
+- (futuras conforme empresas publicarem)
+
+**Cadência padrão (não-Dash Financeiro):** backup seg/qui/dom 6h via cron `backup-publicacoes`. Retenção 30 dias.
 
 **Operadores com acesso (do doc Plata-ou-Plomo):**
 - Admin: Diego
