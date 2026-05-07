@@ -83,6 +83,13 @@
       "source": "./plugins/zeus-co-pulse",
       "category": "zeus-co",
       "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-publisher",
+      "description": "Publisher Specialist. Gerencia publicações no Hostinger plataouplomo.com (PHP+JSON shared hosting). 3 fluxos: Backup (cron seg/qui/dom 6h baixa estado do ar), Sync-aware Update (baixa→diff→merge→sobe — preserva mudanças de outros operadores), Deploy novo (cria estrutura padrão). Crítico: NUNCA subir sem antes baixar quando há colaboradores (Victor/Cris/Bia/Yago/Guilherme/Julia editam dados financeiros entre deploys).",
+      "source": "./plugins/zeus-co-publisher",
+      "category": "zeus-co",
+      "version": "0.1.0"
     }
   ]
 }

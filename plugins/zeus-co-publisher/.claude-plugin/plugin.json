@@ -1,0 +1,9 @@
+{
+  "name": "zeus-co-publisher",
+  "description": "Publisher Specialist do Zeus-CO. Gerencia publicações no servidor Hostinger plataouplomo.com (e outros). 3 capabilities: (1) Deploy local→ar via FTP, (2) Backup ar→local cada 3 dias, (3) Sync-aware update (baixa estado do ar primeiro, faz merge com mudanças locais antes de subir — evita sobrescrever atualizações feitas por outros operadores no JSON). Use SEMPRE para 'publicar', 'fazer deploy', 'subir dashboard', 'atualizar plata ou plomo', 'backup do ar', 'sincronizar publicação', 'verificar o que está no ar'. Aplica especialmente quando outros operadores (Victor, Cris, Bia, Yago, Guilherme, Julia) podem ter atualizado dados financeiros.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
+}
