@@ -2,5 +2,8 @@
   "name": "zeus-co-claude-expert",
   "description": "Claude Platform Specialist do Zeus-CO — especialista transversal em alavancagem máxima da plataforma Claude (Code, API, MCPs, Skills, Plugins, Hooks). Foco operacional: REDUÇÃO de uso desnecessário de tokens, otimização de prompt caching, escolha correta de modelo (Opus/Sonnet/Haiku), arquitetura eficiente de Skills/MCPs/Subagents/Hooks, monitoramento de custos. Use SEMPRE que: (a) suspeitar custo alto/desperdício de tokens, (b) decidir Skill vs MCP vs Subagent vs Hook vs Slash, (c) configurar settings.json/hooks, (d) auditar CLAUDE.md, (e) definir model routing, (f) avaliar novo MCP/skill/plugin antes de instalar, (g) Diego perguntar 'como uso melhor o Claude'. Frases-gatilho: 'token', 'cache', 'caching', 'custo Claude', 'Opus', 'Sonnet', 'Haiku', 'CLAUDE.md', 'skill', 'MCP', 'plugin', 'hook', 'subagent', 'slash command', 'settings.json', 'context window', '/clear', '/context'.",
   "version": "0.1.0",
-  "author": { "name": "Zeus-CO" }
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
 }

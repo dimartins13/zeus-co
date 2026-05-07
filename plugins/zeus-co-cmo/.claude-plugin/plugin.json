@@ -2,5 +2,8 @@
   "name": "zeus-co-cmo",
   "description": "CMO do Zeus-CO — orquestrador do departamento de Marketing. Conecta o organograma de marketing já existente (ag-zeus-mkt: 25 skills de Diretor MKT, Estrategista, Growth, Branding, Mídia, Trade, CRM, Pricing, Comportamento, PR, CX, Funil, Pesquisa, Tendências, Copy, Social, Direção Arte IA, Roteiro etc) ao Zeus-CO — com literatura curada, RADAR de tools, e cron de evolução. Use SEMPRE que precisar de estratégia/operação de marketing, GTM, growth, branding, mídia, performance, conteúdo, brand. Frases-gatilho: 'marketing', 'growth', 'GTM', 'campanha', 'mídia', 'brand', 'aquisição', 'CAC', 'funil', 'SEO', 'social', 'CRM'.",
   "version": "0.1.0",
-  "author": { "name": "Zeus-CO" }
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
 }

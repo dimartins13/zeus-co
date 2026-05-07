@@ -2,5 +2,8 @@
   "name": "zeus-co-pulse",
   "description": "Portfolio Health Specialist do Zeus-CO. Cruza ClickUp (tarefas, status, urgências) com Dash Financeiro (gastos por projeto) e produz painel resumido por empresa OU portfolio inteiro: pontos críticos, alertas, custo atual, fase do projeto. Use SEMPRE para: 'pulse', 'status do projeto', 'painel', 'dashboard', 'quanto está custando', 'tarefas em aberto', 'alertas', 'urgências', 'health check empresa', 'overview portfolio', 'ClickUp tarefas', 'gasto até agora'. Cron diário roda às 8h pra alertar via INBOX.",
   "version": "0.1.0",
-  "author": { "name": "Zeus-CO" }
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
 }
