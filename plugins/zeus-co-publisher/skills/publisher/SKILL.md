@@ -7,6 +7,39 @@ description: Publisher Specialist do Zeus-CO — gerencia publicações no Hosti
 
 Identidade em [`CORE.md`](./CORE.md). Templates em [`templates/`](./templates/).
 
+## 🚨 REGRAS ABSOLUTAS DE EXECUÇÃO (ler ANTES de qualquer ação)
+
+### REGRA 1 — NUNCA pedir senha ao Diego no chat
+Credenciais FTP estão no **1Password**, item `Hostinger plataouplomo FTP` no vault `Trabalho`. Toda execução SEMPRE começa lendo via CLI:
+
+```bash
+FTP_USER=$(op read "op://Trabalho/Hostinger plataouplomo FTP/username")
+FTP_PASS=$(op read "op://Trabalho/Hostinger plataouplomo FTP/password")
+```
+
+Se `op read` falhar → instruir Diego a verificar `op whoami` (autenticação CLI). NÃO pedir pra digitar senha no chat.
+
+### REGRA 2 — NUNCA repetir credencial em mensagem (mesmo a antiga)
+Não dizer "a senha `XXX` não funciona". Dizer "a credencial armazenada falhou — verificar 1Password".
+Senhas — vivas ou expiradas — NUNCA aparecem em texto no chat. Diego pode estar mostrando print pra outras pessoas.
+
+### REGRA 3 — Usar scripts já existentes em `_Scripts/`
+- `~/Documents/Claude/Projects/_Scripts/ftp-download.py` — backup
+- `~/Documents/Claude/Projects/_Scripts/ftp-upload.py` — deploy
+- `~/Documents/Claude/Projects/_Scripts/backup-dashfin-manual.sh` — fluxo completo Dash Financeiro
+
+Não recriar lógica FTP inline — invocar esses scripts via Bash.
+
+### REGRA 4 — Sync-aware update OBRIGATÓRIO antes de upload
+Pra QUALQUER deploy de `index.html`, `dados.json`, `users.json`, `findash_data.json`:
+1. ANTES de subir → `ftp-download.py` da versão atual no ar (snapshot pré-update)
+2. Diff vs Arquivo Final local
+3. Mostra ao Diego o que mudou (incluindo mudanças de outros operadores)
+4. Diego aprova → upload merged
+5. Atualiza Arquivo Final
+
+Pular esse fluxo = risco de sobrescrever dados de Victor/Cris/Bia/Yago/Guilherme/Julia.
+
 ## Princípio fundador
 
 > **NUNCA subir sem antes baixar.** O ar é fonte de verdade quando há colaboradores. Sobrescrever atualizações alheias = perder dados financeiros = perder confiança.
