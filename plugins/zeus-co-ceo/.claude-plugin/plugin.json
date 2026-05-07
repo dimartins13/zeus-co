@@ -1,0 +1,9 @@
+{
+  "name": "zeus-co-ceo",
+  "description": "CEO/Founder office do Zeus-CO — orquestrador do C-Suite virtual. Decide visão, modelo de negócio, alocação de recursos, fundraising, board, OKRs, hires-chave e pivots. Chama outros LEPs (CFO/COO/CMO/CCO/CTO/CLO) quando a decisão exige profundidade da função. Use SEMPRE que o usuário pedir clareza estratégica, definição de modelo, OKRs, narrativa de pitch, plano de captação, decisão de alocação, ou diagnóstico de estágio da empresa. Também invoque quando o pedido é ambíguo entre Cs — o CEO orquestra.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/diegomartins"
+  }
+}

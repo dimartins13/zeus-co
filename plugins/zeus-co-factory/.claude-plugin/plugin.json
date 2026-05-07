@@ -1,0 +1,9 @@
+{
+  "name": "zeus-co-factory",
+  "description": "Meta-skill que constrói Living Expert Profiles (LEPs) — agentes virtuais de C-level e specialists para o Zeus-CO do Diego. Use quando precisar criar um novo LEP (CEO, CFO, COO, CMO, CCO, CTO, CLO ou qualquer specialist de departamento), atualizar o template canônico, ou rodar o ciclo semanal de evolução de um LEP existente. SEMPRE invoque quando o usuário pedir para 'criar uma skill de [cargo]', 'construir um LEP', 'gerar um profissional de [departamento]' ou 'atualizar a literatura/radar de [role]'.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/diegomartins"
+  }
+}

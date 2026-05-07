@@ -1,0 +1,88 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "zeus-co",
+  "description": "Zeus-CO — virtual C-Suite operating system for serial founders. 11 Living Expert Profiles (LEPs): 7 Chiefs (CEO/CFO/COO/CMO/CCO/CTO/CLO) + 3 transversal Specialists (Claude Platform Expert, Naming+Domain, Pulse) + Skill Factory. Each LEP includes CORE (frameworks + heuristics + orchestration), LITERATURE (curated bibliography in 4 layers including BR sources), RADAR (tools/MCPs), EVOLUTION (changelog), WEEKLY_DIGEST (auto-updated by cron), and 4-6 templates of canonical artifacts.",
+  "owner": {
+    "name": "Diego Martins",
+    "email": "amazonianalliance@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "zeus-co-factory",
+      "description": "Skill Factory — meta-skill que constrói novos Living Expert Profiles (LEPs) sob demanda. Use para criar nova role C-level, Diretor ou Specialist no Zeus-CO.",
+      "source": "./plugins/zeus-co-factory",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-ceo",
+      "description": "CEO/Founder office — orquestrador do C-Suite virtual. Decide visão, business model, OKRs, fundraising, board, alocação de capital. Chama outros LEPs (CFO/COO/CMO/CCO/CTO/CLO) quando decisão exige profundidade de função.",
+      "source": "./plugins/zeus-co-ceo",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-cfo",
+      "description": "CFO — modelagem financeira, runway, unit economics (CAC/LTV/payback), Default Alive checkpoints, fundraising math, cap table, estrutura tributária BR (Simples/Presumido/Real, holding).",
+      "source": "./plugins/zeus-co-cfo",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-coo",
+      "description": "COO — desenho de processos, SOPs, supply chain, vendor management, fulfillment, customer ops, qualidade. Remove gargalos operacionais. Decisões Make vs Buy vs Glue.",
+      "source": "./plugins/zeus-co-coo",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-cmo",
+      "description": "CMO — orquestrador do departamento de marketing. Decide GTM, growth strategy, brand, canais, budget. Delega para os 25 specialists do ag-zeus-mkt (Diretor MKT, Estrategista, Growth, SEO, Mídia, Trade, CRM, Pricing, etc).",
+      "source": "./plugins/zeus-co-cmo",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-cco",
+      "description": "CCO (Chief Creative Officer) — brand foundation, identidade visual, narrativa, brand voice, direção criativa, content pillars. Sintetiza brand-voice:* + ag-zeus-mkt criação + stack Adobe/Canva/Figma.",
+      "source": "./plugins/zeus-co-cco",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-cto",
+      "description": "CTO — decisões de stack (princípio Boring Tech), MVP scoping, automação agent-first (MCPs sobre custom build), observability baseline. Defaults Hostinger-friendly.",
+      "source": "./plugins/zeus-co-cto",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-clo",
+      "description": "CLO (Chief Legal Officer) — contratos, compliance LGPD, regulação setorial BR (iGaming SECAP, audiovisual ANCINE, fintech BACEN), IP/trademark INPI, estrutura societária (LTDA/SA/holding). NÃO substitui advogado humano em decisões críticas.",
+      "source": "./plugins/zeus-co-clo",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-claude-expert",
+      "description": "Claude Platform Specialist (transversal — atende todos os LEPs). Token efficiency, prompt caching strategy, model routing (Haiku/Sonnet/Opus), arquitetura Skill vs MCP vs Subagent vs Hook, auditoria CLAUDE.md. Auto-atualização semanal + audit mensal de custos.",
+      "source": "./plugins/zeus-co-claude-expert",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-naming-domain",
+      "description": "Naming + Domain Specialist (adaptado das skills do amigo do Diego, generalizado multi-setor BR). Gera nomes em 7 territórios (invented, compound, abstract, heritage, minimal, linguistic-roots, phonosemantic), scoring matrix 5 critérios, trademark pre-screening INPI BR + USPTO/EUIPO, domain check Registro.br first + redes sociais. Reporta a CCO + CLO.",
+      "source": "./plugins/zeus-co-naming-domain",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-pulse",
+      "description": "Portfolio Health Specialist. Cruza ClickUp (tarefas, status, urgências) + Dash Financeiro (gastos por empresa) + estado disco (00_STAGE, LEARNINGS, BACKLOG). Produz painel acionável por empresa OU portfolio: pontos críticos, alertas, custo, fase. Cron diário 8h só dispara se P0.",
+      "source": "./plugins/zeus-co-pulse",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    }
+  ]
+}

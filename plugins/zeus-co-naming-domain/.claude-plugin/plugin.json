@@ -1,0 +1,6 @@
+{
+  "name": "zeus-co-naming-domain",
+  "description": "Specialist Zeus-CO de Naming + Domain Check. Gera nomes de marca/empresa com 7 categorias (invented, compound, abstract, place/heritage, minimal/modern, linguistic roots, phonosemantic), scoring matrix, trademark pre-screening (INPI BR + USPTO/EUIPO), e verificação de domínio (Registro.br first, .com, redes sociais). Adaptação universal multi-setor (não só eyewear). Use SEMPRE para: nomear nova empresa/produto/marca, validar nome candidato, checar domínio disponível, verificar handle Instagram/TikTok, pre-screen trademark INPI. CCO orquestra pra naming; CLO orquestra pra trademark/domain.",
+  "version": "0.1.0",
+  "author": { "name": "Zeus-CO (adapted from friend's skills)" }
+}
