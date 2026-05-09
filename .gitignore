@@ -1,6 +1,53 @@
+# ============================================================
+# .gitignore — zeus-co marketplace
+# Proteção: nada sensível deve subir pro GitHub
+# ============================================================
+
+# macOS
 .DS_Store
 *.swp
-*.tmp
-node_modules/
-.env
-.env.local
+._*
+
+# Credenciais NUNCA aqui
+*.env
+*.env.local
+**/credentials.json
+**/secrets/
+**/.htpasswd
+
+# Backups (não pertencem ao marketplace)
+**/backups/
+**/_Publicacoes/Backup/
+**/findash_data.json
+**/users.json
+**/api/dados.json
+
+# Logs
+**/*.log
+**/.logs/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.iml
+
+# Plugin binários
+*.zip
+*.tar.gz
+
+# Ferramentas Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Permitir docs explicitamente
+!**/SKILL.md
+!**/CORE.md
+!**/LITERATURE.md
+!**/RADAR.md
+!**/EVOLUTION.md
+!**/WEEKLY_DIGEST.md
+!**/templates/*.md
+!**/README.md
+!**/plugin.json
+!**/marketplace.json
