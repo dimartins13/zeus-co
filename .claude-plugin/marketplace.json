@@ -90,6 +90,13 @@
       "source": "./plugins/zeus-co-publisher",
       "category": "zeus-co",
       "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-cerebro-criativo",
+      "description": "Cérebro Criativo — API criativa transversal do Zeus-CO. Skill operadora que GERA ideias aplicando Eagleman bend/break/blend unificado com Boden 3 types, Fauconnier-Turner conceptual blending, arquitetura Hofstadter slipnet e métrica Beaty SemDis. Marketing é a casa primária (big idea, conceito, naming, copy, brand), mas é capability compartilhada — qualquer LEP invoca quando precisa destravar pensamento divergente. 3 vetores (Bend/Break/Blend) + 2 amplificadores (Software-Inovação + Memória-Atenção) + 5 modos (solo/cascata/suporte/absurdo-controlado/refinamento) + corpus 180+ cases cross-indústria + 7 léxicos de domínios distantes + auto-avaliação de originalidade via distância semântica. Frases-gatilho: 'big idea', 'conceito criativo', 'ideação', 'brainstorm', 'reframe', 'alternativas criativas', 'cerebro-criativo', 'pensar fora da caixa', 'criatividade', 'suporte criativo'.",
+      "source": "./plugins/zeus-co-cerebro-criativo",
+      "category": "zeus-co",
+      "version": "0.1.0"
     }
   ]
 }
