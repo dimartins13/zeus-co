@@ -1,0 +1,6 @@
+{
+  "name": "zeus-co-procurement",
+  "description": "Procurement (Compras estratégicas) — distinto de COO supply (estoque) e COO vendor (gestão fornecedor). Foco: SOURCING estratégico + negociação + categoria. 5 skills: procurement (chief), procurement-orquestrador, procurement-strategic-sourcing (RFP/RFQ), procurement-category-mgr (categoria específica), procurement-tail-spend (compras pequenas automatizadas via AI/cards). Cross com cfo-ap-specialist (pagamento) e coo-vendor (relacionamento dia-a-dia).",
+  "version": "1.0.0",
+  "author": {"name": "Diego Martins"}
+}

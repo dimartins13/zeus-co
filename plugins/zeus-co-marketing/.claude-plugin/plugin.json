@@ -1,0 +1,9 @@
+{
+  "name": "zeus-co-marketing",
+  "description": "Camada de orquestração + skills complementares de marketing/criação do Zeus-CO. Estende ag-zeus-mkt/xpto-mk com: pipeline canônico de 11 fases (Fase 0 = Descoberta Interna obrigatória, Fase 7 = 14 sub-fases multi-formato), tool bindings (Claude Design / Adobe MCPs / Higgsfield / Canva / Figma / Midjourney / Sora / Runway / ElevenLabs / HeyGen), e 10 skills novas pros gaps (live-marketing, marketing-promocional, marketing-afiliados, retail-media, creator-economy, processo-criativo-pesquisa, ctv-streaming-ads, ai-generative-creative, live-commerce, tiktok-shop). Inclui orquestrador que executa pipeline end-to-end. Princípio: criação SEMPRE olha pra DENTRO primeiro (arquivos da empresa), depois pra FORA (mercado, processos criativos premiados), aí sim cria.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Diego Martins",
+    "url": "https://github.com/dimartins13/zeus-co-mirror"
+  }
+}

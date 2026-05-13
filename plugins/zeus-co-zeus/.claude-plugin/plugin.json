@@ -1,0 +1,6 @@
+{
+  "name": "zeus-co-zeus",
+  "description": "ZEUS — orquestrador-mor do Zeus-CO. Diego invoca chamando 'zeus' no chat. Zeus ENTENDE o contexto (empresa atual + intent + complexidade) e ATUA — decide skills/plugins a invocar, executa pipeline correto, reporta resultado. Diego confia que Zeus toma a decisão certa entre 130+ LEPs disponíveis. Skill TRANSVERSAL — gateway de qualquer chat. Auto-ativa quando Diego digita 'zeus' como primeira palavra ou invoca pergunta complexa sem skill específica.",
+  "version": "1.0.0",
+  "author": {"name": "Diego Martins"}
+}

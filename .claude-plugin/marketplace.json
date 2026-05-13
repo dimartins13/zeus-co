@@ -97,6 +97,83 @@
       "source": "./plugins/zeus-co-cerebro-criativo",
       "category": "zeus-co",
       "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-scout",
+      "description": "Research & Improvement Radar do Zeus-CO. Pesquisa EXTERNAMENTE em 6 dimensões (projetos com resultado melhor, complementos que fazem melhor, problemas que não resolvemos, visões diferentes, soluções pra problemas futuros, MCPs novos + subutilizados) e produz sugestões de melhoria do próprio Zeus-CO. Roda autônomo terça+sexta 01:00 via launchd. Manual: 'scout varre agora', 'radar zeus-co', 'o que tem melhor que zeus-co', 'auditar mcps', 'scan repositorios'. Output em _Improvements/RADAR.md. NUNCA modifica LEPs/empresas — só sugere pra Diego decidir.",
+      "source": "./plugins/zeus-co-scout",
+      "category": "zeus-co",
+      "version": "0.1.0"
+    },
+    {
+      "name": "zeus-co-board",
+      "description": "Camada Board + Founders + Governance — acima do C-Suite. 8 skills: board-orquestrador (executa pipeline 9 fases governance), founders-office (Diego direct/no-delegate layer), board-governance (charter/estatuto/quórum), board-advisors-management (sourcing/onboarding/check-in advisors), board-pack-builder (deck mensal/trimestral pro board), decision-memo-author (formaliza decisões Type 1 irreversíveis estilo ADR), cap-table-keeper (cap table waterfall + dilution scenarios), equity-vesting-manager (vesting schedule funcionários/C-Levels/advisors). Pipeline canônico inclui Fase 0 Descoberta Interna obrigatória. Princípio: board APROVA estratégia + monitora performance + protege fundador — NÃO opera empresa.",
+      "source": "./plugins/zeus-co-board",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-zeus",
+      "description": "ZEUS — orquestrador-mor do Zeus-CO. Diego invoca chamando 'zeus' no chat. Zeus ENTENDE o contexto (empresa atual + intent + complexidade) e ATUA — decide skill primária + invoca + executa pipeline + cross-references + reporta. Diego confia em Zeus pra escolher caminho certo entre 130+ LEPs. Skill TRANSVERSAL — gateway de qualquer chat. Auto-ativa quando Diego digita 'zeus' ou faz pergunta complexa sem skill específica.",
+      "source": "./plugins/zeus-co-zeus",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-cro",
+      "description": "CRO (Chief Revenue Officer) — Vendas. 8 skills: cro, cro-orquestrador, cro-vp-sales, cro-revops, cro-sales-enablement, cro-bdr-mgr, cro-account-executive, cro-customer-success. Converte demanda gerada pelo CMO em RECEITA. PIPELINE 10 fases.",
+      "source": "./plugins/zeus-co-cro",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-chro",
+      "description": "CHRO (Chief Human Resources Officer) — People Ops. 6 skills: chro, chro-orquestrador, chro-recruiting, chro-people-ops, chro-learning-development, chro-culture. PIPELINE 9 fases (org design → recruiting → onboarding → comp → performance → L&D → culture → off-boarding → reporting). Cross com clo-trabalhista + cfo-controller.",
+      "source": "./plugins/zeus-co-chro",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-procurement",
+      "description": "Procurement (Compras estratégicas) — distinto de COO supply (estoque) e COO vendor (relacionamento). Foco SOURCING + negociação + categoria. 5 skills: procurement, procurement-orquestrador, procurement-strategic-sourcing (RFP/RFQ), procurement-category-mgr (Kraljic matrix), procurement-tail-spend (compras pequenas automatizadas).",
+      "source": "./plugins/zeus-co-procurement",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-facilities",
+      "description": "Facilities — espaço físico + IT assets + sustentabilidade. 3 skills: facilities (chief), facilities-workspace (escritório/coworking/home-office stipend), facilities-it-asset (notebooks/celulares/equipment lifecycle). Pequeno em empresa Zeus-CO mas crítico em operação física.",
+      "source": "./plugins/zeus-co-facilities",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-cino",
+      "description": "CINO (Chief Innovation Officer) — inovação produto/serviço/modelo. Three Horizons (H2/H3 foco). 6 skills: cino, cino-orquestrador, cino-research (discovery qualitativa), cino-experimentation (lean MVPs), cino-tech-scouting (radar tech setor), cino-open-innovation (hackathons + parcerias acadêmicas + aceleradoras). PIPELINE 7 fases.",
+      "source": "./plugins/zeus-co-cino",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-entrepreneurship",
+      "description": "Entrepreneurship / Venture Studio — criação de empresas novas + gestão portfolio fundador serial. 6 skills: entrepreneurship, entrepreneurship-orquestrador, venture-studio-mgr (idea pipeline + validation sprints + recursos compartilhados), new-co-design (empresa nova end-to-end), portfolio-allocation (Three Horizons portfolio Diego), exit-strategy (M&A/IPO/lifestyle/kill). PIPELINE 8 fases.",
+      "source": "./plugins/zeus-co-entrepreneurship",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-labs",
+      "description": "Zeus-CO Labs — departamento AUTÔNOMO de pesquisa LLM aplicada ao PRÓPRIO Zeus-CO ('Anthropic Research interna'). 6 skills: labs-director, labs-orquestrador, llm-researcher (papers arXiv/HuggingFace/Anthropic), prompt-architect (otimização prompts em escala), skill-effectiveness-analyst (mede performance LEPs), safety-alignment-monitor (drift + princípios invioláveis). Meta-camada. Distinto de scout (mundo externo) — Labs analisa DENTRO + projeta avanço.",
+      "source": "./plugins/zeus-co-labs",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-marketing",
+      "description": "Camada de orquestração + skills complementares de marketing/criação. Estende ag-zeus-mkt/xpto-mk com: PIPELINE canônico de 11 fases (Fase 0 = Descoberta Interna obrigatória, 4b = Processo Criativo dupla, Fase 7 = 14 sub-fases multi-formato), TOOL_BINDINGS (Claude Design + Adobe + Higgsfield + Canva + Figma + Gamma + Midjourney + Sora + Runway + ElevenLabs + HeyGen), 10 skills NOVAS (live-marketing, marketing-promocional, marketing-afiliados, retail-media, creator-economy, processo-criativo-pesquisa, ctv-streaming-ads, ai-generative-creative, live-commerce, tiktok-shop) + orquestrador (marketing-orquestrador) que executa pipeline end-to-end. Princípio: criação SEMPRE olha pra DENTRO primeiro (CLAUDE.md + brand-guide + LEARNINGS + BP da empresa), depois pra FORA (mercado + processo criativo Cannes/Effie), aí sim CRIA. Emula agência completa: publicidade + promocional + digital + social + live (físico+commerce) + afiliados + retail media + creator economy + PR + CRM + TikTok Shop + AI generative + CTV streaming.",
+      "source": "./plugins/zeus-co-marketing",
+      "category": "zeus-co",
+      "version": "1.1.0"
     }
   ]
 }

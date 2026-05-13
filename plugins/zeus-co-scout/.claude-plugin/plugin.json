@@ -1,0 +1,9 @@
+{
+  "name": "zeus-co-scout",
+  "description": "Research & Improvement Radar do Zeus-CO. Pesquisa EXTERNAMENTE em 6 dimensões (projetos melhores, complementos, problemas não resolvidos, visões diferentes, soluções futuras, MCPs) + audita MCPs instalados subutilizados. Roda autônomo terça+sexta 01:00 via launchd, mas também invocável manualmente: 'scout, varre agora', 'radar zeus-co', 'o que tem melhor que zeus-co', 'auditar mcps'. Output em _Improvements/RADAR.md. NUNCA modifica LEPs/empresas — só sugere.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
+}
