@@ -1,9 +1,9 @@
 {
   "name": "zeus-co-facilities",
-  "description": "Facilities — espaço físico + IT assets + sustentabilidade ESG. 3 skills: facilities (chief), facilities-workspace (escritório/coworking/home-office stipend), facilities-it-asset (notebooks/celulares/equipment lifecycle). Pequeno em empresa Zeus-CO (Diego portfolio remote-first) mas crítico quando empresa cresce ou tem operação física (Ventage estoque, dope street showroom potencial).",
-  "version": "1.0.0",
+  "description": "Facilities / Workplace Experience — espaço físico + IT asset + remote stipend + safety + ESG + soft services + real estate. 10 skills: facilities (chief), facilities-orquestrador, facilities-workspace (escritório/coworking/hub-and-spoke), facilities-workplace-experience (WEx software, ABW, neighborhoods), facilities-it-asset (hardware lifecycle), facilities-remote-program (home stipend, ergonomia, política híbrida), facilities-safety-security (EHS, NR brasileiras, CIPA, acesso), facilities-sustainability-esg (Scope 1+2, LEED/BREEAM/GBC, carbon accounting), facilities-vendor-soft-services (cleaning, catering, recepção, SLA), facilities-real-estate (portfolio físico, leases). Use SEMPRE pra escritório, coworking, hardware, equipment, home office stipend, ergonomia, NR, segurança trabalho, ESG do espaço, sustentabilidade, fornecedor de prédio, contrato aluguel, WEx, neighborhoods, hub-and-spoke. Frases-gatilho: 'facilities', 'workplace', 'escritório', 'coworking', 'WeWork', 'home office stipend', 'notebook', 'laptop', 'hardware', 'BYOD', 'NR', 'CIPA', 'EHS', 'segurança no trabalho', 'LEED', 'BREEAM', 'pegada de carbono', 'ESG escritório', 'limpeza', 'catering', 'recepção', 'aluguel', 'lease', 'hub-and-spoke', 'Robin', 'Envoy', 'Workwize', 'Deel IT', 'ergonomia'.",
+  "version": "1.1.0",
   "author": {
-    "name": "Diego Martins",
+    "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"
   }
 }
