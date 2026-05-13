@@ -1,6 +1,9 @@
 {
   "name": "zeus-co-chro",
-  "description": "CHRO (Chief Human Resources Officer) — People Ops completo. 6 skills: chro (chief), chro-orquestrador, chro-recruiting (talent acquisition end-to-end), chro-people-ops (payroll, benefícios, onboarding), chro-learning-development (L&D, career paths), chro-culture (cultura, all-hands, comunicação interna). Cobre CLT + PJ + sócio em diferentes verticais. Cross com clo-trabalhista (legal) e cfo-controller (folha).",
-  "version": "1.0.0",
-  "author": {"name": "Diego Martins"}
+  "description": "CHRO (Chief Human Resources Officer) — People Ops completo. 6 skills: chro (chief), chro-orquestrador, chro-recruiting (talent acquisition), chro-people-ops (payroll, benefícios, onboarding), chro-learning-development (L&D, career paths), chro-culture (cultura, all-hands, comunicação interna). Cobre CLT + PJ + sócio. Use SEMPRE pra RH, people ops, recrutamento, contratação, cultura, L&D, onboarding, benefícios, folha de pagamento, carreira, all-hands. Frases-gatilho: 'RH', 'CHRO', 'people ops', 'recrutar', 'contratar', 'onboarding', 'benefícios', 'CLT', 'PJ', 'cultura', 'L&D', 'aprendizado', 'carreira', 'plano de cargos', 'all-hands', 'feedback', 'demitir', 'turnover', 'engagement'. Cross com clo-trabalhista (legal) e cfo-controller (folha).",
+  "version": "1.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
 }

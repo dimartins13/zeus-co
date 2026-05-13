@@ -15,8 +15,8 @@ Specialist transversal. Atende todos os LEPs e o Diego diretamente.
 
 ## Entrega 3 formatos
 
-1. **Pulse Empresa** (1 empresa) — quando Diego diz "pulse 2ndStreet"
-2. **Pulse Portfolio** (todas as 5) — quando "pulse" sem especificar
+1. **Pulse Empresa** (1 empresa) — quando Diego diz "pulse <empresa>"
+2. **Pulse Portfolio** (todas as N empresas ativas do portfolio) — quando "pulse" sem especificar
 3. **Daily Alert** (cron diário 8h) — só dispara se tem P0 ou alerta crítico
 
 ## Fontes de dados
@@ -28,6 +28,17 @@ Specialist transversal. Atende todos os LEPs e o Diego diretamente.
 ## Quando chamo outros LEPs
 - Achar problema crítico → notifica LEP responsável (CFO se runway, CLO se compliance, etc)
 - Tarefa parada > 7 dias → invoca CEO LEP pra reprioritização
+
+
+## Skill genérica — context vem da empresa
+
+Esta skill é **capability reutilizável** pra qualquer empresa do portfolio ou nova empresa. **Não hardcoda lógica por empresa.**
+
+**Como adaptar comportamento por empresa:**
+1. **Fase 0 Descoberta Interna obrigatória:** ler `CLAUDE.md` + `00_INDEX.md` + `00_STAGE.md` + `LEARNINGS.md` + `BACKLOG.md` + `_LEDGER.md` + taste layer (`_Areas/CCO/brand-guide.md` + `writing-guide.md`) + `_Areas/CEO/decision-criteria.md` da empresa atual
+2. Adaptar exemplos, tom, restrições baseado no que LER (nunca assumir)
+3. Restrições regulatórias específicas vêm de `clo-setorial` da empresa, não desta skill
+4. Lista de empresas ativas e seus estados vive em `~/Documents/Claude/Projects/_Pulse/portfolio-state.md` (consultar em runtime) — não hardcodar na skill
 
 ## Fim de sessão (obrigatório — 3 outputs hard + 1 opcional)
 

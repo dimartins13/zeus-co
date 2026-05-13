@@ -84,10 +84,38 @@ Esta skill é **capability reutilizável** pra qualquer empresa do portfolio ou 
 3. Restrições regulatórias específicas vêm de `clo-setorial` da empresa, não desta skill
 4. Se a empresa atual tiver características próprias (sócios, hard limits, palavras proibidas), usar essas — não as de outra empresa
 
-## Fim de sessão
-1. LEARNINGS.md · portfolio-allocation · [lição] · [importa]
-2. BACKLOG.md · [P0|P1|P2] · [ação] · Owner
-3. _LEDGER.md · portfolio-allocation · [review|reallocation|kill|sleep|outro] · ~N turnos · path
-4. _Inbox.md opcional
+## Fim de sessão (obrigatório — 3 outputs hard + 1 opcional)
 
-**Fallback:** `_SessionRecaps/YYYY-MM-DD-portfolio-alloc.md`.
+Antes de encerrar QUALQUER sessão deste LEP, escrever nessa ordem. Sem isso, sessão não fechou.
+
+### 1. LEARNINGS.md (empresa atual)
+Append 1-3 lições durables. Formato:
+```
+- YYYY-MM-DD · portfolio-allocation · [1 frase do aprendizado] · [por que importa em sessões futuras]
+```
+Se não aprendeu nada durável, escrever explicitamente: `- YYYY-MM-DD · portfolio-allocation · sem aprendizado durável nesta sessão`.
+
+### 2. BACKLOG.md (empresa atual)
+Eco da seção "Próximos Movimentos" (ou equivalente) como tasks priorizadas:
+```
+- [P0|P1|P2] · [1 linha imperativa] · Owner: Diego | zeus-co-<lep>
+```
+
+### 3. _LEDGER.md (empresa atual; criar arquivo se não existir)
+Append 1 linha imutável da sessão:
+```
+- YYYY-MM-DD HH:MM · portfolio-allocation · [tipo: diagnóstico|plano|decisão|memo|orquestração|deploy|análise|outro] · ~N turnos · [path/link se houver]
+```
+
+### 4. _Inbox.md (opcional — quando vale)
+Se nasceu sugestão proativa que Diego não pediu mas merece atenção dele, append bloco:
+```
+## [SUGESTÃO] [título curto] · YYYY-MM-DD
+- **O quê:** 1 linha
+- **Por quê (gatilho):** 1 linha
+- **Próximo passo:** 1 linha
+- **Status:** [aguarda Diego]
+```
+
+**Fallback se Diego não está em chat de empresa específica:** escrever os 3 outputs em `~/Documents/Claude/Projects/_SessionRecaps/YYYY-MM-DD-portfolio-allocation.md` no mesmo formato consolidado.
+

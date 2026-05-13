@@ -1,6 +1,9 @@
 {
   "name": "zeus-co-labs",
-  "description": "Zeus-CO Labs — departamento AUTÔNOMO de pesquisa LLM aplicada ao próprio Zeus-CO. Tipo 'Anthropic Research interna do Zeus'. 6 skills: labs-director (chief), labs-orquestrador, llm-researcher (analisa logs Zeus + lê papers SOTA + propõe melhorias arquiteturais), prompt-architect (otimização prompt engineering em escala), skill-effectiveness-analyst (mede performance de cada LEP — quais convertem, quais não), safety-alignment-monitor (alignment + safety do próprio Zeus-CO). Distinto de zeus-co-scout (que olha pra fora — projetos similares) — eu olho pra DENTRO do Zeus-CO + projeto o avanço dele. Meta-camada.",
-  "version": "1.0.0",
-  "author": {"name": "Diego Martins"}
+  "description": "Zeus-CO Labs — departamento autônomo de pesquisa LLM aplicada ao próprio Zeus-CO. Tipo 'Anthropic Research interna do Zeus'. 6 skills: labs-director (chief), labs-orquestrador, llm-researcher (analisa logs Zeus + lê papers SOTA + propõe melhorias arquiteturais), prompt-architect (otimização prompt engineering em escala), skill-effectiveness-analyst (mede performance de cada LEP), safety-alignment-monitor (alignment + safety do próprio Zeus-CO). Distinto de zeus-co-scout (olha pra fora) — labs olha pra DENTRO do Zeus-CO. Meta-camada. Use SEMPRE pra melhorar Zeus-CO, otimizar prompts, medir effectiveness, papers LLM, research interna, alignment, safety do sistema. Frases-gatilho: 'Zeus Labs', 'melhorar Zeus', 'research interna', 'papers LLM', 'prompt engineering', 'otimizar prompt', 'skill effectiveness', 'qual LEP funciona', 'alignment', 'safety', 'meta-skill', 'logs Zeus', 'arquitetura Zeus-CO'.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
 }

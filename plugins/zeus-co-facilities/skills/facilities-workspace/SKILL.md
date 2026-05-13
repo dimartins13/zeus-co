@@ -8,15 +8,23 @@ description: Workspace management — escritório próprio, coworking, home-offi
 ## Identidade
 Onde gente da empresa trabalha + onde marca aparece fisicamente.
 
-## Workspace types Diego empresas
+## Modelos típicos de workspace
 
-| Empresa | Modelo workspace | Notas |
+| Modelo | Quando faz sentido | Notas operacionais |
 |---|---|---|
-| **<empresa>** | Pode ter SHOWROOM físico (drops + eventos) | Live-marketing cross |
-| **<empresa>** | 100% remoto | Produto digital |
-| **<empresa>** | 100% remoto | Produção via vendors |
-| **<empresa>** | Coworking SP (regulatório requer sede) | SECAP compliance |
-| **<empresa>** | Operação física (estoque óculos) | CD físico necessário |
+| **Coworking compartilhado** | Time pequeno (< 10), sede regulatória obrigatória, baixa cultura presencial | WeWork, Cubo, Distrito — endereço fiscal + sala on-demand |
+| **Escritório próprio** | Time médio (10-50), cultura precisa de espaço físico | Contrato comercial, layout aberto, sala reunião |
+| **100% remoto** | Time distribuído, produto digital, time < 20 | Home stipend, encontros trimestrais presenciais |
+| **Showroom + escritório** | Marca lifestyle/D2C, drops + eventos físicos relevantes | Vitrine permanente, ativações periódicas (live-marketing) |
+| **Operação física + frente comercial** | Estoque + atendimento físico necessário | CD/depósito + ponto de venda; bate em coo-logistics |
+| **Híbrido** | Time misto presencial+remoto | Política de dias presenciais + hot desks |
+
+**Como escolher (rodar via Fase 0 da empresa):**
+1. Modelo de negócio é digital ou físico?
+2. Regulação obriga sede física (ex: iGaming SECAP, varejo IE)?
+3. Cultura do founder/time exige presença?
+4. Headcount atual + projeção 12 meses?
+5. Budget disponível (~5-15% do OPEX em workspace é razoável)?
 
 ## Output canon
 - `_Areas/Facilities/workspace-config.md`

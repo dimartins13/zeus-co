@@ -1,6 +1,9 @@
 {
   "name": "zeus-co-procurement",
-  "description": "Procurement (Compras estratégicas) — distinto de COO supply (estoque) e COO vendor (gestão fornecedor). Foco: SOURCING estratégico + negociação + categoria. 5 skills: procurement (chief), procurement-orquestrador, procurement-strategic-sourcing (RFP/RFQ), procurement-category-mgr (categoria específica), procurement-tail-spend (compras pequenas automatizadas via AI/cards). Cross com cfo-ap-specialist (pagamento) e coo-vendor (relacionamento dia-a-dia).",
-  "version": "1.0.0",
-  "author": {"name": "Diego Martins"}
+  "description": "Procurement (Compras estratégicas) — distinto de COO supply (estoque) e COO vendor (gestão fornecedor dia-a-dia). Foco: SOURCING estratégico + negociação + gestão de categoria. 5 skills: procurement (chief), procurement-orquestrador, procurement-strategic-sourcing (RFP/RFQ), procurement-category-mgr (categoria específica), procurement-tail-spend (compras pequenas automatizadas via AI/cards). Cross com cfo-ap-specialist (pagamento) e coo-vendor (relacionamento). Use SEMPRE pra compras estratégicas, sourcing, RFP, RFQ, negociação com fornecedor, categoria de compra, tail spend. Frases-gatilho: 'compras', 'procurement', 'sourcing', 'RFP', 'RFQ', 'fornecedor estratégico', 'categoria', 'tail spend', 'negociação fornecedor', 'contrato fornecedor', 'cotação', 'reduzir custo compras', 'consolidar compras', 'centralizar fornecedor'.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
 }

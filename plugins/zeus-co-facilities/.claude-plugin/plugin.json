@@ -2,5 +2,8 @@
   "name": "zeus-co-facilities",
   "description": "Facilities — espaço físico + IT assets + sustentabilidade ESG. 3 skills: facilities (chief), facilities-workspace (escritório/coworking/home-office stipend), facilities-it-asset (notebooks/celulares/equipment lifecycle). Pequeno em empresa Zeus-CO (Diego portfolio remote-first) mas crítico quando empresa cresce ou tem operação física (Ventage estoque, dope street showroom potencial).",
   "version": "1.0.0",
-  "author": {"name": "Diego Martins"}
+  "author": {
+    "name": "Diego Martins",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
 }

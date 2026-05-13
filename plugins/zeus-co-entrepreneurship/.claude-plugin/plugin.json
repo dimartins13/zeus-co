@@ -1,6 +1,9 @@
 {
   "name": "zeus-co-entrepreneurship",
-  "description": "Entrepreneurship / Venture Studio — criação de empresas novas + gestão de portfolio Diego fundador serial. 6 skills: entrepreneurship (chief), entrepreneurship-orquestrador, venture-studio-mgr (operação venture studio), new-co-design (design de empresa nova end-to-end), portfolio-allocation (alocação de tempo + capital Diego cross-portfolio), exit-strategy (planejamento exit / sale / spin-off / kill). Diferente de cino (que inova produto/feature) — eu crio EMPRESAS NOVAS.",
-  "version": "1.0.0",
-  "author": {"name": "Diego Martins"}
+  "description": "Entrepreneurship / Venture Studio — criação de empresas novas + gestão de portfolio fundador serial. 6 skills: entrepreneurship (chief), entrepreneurship-orquestrador, venture-studio-mgr (operação venture studio), new-co-design (design de empresa nova end-to-end), portfolio-allocation (alocação tempo + capital cross-portfolio), exit-strategy (planejamento exit/sale/spin-off/kill). Diferente de cino (que inova produto) — entrepreneurship cria EMPRESAS NOVAS. Use SEMPRE pra criar empresa nova, venture studio, portfolio fundador, alocar tempo cross-empresas, exit, spin-off, kill company, sair de empresa, vender empresa, validar nova ideia de empresa. Frases-gatilho: 'venture studio', 'nova empresa', 'criar empresa', 'startup nova', 'portfolio', 'alocação capital', 'alocação tempo', 'cross-portfolio', 'exit', 'sair', 'vender empresa', 'spin-off', 'kill', 'matar empresa', 'founder serial', 'ideia de empresa nova'.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
 }

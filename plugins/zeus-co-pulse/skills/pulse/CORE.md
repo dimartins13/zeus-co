@@ -109,27 +109,29 @@ Progresso checklist: X/Y items (Z%)
 ```
 === PULSE PORTFOLIO — [data] ===
 
-🟢 KingPanda: 4/5 (Validação)
-🟡 2ndStreet: 3/5 (Operação inicial) — atenção runway
-🟢 Crazyflips: 4/5 (MVP/Lançamento)
-🔴 Ventage: 2/5 (Validação) — modelo ainda vago
-🟢 TarjaPreta: 3/5 (MVP) — LGPD pending
+🟢 <empresa-1>: N/5 (<estágio>)
+🟡 <empresa-2>: N/5 (<estágio>) — <alerta-curto>
+🟢 <empresa-3>: N/5 (<estágio>)
+🔴 <empresa-4>: N/5 (<estágio>) — <alerta-crítico>
+🟢 <empresa-5>: N/5 (<estágio>) — <pendência>
 
 💰 Burn portfolio: R$ XXX/mês
-   Top spender: 2ndStreet (R$ Y/mês)
+   Top spender: <empresa-X> (R$ Y/mês)
 
-⚠️ ALERTAS P0 (3):
-   - [empresa]: ação
-   - [empresa]: ação
+⚠️ ALERTAS P0 (N):
+   - <empresa>: ação
+   - <empresa>: ação
 
 📊 Capacity Diego: alocação atual
-   - 60% 2ndStreet (vs 40% planejado)
-   - 20% KingPanda
+   - X% <empresa-A> (vs Y% planejado)
+   - X% <empresa-B>
    - ...
 
 🎯 Recomendação semana:
    {1 frase — em qual empresa focar + por quê}
 ```
+
+**Lista de empresas ativas + estágios vem de `~/Documents/Claude/Projects/_Pulse/portfolio-state.md`** (consultar em runtime, não hardcodar aqui).
 
 ## Quando NÃO operar
 
