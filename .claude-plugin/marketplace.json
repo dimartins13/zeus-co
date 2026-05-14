@@ -175,6 +175,13 @@
       "source": "./plugins/zeus-co-marketing",
       "category": "zeus-co",
       "version": "1.2.0"
+    },
+    {
+      "name": "zeus-co-design-lab",
+      "description": "DESIGN-LAB — laboratório de produção visual do ZEUS-CO. Curado de open-source nexu-io/open-design (Apache 2.0). 12 skills planas (deck, LP, magazine editorial, email HTML, social carousel, KV/poster, motion, image gen, video gen, design system) + 51 skills detalhadas em resources + 66 design systems de referência (Apple, Stripe, Linear, etc) + 5 padrões core + 4 pipelines (Freepik, Higgsfield, Adobe Express, Gamma).",
+      "source": "./plugins/zeus-co-design-lab",
+      "category": "zeus-co",
+      "version": "0.1.0"
     }
   ]
 }
