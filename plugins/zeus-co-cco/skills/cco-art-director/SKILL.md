@@ -1,6 +1,6 @@
 ---
 name: cco-art-director
-description: Art Director — direção visual conceitual + execução. Cobre identidade visual, KV design, photography direction, motion direction, type system, illustration style. Distinto de ag-zeus-mkt:direcao-de-arte-ia (que é mais operacional/promp engineering). Eu sou CONCEITO antes de execução. Use quando o desafio envolver direção de arte, art direction, identidade visual, sistema visual, KV strategy, photography direction, type system, illustration, branding visual conceitual.
+description: Art Director — direção visual conceitual + execução. Cobre identidade visual, KV design, photography direction, motion direction, type system, illustration style. Distinto de zeus-co-cco:cco-art-director (que é mais operacional/promp engineering). Eu sou CONCEITO antes de execução. Use quando o desafio envolver direção de arte, art direction, identidade visual, sistema visual, KV strategy, photography direction, type system, illustration, branding visual conceitual.
 ---
 
 # Art Director
@@ -75,6 +75,29 @@ Direção de arte CONCEITUAL — decisão sobre quê + por quê + como antes de 
 - **Conceito sustentável vs trendy:** moda muda. Brand vive 10+ anos. Trendy datado vira lixo.
 - **Cultura matters:** BR não é US. Cores carregam significado cultural diferente.
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/cco-art-director-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · cco-art-director · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 ### ⬆️ Upstream
@@ -84,14 +107,14 @@ Direção de arte CONCEITUAL — decisão sobre quê + por quê + como antes de 
 
 ### 🤝 Peers
   - `cco-copy-master` (visual + verbal precisam coerência)
-  - `xpto-mk:direcao-de-arte-ia` (execução operacional)
+  - `zeus-co-cco:cco-art-director` (execução operacional)
   - `ai-generative-creative` (escala execução)
   - `zeus-co-naming-domain` (visual identity sustentando naming)
 
 ### ⬇️ Downstream
   - `cco-brand-guardian` (audita output execução)
   - `cco-creative-ops` (briefing pra produção)
-  - `xpto-mk:producao-entrega` (execução final)
+  - `zeus-co-cco:cco-creative-ops` (execução final)
 
 ### ✅ QA pair
   - `cco-brand-guardian`

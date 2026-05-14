@@ -140,7 +140,7 @@ Segundo princípio: **TikTok Shop integra 4 alavancas que se reforçam.** Catál
 
 ## Conexões no pipeline
 
-- **Upstream:** Fase 7 execução criativa (todo conteúdo pode virar TikTok content) + `xpto-mk:digital-marketing`
+- **Upstream:** Fase 7 execução criativa (todo conteúdo pode virar TikTok content) + `zeus-co-cmo:cmo-growth-performance`
 - **Downstream:** Fase 10 analytics + `coo-logistics` (fulfillment) + `cfo-treasury` (recebíveis TikTok)
 - **QA pair:** `cco-brand-guardian` (conteúdo visual) + `clo-compliance` (CDC + termos) + `coo-customer-ops` (rating)
 - **Tools:** Shopify AI Toolkit MCP (catálogo), TikTok Ads Manager, TikTok Shop Seller Center, integrations middleware
@@ -160,9 +160,32 @@ Segundo princípio: **TikTok Shop integra 4 alavancas que se reforçam.** Catál
 ## Quando NÃO opero
 
 - Live commerce em outras plataformas → `live-commerce`
-- Ads em outras plataformas (Meta, Google) → `xpto-mk:midia-planejamento`
+- Ads em outras plataformas (Meta, Google) → `zeus-co-cmo:cmo-growth-performance`
 - Programa de afiliados em outras plataformas → `marketing-afiliados`
 - Catálogo em outros marketplaces → `retail-media`
+
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/tiktok-shop-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · tiktok-shop · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
 
 ## Trabalha em equipe com
 
@@ -178,18 +201,35 @@ Segundo princípio: **TikTok Shop integra 4 alavancas que se reforçam.** Catál
   - `live-commerce` (TikTok Live é uma das alavancas)
   - `retail-media` (mix de marketplaces)
   - `marketing-afiliados` (programa afiliação cross-plataforma)
-  - `xpto-mk:growth-performance` (ads optimization)
+  - `zeus-co-cmo:cmo-growth-performance` (ads optimization)
 
 ### ⬇️ Downstream
   - `coo-logistics` (fulfillment)
   - `coo-customer-ops` (rating + atendimento)
   - `cfo-treasury` (recebíveis + reconciliação)
-  - `xpto-mk:analista-marketing` (performance)
+  - `zeus-co-cmo:cmo-marketing-ops-martech` (performance)
 
 ### ✅ QA pair
   - `cco-brand-guardian` (conteúdo visual)
   - `clo-compliance` (CDC + categoria permitida)
   - `coo-customer-ops` (rating-driven)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa

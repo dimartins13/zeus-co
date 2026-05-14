@@ -53,7 +53,7 @@
 7. Aprovação humana final — geramos, Diego escolhe
 
 ### Decisões arquiteturais
-- **Standalone plugin** (não dentro de ag-zeus-mkt) — porque capability é transversal, todos LEPs invocam
+- **Standalone plugin** (não dentro do plugin zeus-co-cmo) — porque capability é transversal, todos LEPs invocam
 - **Modo dual** — marketing-primary auto-trigger + suporte transversal explícito
 - **Nome PT** (cerebro-criativo) — alinha com origem da pesquisa neuro (Diego)
 - **Framework unificado** — Boden + Eagleman + Fauconnier-Turner + Hofstadter + Beaty + Eberle, não framework único
@@ -86,8 +86,8 @@
 
 ## Notas de design (decisões registradas)
 
-### Por que NÃO dentro do ag-zeus-mkt
-Inicialmente considerado mora em `ag-zeus-mkt:cerebro-criativo`, mas elevou-se a plugin standalone porque:
+### Por que NÃO dentro do ecossistema ZEUS-CO
+Inicialmente considerado mora em `zeus-co (cmo+marketing+cco):cerebro-criativo`, mas elevou-se a plugin standalone porque:
 - Pesquisa aprofundada revelou capability transversal (Boden 3 types funcionam pra qualquer função)
 - Outras skills (não-marketing) precisam chamar de forma natural
 - Status de specialist próprio é coerente com naming-domain/pulse/publisher/claude-expert
@@ -95,7 +95,7 @@ Inicialmente considerado mora em `ag-zeus-mkt:cerebro-criativo`, mas elevou-se a
 ### Por que nome PT (não EN)
 Diego é founder BR, base de empresas BR, e a pesquisa neuro foi originalmente passada em PT. Nome em PT (`cerebro-criativo`) sinaliza:
 - Alinhamento com origem da pesquisa
-- Coerência com `ag-zeus-mkt` (skills marketing já em PT)
+- Coerência com `zeus-co-cmo + zeus-co-marketing + zeus-co-cco` (skills marketing já em PT)
 - Não-pretensão de internacionalização imediata (Zeus-CO opera BR-first)
 
 ### Por que 5 modos e não menos

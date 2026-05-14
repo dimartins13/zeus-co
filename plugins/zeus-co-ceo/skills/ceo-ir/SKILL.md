@@ -52,6 +52,29 @@ Se nasceu sugestão proativa que Diego não pediu mas merece atenção dele, app
 
 **Fallback se Diego não está em chat de empresa específica:** escrever os 3 outputs em `~/Documents/Claude/Projects/_SessionRecaps/YYYY-MM-DD-<topic>.md` no mesmo formato consolidado.
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/ceo-ir-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · ceo-ir · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 > Skill ISOLADA é skill subutilizada. Eu opero conectado.

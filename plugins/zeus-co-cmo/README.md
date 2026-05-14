@@ -1,6 +1,6 @@
 # Zeus-CO — CMO LEP
 
-CMO do Zeus-CO. Orquestrador do departamento de marketing que JÁ EXISTE via `ag-zeus-mkt` (25 skills).
+CMO do Zeus-CO. Orquestrador do departamento de marketing que JÁ EXISTE via `zeus-co-cmo + zeus-co-marketing + zeus-co-cco` (25 skills).
 
 **Princípio:** Decido GTM, opero growth, ativo o time. Não recrio o time — orquestro.
 

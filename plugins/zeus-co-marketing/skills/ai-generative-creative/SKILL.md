@@ -159,7 +159,7 @@ Camadas de control:
 
 - **Upstream:** Fase 6 Big Idea + Fase 7a TVC roteiro + qualquer skill criativa que precise asset visual
 - **Downstream:** Alimenta TODAS sub-fases visuais da Fase 7 (publicidade, social, live, creator, retail, CTV)
-- **QA pair:** `zeus-co-cco-brand-guardian` (sempre), `zeus-co-clo-lgpd` (biometrics), `zeus-co-clo-ip` (rights), `xpto-mk:verificador-factual` (claims)
+- **QA pair:** `zeus-co-cco-brand-guardian` (sempre), `zeus-co-clo-lgpd` (biometrics), `zeus-co-clo-ip` (rights), `zeus-co-cmo:cmo-pesquisa-insights` (claims)
 - **Tools nativos no Cowork:** Higgsfield MCP, Adobe MCPs, Freepik MCP, Canvas Design skill, web-artifacts-builder
 
 ## Output esperado
@@ -176,10 +176,33 @@ Camadas de control:
 
 ## Quando NÃO opero
 
-- Direção criativa conceitual → `xpto-mk:direcao-de-arte-ia` (estratégia visual)
-- Produção tradicional (fotógrafo humano, filmagem real) → `ag-zeus-mkt:producao-entrega`
+- Direção criativa conceitual → `zeus-co-cco:cco-art-director` (estratégia visual)
+- Produção tradicional (fotógrafo humano, filmagem real) → `zeus-co-cco:cco-creative-ops`
 - Edição de áudio profissional → fora do Zeus-CO atual (delegação humana)
 - Naming/branding conceito → `zeus-co-naming-domain` + `cerebro-criativo`
+
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/ai-generative-creative-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · ai-generative-creative · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
 
 ## Trabalha em equipe com
 
@@ -188,17 +211,17 @@ Camadas de control:
 ### ⬆️ Upstream
   - `marketing-orquestrador` (Fase 7m — transversal)
   - `cco` (direção criativa conceitual)
-  - `xpto-mk:direcao-de-arte-ia` (estratégia visual)
-  - `xpto-mk:roteiro-publicitario` (storyboard)
+  - `zeus-co-cco:cco-art-director` (estratégia visual)
+  - `zeus-co-cco:cco-storytelling` (storyboard)
 
 ### 🤝 Peers
   - `cerebro-criativo` (ideação)
   - `processo-criativo-pesquisa` (referências de processo)
-  - `xpto-mk:copywriting` (texto pra peça)
+  - `zeus-co-cco:cco-copy-master` (texto pra peça)
 
 ### ⬇️ Downstream
-  - `ag-zeus-mkt:producao-entrega` (post-prod profissional)
-  - `xpto-mk:social-media-conteudo` (deploy social)
+  - `zeus-co-cco:cco-creative-ops` (post-prod profissional)
+  - `zeus-co-cco:cco-content-strategist` (deploy social)
   - `ctv-streaming-ads` (TVC AI-generated)
   - `live-commerce` (assets pra live)
   - `creator-economy` (toolkit visual pra creators)
@@ -208,7 +231,24 @@ Camadas de control:
   - `cco-brand-guardian` (SEMPRE — brand + visual)
   - `clo-lgpd` (biometrics / rostos)
   - `clo-ip` (rights commerciais)
-  - `xpto-mk:verificador-factual` (claims em peça)
+  - `zeus-co-cmo:cmo-pesquisa-insights` (claims em peça)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa

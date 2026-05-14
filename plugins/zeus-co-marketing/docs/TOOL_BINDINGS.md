@@ -70,21 +70,21 @@ Toda peça gerada por qualquer tool acima passa por `zeus-co-cco-brand-guardian`
 
 ## Bindings por skill (quem chama qual tool)
 
-### Skills criativas (`xpto-mk:` + `zeus-co-cco:`)
-- `xpto-mk:diretor-criacao` → invoca **Canvas Design** (KV preliminar) → Brand Guardian QA → escala pra Adobe se aprovado
-- `xpto-mk:publicidade-criativa` → **Canvas Design** + **Higgsfield** (peças preliminares)
-- `xpto-mk:direcao-de-arte-ia` → **Canvas Design** + **Adobe MCPs** + **Higgsfield** (KV oficiais)
-- `xpto-mk:roteiro-publicitario` → **Canvas Design** (storyboard) → **Higgsfield** (geração vídeo)
-- `xpto-mk:branding` → **Canvas Design** (mockup) → **Adobe** (logo final) → **Figma** (handoff equipe)
-- `xpto-mk:copywriting` → SEM tool visual (texto puro)
+### Skills criativas (`zeus-co-cco:`)
+- `zeus-co-cco:cco-orquestrador` → invoca **Canvas Design** (KV preliminar) → Brand Guardian QA → escala pra Adobe se aprovado
+- `zeus-co-cco:cco-art-director` → **Canvas Design** + **Higgsfield** (peças preliminares)
+- `zeus-co-cco:cco-art-director` → **Canvas Design** + **Adobe MCPs** + **Higgsfield** (KV oficiais)
+- `zeus-co-cco:cco-storytelling` → **Canvas Design** (storyboard) → **Higgsfield** (geração vídeo)
+- `zeus-co-cmo:cmo-branding` → **Canvas Design** (mockup) → **Adobe** (logo final) → **Figma** (handoff equipe)
+- `zeus-co-cco:cco-copy-master` → SEM tool visual (texto puro)
 - `zeus-co-cerebro-criativo` → **Canvas Design** (moodboard de ideação)
 
-### Skills sociais (`xpto-mk:social-media-conteudo` + similares)
+### Skills sociais (`zeus-co-cco:cco-content-strategist` + similares)
 - → **Canva MCP** (template editável)
 - → **Higgsfield** (vídeo curto)
 - → **Adobe** (versão final)
 
-### Skills de produção (`ag-zeus-mkt:producao-entrega`)
+### Skills de produção (`zeus-co-cco:cco-creative-ops`)
 - → **Adobe full suite** (entrega final)
 - → **Figma** (handoff cliente)
 - → **Gamma** (decks acompanhantes)

@@ -13,7 +13,7 @@
 - 16 MCPs externos: asana, context7, discord, fakechat, firebase, github, gitlab, greptile, imessage, laravel-boost, linear, playwright, serena, supabase, telegram, terraform
 - Custom: gemini-video, video, scheduled-tasks
 - Plugins-ecosystem: 1c4e78c8 (Adobe), 220c44d9 (Google Drive), 2801b3d7 (Gamma), 3a7681c7 (Gmail), 3ca73a72 (Calendar), 60f907d8 (ClickUp), 796ab82d (Adobe Marketing), 8984f484 (Canva), Claude Preview, dd613414 (Higgsfield), fdcd0fac (Figma), Freepik, mcp-image, mcp-registry
-- Plugins finance/marketing: brand-voice, financial-analysis, equity-research, private-equity, investment-banking, wealth-management, finance, marketing, dev-skills, ag-zeus-mkt, xpto-mk, 2ndstreet-cataloger, anthropic-skills
+- Plugins finance/marketing: brand-voice, financial-analysis, equity-research, private-equity, investment-banking, wealth-management, finance, marketing, dev-skills, zeus-co-cmo, zeus-co-cco, zeus-co-marketing, anthropic-skills
 
 ### Skills do Zeus-CO construídos hoje (Sprint A)
 - `zeus-co-factory` (lep-builder)

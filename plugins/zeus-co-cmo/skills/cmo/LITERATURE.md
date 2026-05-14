@@ -96,45 +96,45 @@
 **O CMO LEP é orquestrador. O time real está aqui:**
 
 ### Liderança e estratégia
-- `ag-zeus-mkt:cmo-marketing` — eu mesmo (chief)
-- `ag-zeus-mkt:diretor-marketing` — diretor (operação tática)
-- `ag-zeus-mkt:estrategista-marketing` — estratégia
-- `ag-zeus-mkt:planejamento-estrategico` — planejamento brief
-- `ag-zeus-mkt:marketing-estrategico` — macro estratégia
-- `ag-zeus-mkt:ag-zeus-mkt-orquestrador` — entry point para o ecossistema
+- `zeus-co-cmo:cmo` — eu mesmo (chief)
+- `zeus-co-cmo:cmo-estrategia-marketing` — diretor (operação tática)
+- `zeus-co-cmo:cmo-estrategia-marketing` — estratégia
+- `zeus-co-cmo:cmo-estrategia-marketing` — planejamento brief
+- `zeus-co-cmo:cmo-estrategia-marketing` — macro estratégia
+- `zeus-co-marketing:marketing-orquestrador` — entry point para o ecossistema
 
 ### Análise e dados
-- `ag-zeus-mkt:analista-marketing` — analytics, dashboards, ROI
-- `ag-zeus-mkt:business-intelligence` — BI cross-marketing
-- `ag-zeus-mkt:investigar-performance` — diagnóstico de performance
-- `ag-zeus-mkt:simular-volume` — projeção de volume
+- `zeus-co-cmo:cmo-marketing-ops-martech` — analytics, dashboards, ROI
+- `zeus-co-cmo:cmo-marketing-ops-martech` — BI cross-marketing
+- `zeus-co-cmo:cmo-marketing-ops-martech` — diagnóstico de performance
+- `zeus-co-cmo:cmo-pesquisa-insights` — projeção de volume
 
 ### Branding e posicionamento
-- `ag-zeus-mkt:branding` — brand foundation
-- `ag-zeus-mkt:comportamento-consumidor` — consumer behavior
-- `ag-zeus-mkt:tendencias-criativas-br` — trends BR
-- `ag-zeus-mkt:pesquisa-mercado` — research
+- `zeus-co-cmo:cmo-branding` — brand foundation
+- `zeus-co-cmo:cmo-pesquisa-insights` — consumer behavior
+- `zeus-co-cmo:cmo-pesquisa-insights` — trends BR
+- `zeus-co-cmo:cmo-pesquisa-insights` — research
 
 ### Criação
-- `ag-zeus-mkt:diretor-criacao` — direção criativa
-- `ag-zeus-mkt:publicidade-criativa` — big ideas
-- `ag-zeus-mkt:copywriting` — copy
-- `ag-zeus-mkt:direcao-de-arte-ia` — direção arte IA
-- `ag-zeus-mkt:roteiro-publicitario` — roteiros video
-- `ag-zeus-mkt:producao-entrega` — entrega de peças
+- `zeus-co-cco:cco-orquestrador` — direção criativa
+- `zeus-co-cco:cco-art-director` — big ideas
+- `zeus-co-cco:cco-copy-master` — copy
+- `zeus-co-cco:cco-art-director` — direção arte IA
+- `zeus-co-cco:cco-storytelling` — roteiros video
+- `zeus-co-cco:cco-creative-ops` — entrega de peças
 
 ### Canais e ativação
-- `ag-zeus-mkt:digital-marketing` — digital macro
-- `ag-zeus-mkt:social-media-conteudo` — social media
-- `ag-zeus-mkt:growth-performance` — growth + paid
-- `ag-zeus-mkt:funil-conversao` — funnel optimization
-- `ag-zeus-mkt:midia-planejamento` — media planning
-- `ag-zeus-mkt:martech-implementacao` — martech / LP / tracking
-- `ag-zeus-mkt:trade-marketing-varejo` — trade
-- `ag-zeus-mkt:pr-comunicacao-corporativa` — PR
-- `ag-zeus-mkt:cx-experiencia-cliente` — CX
-- `ag-zeus-mkt:estrategia-pricing` — pricing strategy
-- `ag-zeus-mkt:verificador-factual` — factcheck antes de publicar
+- `zeus-co-cmo:cmo-growth-performance` — digital macro
+- `zeus-co-cco:cco-content-strategist` — social media
+- `zeus-co-cmo:cmo-growth-performance` — growth + paid
+- `zeus-co-cmo:cmo-growth-performance` — funnel optimization
+- `zeus-co-cmo:cmo-growth-performance` — media planning
+- `zeus-co-cmo:cmo-marketing-ops-martech` — martech / LP / tracking
+- `zeus-co-marketing:retail-media` — trade
+- `zeus-co-cmo:cmo-comunicacao-pr` — PR
+- `zeus-co-cmo:cmo-crm-lifecycle` — CX
+- `zeus-co-cmo:cmo-product-marketing` — pricing strategy
+- `zeus-co-cmo:cmo-pesquisa-insights` — factcheck antes de publicar
 
 ### Skills `marketing:*` (complementares)
 - `marketing:campaign-plan`, `marketing:competitive-brief`, `marketing:content-creation`, `marketing:draft-content`, `marketing:email-sequence`, `marketing:performance-report`, `marketing:seo-audit`, `marketing:brand-review`
@@ -155,7 +155,7 @@
 ---
 
 Sources usadas:
-- ag-zeus-mkt plugin (instalado)
+- plugins zeus-co-cmo + zeus-co-marketing + zeus-co-cco (instalado)
 - Bibliotecas marketing públicas (HubSpot, CXL, Reforge, etc)
 
 *Última varredura: 2026-05-06.*

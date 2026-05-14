@@ -70,7 +70,7 @@ Toda ativação física precisa de:
 
 ## Conexões no pipeline
 
-- **Upstream:** Fase 6 Big Idea (`zeus-co-cerebro-criativo` + `xpto-mk:diretor-criacao`)
+- **Upstream:** Fase 6 Big Idea (`zeus-co-cerebro-criativo` + `zeus-co-cco:cco-orquestrador`)
 - **Downstream:** Fase 8 Plano canais (compor live no mix), Fase 9 calendário, Fase 10 analytics
 - **QA pair:** `zeus-co-cco-brand-guardian` (consistência cross-touchpoint visual) + `coo-customer-ops` (operação de atendimento no evento)
 - **Tools:** Figma MCP (layout planta evento), Canva (sinalização), Adobe (peças finais), Higgsfield (teaser/aftermovie)
@@ -98,9 +98,26 @@ Toda ativação física precisa de:
 
 ## Quando NÃO opero
 
-- Ativação digital pura (delegar pra `xpto-mk:digital-marketing`)
+- Ativação digital pura (delegar pra `zeus-co-cmo:cmo-growth-performance`)
 - Influencer trip sem ativação fixa (delegar pra `creator-economy`)
 - Promoção mecânica via app/web (delegar pra `marketing-promocional`)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa
@@ -137,6 +154,29 @@ Sugestão proativa pra Diego sobre live marketing.
 
 **Fallback:** `_SessionRecaps/YYYY-MM-DD-<topic>.md`.
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/live-marketing-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · live-marketing · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 > Skill ISOLADA é skill subutilizada. Eu opero conectado.
@@ -149,12 +189,12 @@ Sugestão proativa pra Diego sobre live marketing.
 
 ### 🤝 Peers (com quem co-crio)
   - cco-creative-ops
-  - ag-zeus-mkt:producao-entrega
+  - zeus-co-cco:cco-creative-ops
   - creator-economy
 
 ### ⬇️ Downstream (pra quem entrego)
   - coo-customer-ops (atendimento evento)
-  - ag-zeus-mkt:pr-comunicacao-corporativa
+  - zeus-co-cmo:cmo-comunicacao-pr
 
 ### ✅ QA pair (quem valida meu output antes do deploy)
   - cco-brand-guardian

@@ -55,7 +55,7 @@ Documento `00-descoberta-interna.md` com 5 seções:
 ## Fase 1 — BRIEFING (claro, mensurável)
 
 **Owner:** CMO (`zeus-co-cmo`) recebe input do Diego.
-**Skills:** `xpto-mk:planejamento-estrategico` ou similar.
+**Skills:** `zeus-co-cmo:cmo-estrategia-marketing` ou similar.
 **Output:** `_Areas/CMO/<projeto>/01-briefing.md`
 
 Estrutura:
@@ -70,7 +70,7 @@ Estrutura:
 
 ## Fase 2 — PESQUISA EXTERNA (mercado + concorrentes)
 
-**Owner:** `xpto-mk:pesquisa-mercado` + `ag-zeus-mkt:pesquisa-mercado`
+**Owner:** `zeus-co-cmo:cmo-pesquisa-insights` + `zeus-co-cmo:cmo-pesquisa-insights`
 **Output:** `_Areas/CMO/<projeto>/02-pesquisa-mercado.md`
 
 Cobertura:
@@ -84,7 +84,7 @@ Cobertura:
 
 ## Fase 3 — COMPORTAMENTO + INSIGHT
 
-**Owner:** `xpto-mk:comportamento-consumidor`
+**Owner:** `zeus-co-cmo:cmo-pesquisa-insights`
 **Output:** `_Areas/CMO/<projeto>/03-insight.md`
 
 - Jobs-to-be-done do público
@@ -96,7 +96,7 @@ Cobertura:
 
 ## Fase 4 — BENCHMARK CRIATIVO + PROCESSO
 
-**Owner:** `xpto-mk:tendencias-criativas-br` + **`zeus-co-marketing:processo-criativo-pesquisa`** (NOVA)
+**Owner:** `zeus-co-cmo:cmo-pesquisa-insights` + **`zeus-co-marketing:processo-criativo-pesquisa`** (NOVA)
 **Output:** `_Areas/CMO/<projeto>/04-benchmark-criativo.md`
 
 Cobertura DUPLA:
@@ -107,7 +107,7 @@ Cobertura DUPLA:
 
 ## Fase 5 — PLANEJAMENTO ESTRATÉGICO
 
-**Owner:** `xpto-mk:planejamento-estrategico` + `xpto-mk:marketing-estrategico` + `xpto-mk:estrategista-marketing`
+**Owner:** `zeus-co-cmo:cmo-estrategia-marketing` + `zeus-co-cmo:cmo-estrategia-marketing` + `zeus-co-cmo:cmo-estrategia-marketing`
 **Output:** `_Areas/CMO/<projeto>/05-plano-estrategico.md`
 
 - Posicionamento da campanha
@@ -120,7 +120,7 @@ Cobertura DUPLA:
 
 ## Fase 6 — BIG IDEA + CONCEITO
 
-**Owner:** `zeus-co-cerebro-criativo` + `xpto-mk:diretor-criacao` + `xpto-mk:publicidade-criativa`
+**Owner:** `zeus-co-cerebro-criativo` + `zeus-co-cco:cco-orquestrador` + `zeus-co-cco:cco-art-director`
 **Output:** `_Areas/CMO/<projeto>/06-big-idea.md`
 
 - Big Idea (1 frase, proprietária, escalável)
@@ -136,23 +136,23 @@ Cobertura DUPLA:
 **Output:** `_Areas/CMO/<projeto>/07-execucao/`
 
 ### 7a. Publicidade tradicional (filme + KV + OOH)
-- `xpto-mk:roteiro-publicitario` — roteiro filme
-- `xpto-mk:direcao-de-arte-ia` — KV preliminar
-- `xpto-mk:copywriting` — copy hero + claims
+- `zeus-co-cco:cco-storytelling` — roteiro filme
+- `zeus-co-cco:cco-art-director` — KV preliminar
+- `zeus-co-cco:cco-copy-master` — copy hero + claims
 - **Tool:** Claude Design (`anthropic-skills:canvas-design`) pra KV preliminar PNG/PDF
 - **Tool produção final:** Adobe MCPs (image_generative_expand, document_render_layout)
 
 ### 7b. Marketing promocional ⭐ NOVO
 - **`zeus-co-marketing:marketing-promocional`** — sampling, contests, sweepstakes, brindes, descontos
-- **Tool:** `xpto-mk:copywriting` pra mecânica + termos
+- **Tool:** `zeus-co-cco:cco-copy-master` pra mecânica + termos
 
 ### 7c. Marketing digital (search + social + display)
-- `xpto-mk:digital-marketing` + `xpto-mk:midia-planejamento`
-- `xpto-mk:funil-conversao` — landing pages
+- `zeus-co-cmo:cmo-growth-performance` + `zeus-co-cmo:cmo-growth-performance`
+- `zeus-co-cmo:cmo-growth-performance` — landing pages
 - **Tool:** Meta Ads MCP (recomendado pelo scout) + Google Ads MCPs
 
 ### 7d. Social/Conteúdo
-- `xpto-mk:social-media-conteudo` — calendário + criativos
+- `zeus-co-cco:cco-content-strategist` — calendário + criativos
 - **Tools:** Canva MCP (templates), Figma MCP (design), Higgsfield (vídeo)
 
 ### 7e. Live marketing ⭐ NOVO
@@ -169,13 +169,13 @@ Cobertura DUPLA:
 
 ### 7h. Creator economy ⭐ NOVO
 - **`zeus-co-marketing:creator-economy`** — UGC ops, deals, micro/nano
-- Distinto de `xpto-mk:influencer-marketing` (esse é macro/A-list)
+- Distinto de `zeus-co-marketing:creator-economy` (esse é macro/A-list)
 
 ### 7i. PR + Comunicação corporativa
-- `xpto-mk:pr-comunicacao-corporativa`
+- `zeus-co-cmo:cmo-comunicacao-pr`
 
 ### 7j. CRM + Lifecycle (após captura)
-- `xpto-mk:crm-lifecycle-marketing` — onboarding, retenção, recuperação
+- `zeus-co-cmo:cmo-crm-lifecycle` — onboarding, retenção, recuperação
 
 ### 7k. Live commerce ⭐ NOVO (2026-05-13)
 - **`zeus-co-marketing:live-commerce`** — TikTok Live, Instagram Live Shopping, Shopee Live, ML Live, Magalu Live
@@ -199,7 +199,7 @@ Cobertura DUPLA:
 
 ## Fase 8 — PLANO DE CANAIS + BUDGET SPLIT
 
-**Owner:** `xpto-mk:midia-planejamento` + CMO
+**Owner:** `zeus-co-cmo:cmo-growth-performance` + CMO
 **Output:** `_Areas/CMO/<projeto>/08-plano-canais.md`
 
 - Mix de canais (% budget cada)
@@ -211,7 +211,7 @@ Cobertura DUPLA:
 
 ## Fase 9 — CALENDÁRIO + RÉGUA DE PUBLICAÇÃO
 
-**Owner:** `xpto-mk:social-media-conteudo` + CMO
+**Owner:** `zeus-co-cco:cco-content-strategist` + CMO
 **Output:** `_Areas/CMO/<projeto>/09-calendario.md`
 
 Formato:
@@ -222,7 +222,7 @@ Formato:
 
 ## Fase 10 — ANALYTICS + LOOP DE OTIMIZAÇÃO
 
-**Owner:** `xpto-mk:analista-marketing` + `xpto-mk:business-intelligence`
+**Owner:** `zeus-co-cmo:cmo-marketing-ops-martech` + `zeus-co-cmo:cmo-marketing-ops-martech`
 **Output:** `_Areas/CMO/<projeto>/10-analytics.md` (atualizado semanalmente)
 
 - KPIs primário + secundários, medidos

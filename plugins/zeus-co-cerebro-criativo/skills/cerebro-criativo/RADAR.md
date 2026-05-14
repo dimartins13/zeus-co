@@ -73,7 +73,7 @@
 - **`zeus-co-clo`** — ângulos não-óbvios em compliance
 - **`zeus-co-coo`** — redesign processo via SCAMPER
 - **`zeus-co-pulse`** — caso queira "reframe do problema" antes de diagnóstico
-- **`ag-zeus-mkt:*`** — 25 specialists de marketing (publicidade-criativa, direção-arte, roteiro-publicitário, etc.)
+- **`zeus-co-cmo:* + zeus-co-marketing:*`** — 25 specialists de marketing (publicidade-criativa, direção-arte, roteiro-publicitário, etc.)
 
 ### Skills brand-voice complementares
 - **`brand-voice:enforce-voice`** — aplica brand guidelines em conteúdo (cerebro-criativo gera, brand-voice aprova)

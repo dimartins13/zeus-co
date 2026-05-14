@@ -118,7 +118,7 @@ Anúncio com bid menor pode aparecer mais que um com bid maior se relevância é
 
 - **Upstream:** Fase 5 plano estratégico (retail media entra no mix? quais marketplaces?) + Fase 6 Big Idea (linguagem do anúncio precisa ressoar)
 - **Downstream:** Fase 8 plano canais (% budget retail media) + Fase 9 calendário (regua promo) + Fase 10 analytics (TACoS/ACoS por marketplace)
-- **QA pair:** `xpto-mk:analista-marketing` (métrica saudável?) + `zeus-co-cfo` (margem comporta?)
+- **QA pair:** `zeus-co-cmo:cmo-marketing-ops-martech` (métrica saudável?) + `zeus-co-cfo` (margem comporta?)
 - **Tools:** APIs de cada marketplace (manual ou via Shopify AI Toolkit MCP que scout sugeriu), Adobe (banner final), Canvas Design (variações A/B)
 
 ## Output esperado
@@ -136,10 +136,27 @@ Anúncio com bid menor pode aparecer mais que um com bid maior se relevância é
 
 ## Quando NÃO opero
 
-- Google Ads / Meta Ads / TikTok Ads → `xpto-mk:midia-planejamento` ou `xpto-mk:growth-performance`
+- Google Ads / Meta Ads / TikTok Ads → `zeus-co-cmo:cmo-growth-performance` ou `zeus-co-cmo:cmo-growth-performance`
 - Influencer em marketplace (TikTok Shop creators) → `creator-economy`
 - Programa de afiliados → `marketing-afiliados`
 - Ads off-marketplace → outros LEPs
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa
@@ -167,6 +184,29 @@ Esta skill é **capability reutilizável** pra qualquer empresa do portfolio ou 
 
 **Fallback:** `_SessionRecaps/YYYY-MM-DD-<topic>.md`.
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/retail-media-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · retail-media · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 > Skill ISOLADA é skill subutilizada. Eu opero conectado.
@@ -178,11 +218,11 @@ Esta skill é **capability reutilizável** pra qualquer empresa do portfolio ou 
   - cmo
 
 ### 🤝 Peers (com quem co-crio)
-  - ag-zeus-mkt:midia-planejamento
-  - ag-zeus-mkt:growth-performance
+  - zeus-co-cmo:cmo-growth-performance
+  - zeus-co-cmo:cmo-growth-performance
 
 ### ⬇️ Downstream (pra quem entrego)
-  - ag-zeus-mkt:analista-marketing
+  - zeus-co-cmo:cmo-marketing-ops-martech
   - cfo-fpa (ROAS)
 
 ### ✅ QA pair (quem valida meu output antes do deploy)

@@ -48,6 +48,6 @@ Como vamos saber que funcionou? (Recall, conversão, NPS, etc.)
 - On-air: {data}
 
 ## Próximos Movimentos
-1. {ativar specialist correto — `ag-zeus-mkt:publicidade-criativa` etc}
+1. {ativar specialist correto — `zeus-co-cco:cco-art-director` etc}
 2. {check-in pós primeira rodada}
 3. {validação com CMO + CEO}

@@ -118,6 +118,29 @@ Ex: filme conta núcleo; podcast conta backstory; Instagram conta micro-momentos
 - **Brasilidade > americanidade traduzida.** "Wear The Story" funciona em PT, mas a HISTÓRIA tem que ser BR.
 - **Diversidade urgente:** narrativas BR não-são só "rico branco urbano". Periferia + interior + diversidade = autenticidade.
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/cco-storytelling-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · cco-storytelling · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 ### ⬆️ Upstream
@@ -127,7 +150,7 @@ Ex: filme conta núcleo; podcast conta backstory; Instagram conta micro-momentos
 
 ### 🤝 Peers
   - `cco-art-director` (visual da história)
-  - `xpto-mk:roteiro-publicitario` (script de filme)
+  - `zeus-co-cco:cco-storytelling` (script de filme)
   - `processo-criativo-pesquisa` (cases de narrativas premiadas)
 
 ### ⬇️ Downstream

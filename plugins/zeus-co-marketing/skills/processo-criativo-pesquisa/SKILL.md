@@ -15,7 +15,7 @@ Sou responsável por estudar a **AUTORIA** de campanhas referência — não só
 
 ## Posição no pipeline
 
-**Fase 4b** (Benchmark criativo + processo). Roda em paralelo com `xpto-mk:tendencias-criativas-br` (que cobre Fase 4a — O QUÊ).
+**Fase 4b** (Benchmark criativo + processo). Roda em paralelo com `zeus-co-cmo:cmo-pesquisa-insights` (que cobre Fase 4a — O QUÊ).
 
 ## Fontes de pesquisa canônicas
 
@@ -141,10 +141,27 @@ Bons CDs/copywriters têm "voz". Identificar:
 
 ## Quando NÃO opero
 
-- Tendências gerais de mercado → `xpto-mk:tendencias-criativas-br`
-- Pesquisa de público/comportamento → `xpto-mk:comportamento-consumidor`
-- Benchmark de KPIs financeiros → `xpto-mk:analista-marketing`
+- Tendências gerais de mercado → `zeus-co-cmo:cmo-pesquisa-insights`
+- Pesquisa de público/comportamento → `zeus-co-cmo:cmo-pesquisa-insights`
+- Benchmark de KPIs financeiros → `zeus-co-cmo:cmo-marketing-ops-martech`
 - Geração de Big Idea → `zeus-co-cerebro-criativo` (uso meu output como input)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa
@@ -172,6 +189,29 @@ Esta skill é **capability reutilizável** pra qualquer empresa do portfolio ou 
 
 **Fallback:** `_SessionRecaps/YYYY-MM-DD-<topic>.md`.
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/processo-criativo-pesquisa-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · processo-criativo-pesquisa · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 > Skill ISOLADA é skill subutilizada. Eu opero conectado.
@@ -183,12 +223,12 @@ Esta skill é **capability reutilizável** pra qualquer empresa do portfolio ou 
   - cco
 
 ### 🤝 Peers (com quem co-crio)
-  - ag-zeus-mkt:tendencias-criativas-br
+  - zeus-co-cmo:cmo-pesquisa-insights
   - cerebro-criativo
 
 ### ⬇️ Downstream (pra quem entrego)
-  - ag-zeus-mkt:diretor-criacao
-  - ag-zeus-mkt:publicidade-criativa
+  - zeus-co-cco:cco-orquestrador
+  - zeus-co-cco:cco-art-director
   - cerebro-criativo
 
 ### ✅ QA pair (quem valida meu output antes do deploy)

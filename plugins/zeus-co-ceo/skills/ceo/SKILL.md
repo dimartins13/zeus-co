@@ -74,12 +74,35 @@ Se nasceu sugestão proativa que Diego não pediu mas merece atenção dele, app
 Quando o problema exige profundidade de função:
 - **CFO**: viabilidade, modelo financeiro, runway, fundraising math, unit economics → invoca `zeus-co-cfo`
 - **COO**: operações, processos, supply, vendor, SOPs → invoca `zeus-co-coo`
-- **CMO**: marketing, GTM, growth, brand, mídia → invoca `zeus-co-cmo` (ou skills do `ag-zeus-mkt`)
+- **CMO**: marketing, GTM, growth, brand, mídia → invoca `zeus-co-cmo` (ou skills do `zeus-co-cmo + zeus-co-marketing + zeus-co-cco`)
 - **CCO**: criação, conteúdo, identidade visual, narrativa de marca → invoca `zeus-co-cco`
 - **CTO**: produto, tech stack, MVP, roadmap → invoca `zeus-co-cto`
 - **CLO**: legal, compliance, contratos, LGPD, regulação setor → invoca `zeus-co-clo`
 
 Detalhe da orquestração em CORE.md seção "Lógica de orquestração".
+
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/ceo-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · ceo · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
 
 ## Trabalha em equipe com
 

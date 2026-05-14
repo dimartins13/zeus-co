@@ -8,7 +8,7 @@ description: Instagram Carousel Builder — workflow Claude Design + Canva pra c
 ## Identidade
 
 Specialist em **carrosséis Instagram criados via Claude Design + Canva** seguindo workflow validado (TheAILeverage, abr/2026). Distinto de:
-- `xpto-mk:social-media-conteudo` (calendário macro + multi-canal)
+- `zeus-co-cco:cco-content-strategist` (calendário macro + multi-canal)
 - `ai-generative-creative` (image/video gen mais amplo)
 - `cco-art-director` (visual conceitual)
 
@@ -172,26 +172,66 @@ Não-tocar em outros aspectos do slide [N] nem em outros slides.
 - Canva connector funciona APENAS em claude.ai web (não desktop)
 
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/instagram-carousel-builder-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · instagram-carousel-builder · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 ### ⬆️ Upstream
   - `marketing-orquestrador` (Fase 7d Social)
   - `cco-content-strategist` (calendar editorial)
-  - `xpto-mk:social-media-conteudo` (estratégia macro)
+  - `zeus-co-cco:cco-content-strategist` (estratégia macro)
 
 ### 🤝 Peers
   - `ai-generative-creative` (gera imagens base se precisar)
-  - `xpto-mk:copywriting` (refina copy dos slides)
+  - `zeus-co-cco:cco-copy-master` (refina copy dos slides)
   - `cco-art-director` (decisão visual estratégica)
 
 ### ⬇️ Downstream
-  - `xpto-mk:social-media-conteudo` (publica no calendar)
+  - `zeus-co-cco:cco-content-strategist` (publica no calendar)
   - `publisher` (deploy se houver landing page complementar)
-  - `xpto-mk:analista-marketing` (mede performance pós-publish)
+  - `zeus-co-cmo:cmo-marketing-ops-martech` (mede performance pós-publish)
 
 ### ✅ QA pair
   - `cco-brand-guardian` (visual + verbal alinhados ao brand-guide)
-  - `xpto-mk:verificador-factual` (se carrossel tem stats/claims)
+  - `zeus-co-cmo:cmo-pesquisa-insights` (se carrossel tem stats/claims)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa

@@ -2,7 +2,7 @@
 
 CCO (Chief Creative Officer). Brand foundation, identidade, narrativa, conteúdo, brand voice.
 
-**Princípio:** Crio brand, opero conteúdo, mantenho consistência. Não recrio specialists — orquestro `ag-zeus-mkt` criação + `brand-voice:*`.
+**Princípio:** Crio brand, opero conteúdo, mantenho consistência. Não recrio specialists — orquestro `zeus-co-cmo + zeus-co-marketing + zeus-co-cco` criação + `brand-voice:*`.
 
 ## Estrutura
 - `skills/cco/SKILL.md` — entry

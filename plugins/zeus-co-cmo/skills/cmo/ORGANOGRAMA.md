@@ -1,9 +1,9 @@
 # ORGANOGRAMA — Departamento Marketing (CMO)
 
 > Departamento Marketing **NÃO PRECISA** de subordinados próprios no Zeus-CO.
-> Diego já tem o plugin `ag-zeus-mkt` com **25 specialists profissionais** que constituem o time de marketing completo.
+> Diego já tem o plugin `zeus-co-cmo + zeus-co-marketing + zeus-co-cco` com **31 specialists profissionais (CMO + CCO + Marketing)** que constituem o time de marketing completo.
 >
-> CMO LEP do Zeus-CO **orquestra** o ag-zeus-mkt. Quando Diego invoca CMO, o CMO chama o specialist certo.
+> CMO LEP do Zeus-CO **orquestra** o ecossistema ZEUS-CO. Quando Diego invoca CMO, o CMO chama o specialist certo.
 
 ## Estrutura completa do departamento
 
@@ -11,49 +11,49 @@
 zeus-co-cmo (este plugin — orquestrador estratégico)
     │
     ├── DIREÇÃO ──────────────────────────────────────
-    │   ├── ag-zeus-mkt:cmo-marketing            (Chief — eu mesmo)
-    │   ├── ag-zeus-mkt:diretor-marketing        (Diretor tático)
-    │   ├── ag-zeus-mkt:estrategista-marketing
-    │   ├── ag-zeus-mkt:planejamento-estrategico
-    │   └── ag-zeus-mkt:marketing-estrategico
+    │   ├── zeus-co-cmo:cmo            (Chief — eu mesmo)
+    │   ├── zeus-co-cmo:cmo-estrategia-marketing        (Diretor tático)
+    │   ├── zeus-co-cmo:cmo-estrategia-marketing
+    │   ├── zeus-co-cmo:cmo-estrategia-marketing
+    │   └── zeus-co-cmo:cmo-estrategia-marketing
     │
     ├── ANÁLISE & DADOS ─────────────────────────────
-    │   ├── ag-zeus-mkt:analista-marketing
-    │   ├── ag-zeus-mkt:business-intelligence
-    │   ├── ag-zeus-mkt:investigar-performance
-    │   └── ag-zeus-mkt:simular-volume
+    │   ├── zeus-co-cmo:cmo-marketing-ops-martech
+    │   ├── zeus-co-cmo:cmo-marketing-ops-martech
+    │   ├── zeus-co-cmo:cmo-marketing-ops-martech
+    │   └── zeus-co-cmo:cmo-pesquisa-insights
     │
     ├── BRANDING & POSICIONAMENTO ───────────────────
-    │   ├── ag-zeus-mkt:branding
-    │   ├── ag-zeus-mkt:comportamento-consumidor
-    │   ├── ag-zeus-mkt:tendencias-criativas-br
-    │   └── ag-zeus-mkt:pesquisa-mercado
+    │   ├── zeus-co-cmo:cmo-branding
+    │   ├── zeus-co-cmo:cmo-pesquisa-insights
+    │   ├── zeus-co-cmo:cmo-pesquisa-insights
+    │   └── zeus-co-cmo:cmo-pesquisa-insights
     │
     ├── CRIAÇÃO ─────────────────────────────────────
     │   │  (cross com CCO LEP — esses specialists ficam no domain do CCO)
-    │   ├── ag-zeus-mkt:diretor-criacao
-    │   ├── ag-zeus-mkt:publicidade-criativa
-    │   ├── ag-zeus-mkt:copywriting
-    │   ├── ag-zeus-mkt:direcao-de-arte-ia
-    │   ├── ag-zeus-mkt:roteiro-publicitario
-    │   └── ag-zeus-mkt:producao-entrega
+    │   ├── zeus-co-cco:cco-orquestrador
+    │   ├── zeus-co-cco:cco-art-director
+    │   ├── zeus-co-cco:cco-copy-master
+    │   ├── zeus-co-cco:cco-art-director
+    │   ├── zeus-co-cco:cco-storytelling
+    │   └── zeus-co-cco:cco-creative-ops
     │
     ├── CANAIS & ATIVAÇÃO ───────────────────────────
-    │   ├── ag-zeus-mkt:digital-marketing
-    │   ├── ag-zeus-mkt:social-media-conteudo
-    │   ├── ag-zeus-mkt:growth-performance
-    │   ├── ag-zeus-mkt:funil-conversao
-    │   ├── ag-zeus-mkt:midia-planejamento
-    │   ├── ag-zeus-mkt:martech-implementacao
-    │   ├── ag-zeus-mkt:trade-marketing-varejo
-    │   └── ag-zeus-mkt:pr-comunicacao-corporativa
+    │   ├── zeus-co-cmo:cmo-growth-performance
+    │   ├── zeus-co-cco:cco-content-strategist
+    │   ├── zeus-co-cmo:cmo-growth-performance
+    │   ├── zeus-co-cmo:cmo-growth-performance
+    │   ├── zeus-co-cmo:cmo-growth-performance
+    │   ├── zeus-co-cmo:cmo-marketing-ops-martech
+    │   ├── zeus-co-marketing:retail-media
+    │   └── zeus-co-cmo:cmo-comunicacao-pr
     │
     ├── CX & PRICING ───────────────────────────────
-    │   ├── ag-zeus-mkt:cx-experiencia-cliente
-    │   └── ag-zeus-mkt:estrategia-pricing
+    │   ├── zeus-co-cmo:cmo-crm-lifecycle
+    │   └── zeus-co-cmo:cmo-product-marketing
     │
     └── QA ─────────────────────────────────────────
-        └── ag-zeus-mkt:verificador-factual
+        └── zeus-co-cmo:cmo-pesquisa-insights
 ```
 
 ## Total: 25 specialists já existentes + CMO LEP (Zeus-CO) = **26 capabilities marketing**
@@ -61,7 +61,7 @@ zeus-co-cmo (este plugin — orquestrador estratégico)
 ## Quando CMO LEP é invocado, ele:
 
 1. Identifica intent (estratégia / canal / criação / análise)
-2. Decide qual specialist do `ag-zeus-mkt` ativar
+2. Decide qual specialist do `zeus-co-cmo + zeus-co-marketing + zeus-co-cco` ativar
 3. Passa contexto da empresa ao specialist
 4. Sintetiza resposta + Próximos Movimentos
 5. Atualiza LEARNINGS.md da empresa
@@ -84,17 +84,17 @@ zeus-co-cmo (este plugin — orquestrador estratégico)
 
 ## Por que NÃO duplicar como subordinados zeus-co-cmo-*
 
-- ag-zeus-mkt já tem 25 skills de qualidade (Diego pediu pra adaptar das skills do amigo originalmente — funcionou)
+- ZEUS-CO tem 25 skills de qualidade (Diego pediu pra adaptar das skills do amigo originalmente — funcionou)
 - Duplicar = manter 2 versões = drift = caos
-- Diego confirmou em sessões anteriores: ag-zeus-mkt = "departamento operacional"
+- Diego confirmou em sessões anteriores: ZEUS-CO = "departamento operacional"
 - Token economy: skills carregadas só quando invocadas, sem overhead
 
 ## Decisão arquitetural
 
 CMO Department é o **único Chief que orquestra plugin externo**. Os outros 6 Chiefs (CFO, COO, CEO, CCO, CTO, CLO) têm subordinados internos.
 
-CCO faz **híbrido**: 3 subordinados próprios (Brand Guardian, Content Strategist, Creative Ops) + delega criação executiva ao ag-zeus-mkt criação.
+CCO faz **híbrido**: 3 subordinados próprios (Brand Guardian, Content Strategist, Creative Ops) + delega criação executiva ao ecossistema ZEUS-CO criação.
 
 ## Manutenção
 
-Quando ag-zeus-mkt for atualizado/expandido pelo Diego (ou amigo), este ORGANOGRAMA.md deve ser revisado.
+Quando ecossistema ZEUS-CO for atualizado/expandido pelo Diego (ou amigo), este ORGANOGRAMA.md deve ser revisado.

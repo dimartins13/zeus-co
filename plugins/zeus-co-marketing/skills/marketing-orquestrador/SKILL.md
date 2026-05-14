@@ -1,6 +1,6 @@
 ---
 name: marketing-orquestrador
-description: Orquestrador-mor de marketing/criação do Zeus-CO. Executa pipeline canônico de 11 fases (Fase 0 Descoberta Interna OBRIGATÓRIA, 1-4 olha-pra-fora, 5-10 cria/entrega). Coordena skills do ag-zeus-mkt + xpto-mk + zeus-co-marketing (live, promo, afiliados, retail, creator, processo-criativo) + zeus-co-cco (criação) + tools (Claude Design, Adobe, Higgsfield, Canva). Use SEMPRE pra "rodar campanha completa de <empresa>", "lançamento <empresa> full funnel", "campanha integrada [empresa]", "agência completa pra [empresa]", "do brief ao analytics", "pipeline marketing completo". Sub do CMO (zeus-co-cmo).
+description: Orquestrador-mor de marketing/criação do Zeus-CO. Executa pipeline canônico de 11 fases (Fase 0 Descoberta Interna OBRIGATÓRIA, 1-4 olha-pra-fora, 5-10 cria/entrega). Coordena skills do zeus-co-cmo + zeus-co-marketing + zeus-co-cco + zeus-co-marketing (live, promo, afiliados, retail, creator, processo-criativo) + zeus-co-cco (criação) + tools (Claude Design, Adobe, Higgsfield, Canva). Use SEMPRE pra "rodar campanha completa de <empresa>", "lançamento <empresa> full funnel", "campanha integrada [empresa]", "agência completa pra [empresa]", "do brief ao analytics", "pipeline marketing completo". Sub do CMO (zeus-co-cmo).
 ---
 
 # Marketing Orquestrador — Pipeline Canônico Cross-Funcional
@@ -64,28 +64,28 @@ Fase 0 — DESCOBERTA INTERNA (hard gate)
   └─ Output: 00-descoberta-interna.md
 
 Fase 1 — BRIEFING
-  └─ CMO + xpto-mk:planejamento-estrategico
+  └─ CMO + zeus-co-cmo:cmo-estrategia-marketing
   └─ Output: 01-briefing.md (objetivo + KPI + público + restrições)
 
 Fase 2 — PESQUISA EXTERNA (mercado)
-  └─ xpto-mk:pesquisa-mercado + ag-zeus-mkt:pesquisa-mercado
+  └─ zeus-co-cmo:cmo-pesquisa-insights + zeus-co-cmo:cmo-pesquisa-insights
   └─ Output: 02-pesquisa-mercado.md
 
 Fase 3 — COMPORTAMENTO + INSIGHT
-  └─ xpto-mk:comportamento-consumidor
+  └─ zeus-co-cmo:cmo-pesquisa-insights
   └─ Output: 03-insight.md (Insight Ouro)
 
 Fase 4 — BENCHMARK CRIATIVO + PROCESSO (DUPLA)
-  ├─ 4a: xpto-mk:tendencias-criativas-br (o QUÊ)
+  ├─ 4a: zeus-co-cmo:cmo-pesquisa-insights (o QUÊ)
   └─ 4b: zeus-co-marketing:processo-criativo-pesquisa (o COMO) ⭐
   └─ Output: 04-benchmark.md
 
 Fase 5 — PLANEJAMENTO ESTRATÉGICO
-  └─ xpto-mk:planejamento-estrategico + marketing-estrategico + estrategista
+  └─ zeus-co-cmo:cmo-estrategia-marketing + marketing-estrategico + estrategista
   └─ Output: 05-plano-estrategico.md
 
 Fase 6 — BIG IDEA + CONCEITO
-  └─ zeus-co-cerebro-criativo + xpto-mk:diretor-criacao + publicidade-criativa
+  └─ zeus-co-cerebro-criativo + zeus-co-cco:cco-orquestrador + publicidade-criativa
   └─ Output: 06-big-idea.md (+ tagline + manifesto)
 
 Fase 7 — EXECUÇÃO MULTI-FORMATO (14 sub-fases, paralelas)
@@ -105,15 +105,15 @@ Fase 7 — EXECUÇÃO MULTI-FORMATO (14 sub-fases, paralelas)
   └─ 7n CTV / Streaming Ads ⭐⭐ NOVO (zeus-co-marketing:ctv-streaming-ads) — YouTube CTV, Netflix Ads, Globoplay
 
 Fase 8 — PLANO DE CANAIS + BUDGET SPLIT
-  └─ xpto-mk:midia-planejamento
+  └─ zeus-co-cmo:cmo-growth-performance
   └─ Output: 08-plano-canais.md (% por canal + flighting)
 
 Fase 9 — CALENDÁRIO + RÉGUA
-  └─ xpto-mk:social-media-conteudo + CMO
+  └─ zeus-co-cco:cco-content-strategist + CMO
   └─ Output: 09-calendario.md (tabela + régua pre/launch/sustain/closing)
 
 Fase 10 — ANALYTICS + LOOP
-  └─ xpto-mk:analista-marketing + xpto-mk:business-intelligence
+  └─ zeus-co-cmo:cmo-marketing-ops-martech + zeus-co-cmo:cmo-marketing-ops-martech
   └─ Output: 10-analytics.md (KPIs + aprendizado semanal + ajustes)
   └─ Loop fecha em LEARNINGS.md da empresa
 ```
@@ -153,7 +153,7 @@ Conforme `docs/TOOL_BINDINGS.md`:
 
 Toda fase passa por validador:
 - **Brand**: `zeus-co-cco-brand-guardian`
-- **Factual**: `xpto-mk:verificador-factual`
+- **Factual**: `zeus-co-cmo:cmo-pesquisa-insights`
 - **Legal**: `zeus-co-clo` (qualquer claim sensível)
 - **Financeiro**: `zeus-co-cfo` (qualquer budget)
 
@@ -194,7 +194,7 @@ _Areas/CMO/dope-street-drop-akkari-2026-05/
 
 - **Upstream:** CMO (`zeus-co-cmo`) repassa brief + intent
 - **Downstream:** Brand Guardian + Verificador Factual valida tudo. Output final pro Diego/CEO/CFO conforme contexto.
-- **Sub-skills internas:** todas as `zeus-co-marketing:*` + delegação cross-plugin pra `xpto-mk:*` + `ag-zeus-mkt:*` + `zeus-co-cco:*` + `zeus-co-cerebro-criativo`
+- **Sub-skills internas:** todas as `zeus-co-marketing:*` + delegação cross-plugin pra `zeus-co-cmo:* + zeus-co-cco:* + zeus-co-marketing:*` + `zeus-co-cmo:* + zeus-co-marketing:*` + `zeus-co-cco:*` + `zeus-co-cerebro-criativo`
 
 ## Quando NÃO opero
 
@@ -237,6 +237,29 @@ Sugestão proativa pro Diego.
 
 **Fallback:** `_SessionRecaps/YYYY-MM-DD-<topic>.md`.
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/marketing-orquestrador-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · marketing-orquestrador · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 > Skill ISOLADA é skill subutilizada. Eu opero conectado.
@@ -248,15 +271,15 @@ Sugestão proativa pro Diego.
   - Diego
 
 ### 🤝 Peers (com quem co-crio)
-  - ag-zeus-mkt:cmo-marketing
-  - ag-zeus-mkt:diretor-marketing
+  - zeus-co-cmo:cmo
+  - zeus-co-cmo:cmo-estrategia-marketing
 
 ### ⬇️ Downstream (pra quem entrego)
-  - TODAS as 6 skills zeus-co-marketing + 25 ag-zeus-mkt + 36 xpto-mk
+  - TODAS as 6 skills zeus-co-marketing + 10 zeus-co-cmo + 8 zeus-co-cco + 13 zeus-co-marketing
 
 ### ✅ QA pair (quem valida meu output antes do deploy)
   - cco-brand-guardian
-  - ag-zeus-mkt:verificador-factual
+  - zeus-co-cmo:cmo-pesquisa-insights
   - clo (claims)
   - cfo (budget)
 

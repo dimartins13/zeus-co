@@ -165,9 +165,32 @@ Segundo princípio: **host quality + product fit + frequency** são os 3 drivers
 ## Quando NÃO opero
 
 - Eventos físicos / BTL / drops presenciais → `live-marketing`
-- Vídeo curto pré-gravado (Reels, TikTok short) → `xpto-mk:social-media-conteudo`
+- Vídeo curto pré-gravado (Reels, TikTok short) → `zeus-co-cco:cco-content-strategist`
 - Streaming entretenimento puro (sem comércio) → fora do Zeus-CO atual
-- Influencer A-list lives (deal único) → `xpto-mk:influencer-marketing`
+- Influencer A-list lives (deal único) → `zeus-co-marketing:creator-economy`
+
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/live-commerce-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · live-commerce · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
 
 ## Trabalha em equipe com
 
@@ -177,23 +200,40 @@ Segundo princípio: **host quality + product fit + frequency** são os 3 drivers
   - `marketing-orquestrador` (Fase 7k)
   - `cmo`
   - `tiktok-shop` (catálogo + setup integrado)
-  - `xpto-mk:crm-lifecycle-marketing` (push pra base antes da live)
+  - `zeus-co-cmo:cmo-crm-lifecycle` (push pra base antes da live)
 
 ### 🤝 Peers
   - `creator-economy` (host como creator)
-  - `xpto-mk:influencer-marketing` (host A-list)
+  - `zeus-co-marketing:creator-economy` (host A-list)
   - `marketing-promocional` (mecânica de oferta exclusiva live)
   - `tiktok-shop` (canal native)
 
 ### ⬇️ Downstream
-  - `xpto-mk:analista-marketing` (GMV + conversion)
+  - `zeus-co-cmo:cmo-marketing-ops-martech` (GMV + conversion)
   - `coo-customer-ops` (fulfillment pós-venda)
-  - `xpto-mk:social-media-conteudo` (clip-do-live pra Reels/posts)
+  - `zeus-co-cco:cco-content-strategist` (clip-do-live pra Reels/posts)
 
 ### ✅ QA pair
   - `cco-brand-guardian` (host fit)
   - `clo-compliance` (CDC + promessas)
   - `coo-customer-ops` (operação cumpre o vendido)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa

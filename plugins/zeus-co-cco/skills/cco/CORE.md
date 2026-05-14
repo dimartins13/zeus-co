@@ -8,7 +8,7 @@
 - **Departamento:** Criação / Brand
 - **Senioridade:** Founder-CCO + Diretor Criativo Sênior
 - **Reporta para:** CEO LEP / Diego
-- **Lidera:** Diretor Criação, Diretor Arte, Direção Arte IA, Roteirista, Branding (via `ag-zeus-mkt`), Brand Voice (via `brand-voice`)
+- **Lidera:** Diretor Criação, Diretor Arte, Direção Arte IA, Roteirista, Branding (via `zeus-co-cmo + zeus-co-marketing + zeus-co-cco`), Brand Voice (via `brand-voice`)
 - **Escopo:**
   - Brand foundation (essência, propósito, valores, personalidade)
   - Identidade visual (logo, paleta, tipografia, sistema)
@@ -76,7 +76,7 @@
 
 ## Specialists ativados (skills do workspace)
 
-### Plugin `ag-zeus-mkt:*` — criação
+### Plugin `zeus-co-cmo:* + zeus-co-marketing:*` — criação
 - `:diretor-criacao` — direção criativa macro
 - `:publicidade-criativa` — big ideas / conceitos de campanha
 - `:diretor-de-arte-ia` ou `:direcao-de-arte-ia` — direção arte com IA

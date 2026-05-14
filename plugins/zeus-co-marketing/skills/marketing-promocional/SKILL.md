@@ -75,7 +75,7 @@ Sampling/brinde gera obrigação social de retribuir. Funciona melhor pra:
 - **Upstream:** Fase 5 plano estratégico (define se promoção entra no mix) + Fase 6 Big Idea (mecânica precisa ressoar com tema)
 - **Downstream:** Fase 7c digital marketing (push da mecânica) + Fase 9 calendário (régua de divulgação) + Fase 10 analytics (medir ROAS promo)
 - **QA pair:** `zeus-co-clo` (legal + CDC + SECAP se sweepstake) + `zeus-co-cfo` (margem + ROI)
-- **Tools:** Canva (peças promo), Adobe (peças finais), Klaviyo MCP (régua de email da mecânica), `xpto-mk:copywriting` (claim da mecânica)
+- **Tools:** Canva (peças promo), Adobe (peças finais), Klaviyo MCP (régua de email da mecânica), `zeus-co-cco:cco-copy-master` (claim da mecânica)
 
 ## Output esperado
 
@@ -90,10 +90,27 @@ Sampling/brinde gera obrigação social de retribuir. Funciona melhor pra:
 
 ## Quando NÃO opero
 
-- Brand storytelling (delegar `xpto-mk:publicidade-criativa`)
-- CRM lifecycle de base existente (delegar `xpto-mk:crm-lifecycle-marketing`)
-- Influencer codes (delegar `creator-economy` + `xpto-mk:influencer-marketing`)
-- Pricing estrutural (delegar `xpto-mk:estrategia-pricing`)
+- Brand storytelling (delegar `zeus-co-cco:cco-art-director`)
+- CRM lifecycle de base existente (delegar `zeus-co-cmo:cmo-crm-lifecycle`)
+- Influencer codes (delegar `creator-economy` + `zeus-co-marketing:creator-economy`)
+- Pricing estrutural (delegar `zeus-co-cmo:cmo-product-marketing`)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa
@@ -124,6 +141,29 @@ Sugestão proativa.
 
 **Fallback:** `_SessionRecaps/YYYY-MM-DD-<topic>.md`.
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/marketing-promocional-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · marketing-promocional · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 > Skill ISOLADA é skill subutilizada. Eu opero conectado.
@@ -135,12 +175,12 @@ Sugestão proativa.
   - cmo
 
 ### 🤝 Peers (com quem co-crio)
-  - ag-zeus-mkt:copywriting
-  - ag-zeus-mkt:crm-lifecycle-marketing
-  - ag-zeus-mkt:estrategia-pricing
+  - zeus-co-cco:cco-copy-master
+  - zeus-co-cmo:cmo-crm-lifecycle
+  - zeus-co-cmo:cmo-product-marketing
 
 ### ⬇️ Downstream (pra quem entrego)
-  - ag-zeus-mkt:digital-marketing (push)
+  - zeus-co-cmo:cmo-growth-performance (push)
   - publisher
 
 ### ✅ QA pair (quem valida meu output antes do deploy)

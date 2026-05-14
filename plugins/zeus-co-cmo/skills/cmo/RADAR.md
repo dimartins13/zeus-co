@@ -3,7 +3,7 @@
 ## ✅ Instalados
 
 ### Specialists do departamento (não duplicar — invocar)
-- 25 skills do plugin `ag-zeus-mkt` (organograma marketing inteiro)
+- 25 skills do plugin `zeus-co-cmo + zeus-co-marketing + zeus-co-cco` (organograma marketing inteiro)
 - 8 skills do plugin `marketing:*` (templates de campaign-plan, content-creation, etc)
 - 3 skills do plugin `brand-voice:*` (cross com CCO)
 

@@ -139,10 +139,33 @@ Sou responsável pela **camada de mídia premium em streaming + smart TV** — o
 
 ## Quando NÃO opero
 
-- Vídeo social vertical curto (TikTok/Reels) → `xpto-mk:social-media-conteudo`
-- YouTube ads tradicional (não-CTV, no desktop/mobile) → `xpto-mk:midia-planejamento`
+- Vídeo social vertical curto (TikTok/Reels) → `zeus-co-cco:cco-content-strategist`
+- YouTube ads tradicional (não-CTV, no desktop/mobile) → `zeus-co-cmo:cmo-growth-performance`
 - TV aberta (Globo, SBT, Record linear) → fora do Zeus-CO atual (canal tradicional, requer agência mídia humana)
 - DOOH / digital out-of-home → fora do Zeus-CO atual
+
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/ctv-streaming-ads-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · ctv-streaming-ads · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
 
 ## Trabalha em equipe com
 
@@ -151,22 +174,39 @@ Sou responsável pela **camada de mídia premium em streaming + smart TV** — o
 ### ⬆️ Upstream
   - `marketing-orquestrador` (Fase 7n)
   - `cmo`
-  - `xpto-mk:roteiro-publicitario` (TVC roteiro)
+  - `zeus-co-cco:cco-storytelling` (TVC roteiro)
   - `ai-generative-creative` (variações do TVC pra A/B)
 
 ### 🤝 Peers
-  - `xpto-mk:midia-planejamento`
-  - `xpto-mk:growth-performance`
+  - `zeus-co-cmo:cmo-growth-performance`
+  - `zeus-co-cmo:cmo-growth-performance`
   - `retail-media` (mix awareness + conversion)
 
 ### ⬇️ Downstream
-  - `xpto-mk:analista-marketing` (brand lift + measurement)
+  - `zeus-co-cmo:cmo-marketing-ops-martech` (brand lift + measurement)
   - `cfo-fpa` (ROAS CTV)
 
 ### ✅ QA pair
   - `cco-brand-guardian` (peça brand-safe)
   - `clo` (claims regulados)
   - `cfo` (budget significativo)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa

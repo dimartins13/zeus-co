@@ -15,7 +15,7 @@
 - **Formatos:** {posts / vídeos / artigos / lives}
 - **Cadência:** {N por semana}
 - **Métricas:** {engagement, reach, clicks}
-- **Owner:** {specialist `ag-zeus-mkt:*`}
+- **Owner:** {specialist `zeus-co-cmo:* + zeus-co-marketing:*`}
 - **Exemplos:**
   - {exemplo 1}
   - {exemplo 2}

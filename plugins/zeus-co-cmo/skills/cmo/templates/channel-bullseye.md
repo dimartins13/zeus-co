@@ -61,5 +61,5 @@ Os 3 mais promissores. Cada um recebe budget + owner + prazo de decisão.
 ## Próximos Movimentos
 
 1. Aprovar budget total dos 3 canais inner
-2. Atribuir owner por canal (specialist `ag-zeus-mkt:*` correto)
+2. Atribuir owner por canal (specialist `zeus-co-cmo:* + zeus-co-marketing:*` correto)
 3. Dashboard único de comparação dos 3 canais

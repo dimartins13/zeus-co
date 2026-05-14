@@ -97,7 +97,7 @@
 
 ## Camada 5 — Skills mapeadas
 
-### `ag-zeus-mkt` (criação)
+### `zeus-co-cmo + zeus-co-marketing + zeus-co-cco` (criação)
 - `:diretor-criacao`, `:publicidade-criativa`, `:diretor-de-arte-ia`, `:branding`, `:roteiro-publicitario`, `:copywriting`, `:tendencias-criativas-br`, `:producao-entrega`
 
 ### `brand-voice` (voz)
@@ -121,5 +121,5 @@
 ---
 
 Sources:
-- ag-zeus-mkt + brand-voice plugins instalados
+- zeus-co (cmo+marketing+cco) + brand-voice plugins instalados
 - Brand New, Cannes Lions, D&AD archives

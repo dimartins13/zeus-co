@@ -78,7 +78,7 @@ Owner: `cco-brand-guardian`
 - Output: aprovação ou rejeição com nota específica
 
 ### Fase 10 — Brand health monitoring
-Owner: `cco` + cruzamento com `xpto-mk:analista-marketing`
+Owner: `cco` + cruzamento com `zeus-co-cmo:cmo-marketing-ops-martech`
 - Brand awareness + recall
 - Brand sentiment (social listening)
 - NPS marca (separado de NPS produto)

@@ -20,9 +20,9 @@
 
 - `cco` (chief) → orquestra
 - `cco-brand-guardian` → brand-guidelines + Figma (audit visual) + brand-voice (audit verbal)
-- `cco-content-strategist` → docx + Gamma + xpto-mk:social-media-conteudo
+- `cco-content-strategist` → docx + Gamma + zeus-co-cco:cco-content-strategist
 - `cco-creative-ops` → ClickUp + briefs docx + vendor management
 - `cco-orquestrador` ⭐ NEW → coordena todos
 - `cco-art-director` ⭐ NEW → Midjourney + Adobe + Figma + Canvas Design + Higgsfield
-- `cco-copy-master` ⭐ NEW → writing-skills + brand-voice + xpto-mk:copywriting
+- `cco-copy-master` ⭐ NEW → writing-skills + brand-voice + zeus-co-cco:cco-copy-master
 - `cco-storytelling` ⭐ NEW → writing-skills + WebSearch (cases premiados) + cerebro-criativo

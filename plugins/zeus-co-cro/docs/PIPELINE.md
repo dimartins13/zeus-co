@@ -22,7 +22,7 @@ Owner: `cro` + `cro-vp-sales`
 - Output: `_Areas/CRO/sales-motion.md`
 
 ### Fase 2 — ICP refinement
-Owner: `cro` + cruzamento `xpto-mk:estrategista-marketing`
+Owner: `cro` + cruzamento `zeus-co-cmo:cmo-estrategia-marketing`
 - Ideal Customer Profile detalhado
 - Buyer personas
 - Output: `_Areas/CRO/icp.md`

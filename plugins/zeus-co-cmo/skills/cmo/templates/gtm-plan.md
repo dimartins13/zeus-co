@@ -66,13 +66,13 @@
 
 ## 8. Specialists ativados
 
-- `ag-zeus-mkt:planejamento-estrategico` para refinamento ICP
-- `ag-zeus-mkt:branding` para alinhamento brand-mensagem
-- `ag-zeus-mkt:martech-implementacao` para tracking
-- `ag-zeus-mkt:growth-performance` para canais pagos
-- `ag-zeus-mkt:social-media-conteudo` para orgânico
-- `ag-zeus-mkt:funil-conversao` para LPs
-- `ag-zeus-mkt:analista-marketing` para dashboards
+- `zeus-co-cmo:cmo-estrategia-marketing` para refinamento ICP
+- `zeus-co-cmo:cmo-branding` para alinhamento brand-mensagem
+- `zeus-co-cmo:cmo-marketing-ops-martech` para tracking
+- `zeus-co-cmo:cmo-growth-performance` para canais pagos
+- `zeus-co-cco:cco-content-strategist` para orgânico
+- `zeus-co-cmo:cmo-growth-performance` para LPs
+- `zeus-co-cmo:cmo-marketing-ops-martech` para dashboards
 
 ## Próximos Movimentos
 

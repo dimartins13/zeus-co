@@ -105,7 +105,7 @@ QA: clo-ip (rights de uso da imagem)
 
 ### Use case 3: ANÁLISE DE LIVE COMMERCE GRAVADA
 **Quando:** Pós-live TikTok/IG/Shopee analisar performance.
-**Cross com:** `live-commerce`, `xpto-mk:analista-marketing`.
+**Cross com:** `live-commerce`, `zeus-co-cmo:cmo-marketing-ops-martech`.
 
 **Prompt template:**
 ```
@@ -151,7 +151,7 @@ QA: cco-brand-guardian + clo-contratos (usage rights)
 
 ### Use case 5: COMPETITIVE INTEL VIDEO
 **Quando:** Concorrente lançou campanha — entender o que estão fazendo.
-**Cross com:** `xpto-mk:tendencias-criativas-br`, `cino-tech-scouting`.
+**Cross com:** `zeus-co-cmo:cmo-pesquisa-insights`, `cino-tech-scouting`.
 
 **Prompt template:**
 ```
@@ -197,7 +197,7 @@ QA: clo-setorial (compliance)
 
 ### Use case 7: ANÁLISE DE FILME PUBLICITÁRIO PRÓPRIO (PÓS-EXIBIÇÃO)
 **Quando:** Nossa campanha foi ao ar — análise post-mortem.
-**Cross com:** `xpto-mk:analista-marketing`, `cco-brand-guardian`.
+**Cross com:** `zeus-co-cmo:cmo-marketing-ops-martech`, `cco-brand-guardian`.
 
 **Prompt template:**
 ```
@@ -264,6 +264,29 @@ Output: `_Areas/CEO/comms/quotables/<evento>-YYYY-MM-DD.md`
 - ⚠️ Custo escala com duração + fps — guarda-rail necessário
 
 
+## Self-Evaluation (Camada 1 do sistema vivo)
+
+Antes de fechar a sessão, escrever 1 linha em `~/Documents/Claude/Projects/_Pulse/skill-feedback/video-vision-analysis-YYYY-MM-DD.md`:
+
+```
+- YYYY-MM-DD HH:MM · video-vision-analysis · sucesso=[1-5] · gap=[gap identificado ou "nenhum"] · sugestao=[1 frase de evolução] · empresa=[<empresa>]
+```
+
+**Critérios de sucesso:**
+- 5 = output cumpriu output canônico + Diego confirmou sem reformular
+- 4 = output cumpriu mas Diego pediu ajuste pontual
+- 3 = output parcial; faltou 1+ elemento do output canônico
+- 2 = output errado em algo; Diego corrigiu rumo
+- 1 = não-invocada quando deveria, ou output inutilizável
+
+**Gap = oportunidade de evolução.** Exemplos:
+- "Faltou framework X que mencionei na resposta — adicionar a CORE.md"
+- "Diego perguntou Y que minha skill não cobre — proposta nova sub-skill"
+- "Output canônico não tem item Z que Diego pediu — atualizar SKILL.md"
+- "Description não pegou triggers que Diego usou — refrasear"
+
+Esse arquivo é lido semanalmente pelo `zeus-co-labs:labs-orquestrador` e pelo `<lep>-self-feedback` correspondente.
+
 ## Trabalha em equipe com
 
 ### ⬆️ Upstream
@@ -272,8 +295,8 @@ Output: `_Areas/CEO/comms/quotables/<evento>-YYYY-MM-DD.md`
 - `cco-brand-guardian` (UC4 validação creator)
 
 ### 🤝 Peers
-- `xpto-mk:tendencias-criativas-br` (UC5 competitive)
-- `xpto-mk:analista-marketing` (UC3 e UC7 — cross dados quanti)
+- `zeus-co-cmo:cmo-pesquisa-insights` (UC5 competitive)
+- `zeus-co-cmo:cmo-marketing-ops-martech` (UC3 e UC7 — cross dados quanti)
 - `cerebro-criativo` (transformar análise em ideia nova)
 - `live-commerce` (UC3 specific)
 - `creator-economy` (UC4 specific)
@@ -288,6 +311,23 @@ Output: `_Areas/CEO/comms/quotables/<evento>-YYYY-MM-DD.md`
 ### ✅ QA pair
 - `cco-brand-guardian` (output alinhado brand)
 - `clo` (UC2/UC6 — rights + compliance)
+
+
+## ⚙️ Channel Skill — não-LEP
+
+Esta é uma **Channel Skill** (execution skill de canal/tática específica), não um LEP.
+
+**Diferença operacional:**
+- LEPs (`cmo`, `cmo-branding`, etc) têm identidade, pipeline próprio, orquestram outras
+- Channel Skills (esta) são **ferramentas táticas** despachadas pelo `cmo` ou `marketing-orquestrador`
+- Não precisam de anatomia LEP completa (pipeline, modos, hierarquia)
+- Foco: dominar profundamente UM canal/tática e entregar quando invocada
+
+**Quem me invoca:**
+- `zeus-co-cmo:cmo-orquestrador` (pra campanhas integradas multi-canal)
+- `zeus-co-cmo:cmo-growth-performance` (pra aquisição neste canal)
+- `zeus-co-marketing:marketing-orquestrador` (pipeline tático fase 5 — execução)
+- Diego direto (`use retail-media pra <empresa>`)
 
 
 ## Skill genérica — context vem da empresa

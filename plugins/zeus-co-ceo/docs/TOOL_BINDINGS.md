@@ -11,7 +11,7 @@
 | **Comps benchmarking** | `financial-analysis:comps-analysis` | Comparação setorial |
 | **Pitch deck investor** | `investment-banking:pitch-deck` + Gamma MCP | Captação |
 | **Initiating coverage** | `equity-research:initiating-coverage` | Quando empresa vira pública (futuro) |
-| **Strategic narrative** | `anthropic-skills:docx` + `xpto-mk:copywriting` | Manifesto + posicionamento |
+| **Strategic narrative** | `anthropic-skills:docx` + `zeus-co-cco:cco-copy-master` | Manifesto + posicionamento |
 | **Board pack** | `zeus-co-board:board-pack-builder` | Reunião board mensal/trimestral |
 | **Decision memo** | `zeus-co-board:decision-memo-author` | Type 1 irreversível |
 | **Email comms** | Gmail MCP | Investor update mensal |
@@ -24,7 +24,7 @@
 - `ceo` (chief) → orquestra demais + Pulse
 - `ceo-bizops` → `anthropic-skills:xlsx` + cto-data (analytics cross-funcional)
 - `ceo-chief-of-staff` → Gmail + Google Calendar + `pulse` + handoff matrix
-- `ceo-comms` → `anthropic-skills:docx` + `xpto-mk:copywriting` + Gmail + `ceo-ir`
+- `ceo-comms` → `anthropic-skills:docx` + `zeus-co-cco:cco-copy-master` + Gmail + `ceo-ir`
 - `ceo-estrategia` → `financial-analysis:dcf-model` + `financial-analysis:comps-analysis` + `private-equity:returns`
 - `ceo-ir` → Gamma + `investment-banking:pitch-deck` + Gmail
 - `ceo-orquestrador` ⭐ NEW → coordena todos

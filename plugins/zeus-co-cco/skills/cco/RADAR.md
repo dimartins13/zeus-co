@@ -3,7 +3,7 @@
 ## ✅ Instalados
 
 ### Specialists (delegação)
-- `ag-zeus-mkt:diretor-criacao`, `:publicidade-criativa`, `:diretor-de-arte-ia`, `:branding`, `:roteiro-publicitario`, `:copywriting`, `:tendencias-criativas-br`, `:producao-entrega`
+- `zeus-co-cco:cco-orquestrador`, `:publicidade-criativa`, `:diretor-de-arte-ia`, `:branding`, `:roteiro-publicitario`, `:copywriting`, `:tendencias-criativas-br`, `:producao-entrega`
 - `brand-voice:*` (4 skills)
 - `marketing:brand-review`, `:content-creation`, `:draft-content`
 - `anthropic-skills:brand-guidelines`, `:canvas-design`
