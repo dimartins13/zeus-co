@@ -178,10 +178,10 @@
     },
     {
       "name": "zeus-co-design-lab",
-      "description": "DESIGN-LAB — laboratório de produção visual do ZEUS-CO. Curado de open-source nexu-io/open-design (Apache 2.0). 12 skills planas (deck, LP, magazine editorial, email HTML, social carousel, KV/poster, motion, image gen, video gen, design system) + 51 skills detalhadas em resources + 66 design systems de referência (Apple, Stripe, Linear, etc) + 5 padrões core + 4 pipelines (Freepik, Higgsfield, Adobe Express, Gamma).",
+      "description": "DESIGN-LAB v0.2.0 — laboratório de produção visual com pipelines executáveis (Freepik/Higgsfield/Adobe/Gamma MCPs), Discovery interativo, Critique Gate 5-dim em skills geradoras, evals scaffold, HyperFrames (HTML-in-canvas). 13 skills planas + 51 detalhadas + 66 design systems + 5 padrões core.",
       "source": "./plugins/zeus-co-design-lab",
       "category": "zeus-co",
-      "version": "0.1.0"
+      "version": "0.2.0"
     }
   ]
 }

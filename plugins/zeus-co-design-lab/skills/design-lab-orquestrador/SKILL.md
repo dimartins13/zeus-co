@@ -23,8 +23,37 @@ Brief vira entregável visual em 4 fases: Detect (entender brief + empresa) → 
 ## Resources (orquestrador puxa on-demand)
 - `resources/padroes-core/05-loop-detect-discover-direct-deliver.md`
 - `resources/padroes-core/03-directions-visuais.md` (5 direções com OKLch)
+- `resources/padroes-core/directions-quick-ref.md` ← **NOVO v0.2** quick lookup brief→direção
 - `resources/padroes-core/04-discovery-form.md`
+- `resources/skills-detalhadas/INDEX.md` ← **NOVO v0.2** mapping skill plana → detalhadas
+- `resources/design-systems/INDEX.md` ← **NOVO v0.2** lookup brief→DS
 - `resources/skills-detalhadas/` (51 skills upstream pra consulta profunda)
+- `resources/integracoes/*.md` (4 pipelines executáveis — Freepik/Higgsfield/Adobe/Gamma)
+
+## Features v0.7 do Open Design (upstream)
+
+Open Design v0.7 (13-mai-2026) introduziu 3 features importantes. Nosso plugin tem **paridade parcial** e roadmap pra alcançar:
+
+### 1. HyperFrames (HTML-in-Canvas)
+**Status**: ✅ implementado como `design-lab-hyperframes` skill (v0.2).
+**Diferença**: upstream usa daemon Express; nosso usa `anthropic-skills:web-artifacts-builder` (Cowork nativo).
+
+### 2. Critique Theater Phase 7 (state machine + replay)
+**Status**: 🟡 paridade parcial via **Critique Gate** (5-dim auto-QA) que cada skill geradora roda antes de retornar.
+**Falta vs upstream**: state machine + replay capabilities (refresh-safe). Nosso é stateless: roda critique uma vez por output. Sem replay loop server-side.
+**Decisão**: aceitar gap por enquanto. Diego não tem N horas de refinement em loop — Cowork chat já permite ele refinar manualmente quando 4/5. Revisar quando upstream estabilizar Phase 8+.
+
+### 3. Auto-Memory Store cross-runs
+**Status**: ✅ paridade total via **Sistema Vivo Zeus-CO** já em produção:
+- Memórias persistentes em `~/.claude/projects/-Users-diegomartins-Documents-Claude-Projects/memory/`
+- LEARNINGS.md por empresa (chat-protocol-aware via SKILL Fim de sessão)
+- Self-Evaluation Camada 1 → labs-orquestrador semanal Camada 3
+- Brand guidelines + decision criteria persistem em `_Areas/CCO/`, `_Areas/CEO/`
+
+Nossa implementação **supera o upstream** porque:
+- Vive separado por empresa (não global)
+- Aprende cross-empresa via labs-orquestrador
+- Tem tier 🟢🟡🔴 auto-aplicação
 
 ## Skill genérica — context vem da empresa
 Fase 0 Descoberta Interna obrigatória: ler `CLAUDE.md` + `00_INDEX.md` + `_Areas/CCO/brand-guide.md` da empresa atual antes de criar nada.

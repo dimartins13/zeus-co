@@ -1,64 +1,141 @@
-# Pipeline · Higgsfield
+# Pipeline · Higgsfield — EXECUTÁVEL
 
-> **Status:** Sem MCP nativo dedicado. Integração via Claude in Chrome ou API direta.
+> **Status**: Sem MCP nativo dedicado. Integração via **Claude in Chrome MCP** (`mcp__Claude_in_Chrome__*`) OR API REST direta.
+> **Premium**: Higgsfield cobra por geração — sempre validar Diego antes de queimar créditos.
 
-## Quando o DESIGN-LAB (zeus-co-design-lab) aciona o Higgsfield
+## Quando o `design-lab-*` aciona Higgsfield
 
-Higgsfield é o pesado da equipe. Aciona quando:
-- **Brand film curto** (15-30s) para campanha
-- **Hero shot animado** para LP ou deck premium
-- **Vídeo motion** que precisa de qualidade cinematográfica IA
-- **Conceito visual experimental** (efeitos que outras ferramentas não fazem)
+- `design-lab-image-generation` → quando precisa de imagem **premium** (cinematic, photoreal) que Freepik Mystic não entrega
+- `design-lab-video-generation` → vídeo gerado AI (Higgsfield Soul/DoP)
+- `design-lab-motion-frames` → image-to-motion (animação curta da imagem base)
+- `design-lab-poster-key-visual` → hero quando KV grande de campanha
 
-Não aciona Higgsfield para:
-- Vídeo simples / corte de imagem fixa → usar `remotion` ou `fal-video-edit`
-- Animação de UI / scroll-trigger → usar `gsap-*`
-- Vídeo educativo / explainer → roteiro publicitário + ferramenta mais barata
-
-## Como acionar (3 opções)
-
-### Opção A · Claude in Chrome (interativo, recomendado pra primeira tentativa)
+## Detecção de ambiente (gracioso degradante)
 
 ```
-1. mcp__claude-in-chrome__navigate → https://higgsfield.ai/
-2. Login (se ainda não logado)
-3. find + form_input para preencher o prompt do projeto
-4. Upload de referência se necessário (mcp__claude-in-chrome__file_upload)
-5. Aguardar geração (pode levar 2-5 minutos)
-6. Download do MP4 resultante
+Modo A — Cowork desktop com Chrome MCP ativo + sessão Higgsfield logada
+  → executa via Chrome MCP (navega, gera, baixa)
+
+Modo B — Cowork desktop sem Chrome MCP
+  → fallback Modo INSTRUÇÃO (Diego abre browser, gera, cola path)
+
+Modo C — Claude.ai web (sem Bash)
+  → só Modo INSTRUÇÃO
 ```
 
-### Opção B · Higgsfield API direta (quando volume justificar)
+## Workflow modo A (Chrome MCP)
 
-Higgsfield expõe API REST. Estrutura típica:
+### Passo 1 — Validar Chrome MCP + sessão Higgsfield
 ```
-POST https://api.higgsfield.ai/v1/generate
-Headers: Authorization: Bearer <API_KEY>
-Body: {
-  "prompt": "…",
-  "duration": 5,
-  "aspect_ratio": "16:9",
-  "model": "soul-engine-v2" (ou variação)
-}
+Tool: ToolSearch
+Query: "select:mcp__Claude_in_Chrome__navigate"
+SE retorna schema → Chrome MCP ok
+
+Tool: mcp__Claude_in_Chrome__navigate
+URL: https://higgsfield.ai
+
+Tool: mcp__Claude_in_Chrome__read_page
+→ Verificar se está logado (procura "Sign in" → não logado, pedir Diego logar manual)
 ```
-Setup do API key fica em `docs-internos/credenciais.md` (não commitado).
 
-### Opção C · Manual fallback
+### Passo 2 — Gerar
+```
+Tool: mcp__Claude_in_Chrome__navigate
+URL: https://higgsfield.ai/create
 
-Para casos onde precisa de iteração visual com humano-na-loop, o agente
-gera o prompt detalhado e entrega para o Diego rodar manualmente na UI.
+Tool: mcp__Claude_in_Chrome__form_input
+campo: prompt
+valor: <prompt estruturado>
 
-## Limites e custo
+Tool: mcp__Claude_in_Chrome__left_click
+selector: botão "Generate"
 
-- **Custo:** ~$X por geração (verificar saldo mensal antes de rodar)
-- **Tempo:** 2-5 min por clip
-- **Resolução:** até 1080p, mas vídeo curto (<30s)
-- **Estilo:** funciona melhor para cenas atmosféricas, próximas e líricas. Pior para multidões, texto, mãos.
+Aguarda ~30-90s (Higgsfield gera 4-8 variants)
+```
 
-## Pipeline mais comum no Zeus
+### Passo 3 — Capturar resultados
+```
+Tool: mcp__Claude_in_Chrome__read_page
+Extract: URLs das variants geradas
 
-Para campanha premium → 1 Higgsfield hero (3-5s) + animação GSAP no resto da LP.
+Tool: mcp__Claude_in_Chrome__upload_image
+(ou screenshot pra apresentar pra Diego escolher)
+```
 
-Para deck investor → 1 Higgsfield no slide 1 (intro) e slide 8 (visão futuro). 6 slides do meio: foto Freepik.
+### Passo 4 — Diego escolhe + download
+```
+AskUserQuestion: qual variant (1/2/3/4)?
 
-Para social TikTok/Reels orgânico → Higgsfield gera 3-5 cenas atmosféricas, edição em Remotion.
+Tool: mcp__Claude_in_Chrome__left_click
+selector: download button da variant escolhida
+→ baixa pra ~/Downloads/
+
+Tool: Bash
+mv ~/Downloads/<arquivo recém-baixado> ~/Documents/Claude/Projects/<empresa>/_Areas/CCO/assets/
+```
+
+## Workflow modo B/C (INSTRUÇÃO)
+
+Devolve no chat:
+
+```
+🟡 Higgsfield via Chrome MCP não disponível. Manual:
+
+1. Abre https://higgsfield.ai/create
+2. Login (se não tiver)
+3. Cola este prompt: "<prompt estruturado já preparado>"
+4. Settings recomendados:
+   - Aspect ratio: <X> (baseado no brief)
+   - Model: Soul / DoP (depende: Soul=cinematic, DoP=photoreal)
+   - Variants: 4 (começa)
+5. Generate (espera ~30-90s)
+6. Baixa o que escolheu pra ~/Documents/Claude/Projects/<empresa>/_Areas/CCO/assets/
+7. Volta no chat e cola path — eu sigo
+```
+
+## Cost guardrails (CRÍTICO — Higgsfield é caro)
+
+- **Sempre perguntar Diego antes de gerar** se for > 1 batch (4 variants)
+- Cada geração ~$0.50-2.00 dependendo de model/resolution
+- Soul model = cinematic = MAIS caro
+- DoP = photoreal = menos caro
+- Image-to-motion = MAIS caro ainda
+
+**Regra**: nunca queimar > $5 sem aprovação explícita.
+
+## Prompts boas práticas (Higgsfield específico)
+
+Diferente de Midjourney/Mystic, Higgsfield responde melhor a:
+- **Cena cinematográfica**: descrever câmera, lighting, lens, mood (não só subject)
+- **Reference photo**: upload reference image antes pra style transfer
+- **Director's brief** style: "Wide angle, low key lighting, shot from below, golden hour, dramatic"
+- Evita: prompts curtos genéricos. Higgsfield premia detalhe.
+
+Template prompt Higgsfield:
+```
+[SHOT TYPE] of [SUBJECT] in [LOCATION], [LIGHTING], [MOOD/STYLE].
+Camera: [lens info, angle, distance].
+Post: [color grade, film stock reference if aplicável].
+```
+
+Exemplo:
+```
+Medium close-up of streetwear model wearing oversized denim jacket on São Paulo
+underground subway platform, harsh fluorescent lighting from above, gritty editorial mood.
+Camera: 50mm, eye level, 1.5m distance.
+Post: Kodak Portra 400 film grain, slight desaturation in shadows.
+```
+
+## Cross com outras skills ZEUS-CO
+
+- `cerebro-criativo` antes pra big idea (não desperdiça crédito Higgsfield em ideia ruim)
+- `cco-art-director` valida a referência visual ANTES do prompt
+- `cco-brand-guardian` valida fit brand após geração
+- `cfo-controller` se queimar > $50 num mês precisa registrar
+
+## Sobre tornar Higgsfield MCP nativo
+
+Higgsfield ainda não tem MCP oficial. Quando lançar (eles têm API REST documentada), construir adapter:
+- Wrap REST endpoints em ferramentas MCP
+- Auth via API key (1Password vault)
+- Add custos por chamada no `_LEDGER.md` global

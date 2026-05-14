@@ -1,53 +1,139 @@
-# Pipeline · Adobe Express (via MCP)
+# Pipeline · Adobe Express + Firefly — EXECUTÁVEL
 
-> **Status:** MCP Adobe já conectado (`mcp__1c4e78c8-*`). Suite completa disponível.
+> **Status**: MCP Adobe conectado (`mcp__1c4e78c8-*`). Suite completa: image edit + animate + generative + document.
+> **Best fit**: refine/edit + animate + export final. Não é primary generator (use Freepik Mystic ou Higgsfield pra geração).
 
-## Quando o DESIGN-LAB (zeus-co-design-lab) aciona o Adobe
+## Quando o `design-lab-*` aciona Adobe Express
 
-Para **peça publicitária finalizada** que precisa de:
-- Edição precisa de imagem (brilho, contraste, cor, recorte)
-- Geração de imagem com Firefly
-- Animação de design existente
-- Vetorização, remoção de fundo, expansão generativa
-- Conversão / merge de PDF
-- Edição de vídeo (corte, redimensionamento)
-- Áudio (enhance speech, sumarização de mídia)
+- `design-lab-image-generation` → **refine** imagem gerada (background remove, color adjust, generative expand)
+- `design-lab-poster-key-visual` → finalize KV (resize multi-aspect, color grade)
+- `design-lab-motion-frames` → animate design via `animate_design`
+- `design-lab-magazine-editorial` → document render (PDF final)
+- `design-lab-deck` → export PPT-style refinado
 
-## Tools mais relevantes
-
-| Tool                                          | Quando usar                                         |
-|-----------------------------------------------|-----------------------------------------------------|
-| `mcp__1c4e78c8-*__image_remove_background`    | Limpar foto pra usar em deck/peça                   |
-| `mcp__1c4e78c8-*__image_generative_expand`    | Estender imagem (16:9 → 21:9 por exemplo)           |
-| `mcp__1c4e78c8-*__image_vectorize`            | Converter raster em vetor (logo, ícone)             |
-| `mcp__1c4e78c8-*__image_adjust_*`             | Brilho, contraste, exposição, cor, HSL              |
-| `mcp__1c4e78c8-*__image_apply_*`              | Blur, halftone, glitch, tint, lens blur             |
-| `mcp__1c4e78c8-*__create_firefly_board`       | Board de moodboard Firefly                          |
-| `mcp__1c4e78c8-*__animate_design`             | Animar peça estática                                |
-| `mcp__1c4e78c8-*__document_convert_pdf`       | Conversão de/para PDF                               |
-| `mcp__1c4e78c8-*__video_resize`               | Reformatar vídeo (16:9 → 9:16 por exemplo)          |
-| `mcp__1c4e78c8-*__search_design`              | Buscar template Adobe Express                       |
-| `mcp__1c4e78c8-*__media_enhance_speech`       | Limpar áudio de podcast/voice over                  |
-
-## Fluxo recomendado
+## Detecção de ambiente
 
 ```
-1. Asset entra do Freepik ou Higgsfield
-2. DESIGN-LAB (zeus-co-design-lab) decide se precisa de retoque Adobe:
-   - Foto crua → recorte + ajuste cor + remoção de fundo
-   - Imagem AI → upscale + ajuste fino
-   - Vídeo → resize para formato alvo (9:16 social, 16:9 web)
-3. Aciona tool Adobe específica
-4. Output finalizado entra na peça
+Modo A — Cowork desktop com MCP Adobe conectado
+  → executa via mcp__1c4e78c8-*__*
+
+Modo B/C — Claude.ai web OU MCP off
+  → instrução manual (abre Adobe Express browser)
+```
+
+## Tools Adobe MCP disponíveis (subset relevante)
+
+### Image edit (mais usados)
+| Tool | Quando usar |
+|---|---|
+| `image_remove_background` | Cortar BG de produto/pessoa |
+| `image_crop_and_resize` | Multi-aspect (1:1, 9:16, 3:2, 16:9) |
+| `image_generative_expand` | Estender canvas (outpaint) |
+| `image_fill_area` | Generative fill |
+| `image_select_by_prompt` | Seleção semântica (ex: "select shirt") |
+| `image_select_subject` | Auto subject selection |
+| `image_apply_color_overlay` | Color treatment |
+| `image_adjust_*` | Brightness/contrast/saturation/temperature/highlights/shadows |
+| `image_apply_preset` | Aplicar preset salvo |
+| `image_apply_lens_blur` | Blur bokeh |
+| `image_apply_glitch_effect` | Glitch creative |
+| `image_apply_halftone` | Halftone (vintage editorial) |
+| `image_vectorize` | Raster → SVG |
+| `image_add_grain` | Film grain |
+| `image_auto_straighten` | Endireitar fotos |
+
+### Document
+| Tool | Quando usar |
+|---|---|
+| `document_convert_pdf` | Convert PDF |
+| `document_render_layout` | Render layout document |
+| `document_render_vector` | Render vector |
+| `document_merge_data_layout` | Merge data → layout (mail merge style) |
+
+### Generative
+| Tool | Quando usar |
+|---|---|
+| `change_background_color` | Trocar BG color |
+| `animate_design` | Animação de design |
+| `create_firefly_board` | Board Firefly |
+| `font_recommend` | Sugestão tipográfica |
+| `fill_text` | Preencher área com text |
+
+### Asset management
+| Tool | Quando usar |
+|---|---|
+| `asset_search` | Buscar asset Adobe Stock |
+| `asset_license_and_download_stock` | License + download |
+| `asset_preview_file` | Preview |
+| `asset_inline_preview` | Preview inline |
+
+### Video
+| Tool | Quando usar |
+|---|---|
+| `video_create_quick_cut` | Quick cut video |
+| `video_resize` | Resize video multi-aspect |
+
+## Workflow padrão (refine imagem)
+
+### Caso 1: Refinar imagem AI-gerada
+```
+1. Asset originado de Freepik Mystic ou Higgsfield
+2. Tool: mcp__1c4e78c8-*__image_remove_background (se precisar isolar)
+3. Tool: mcp__1c4e78c8-*__image_adjust_color_temperature (warm/cool fit direção)
+4. Tool: mcp__1c4e78c8-*__image_apply_grain (se Editorial Monocle direction)
+5. Tool: mcp__1c4e78c8-*__image_crop_and_resize → multi-aspect
+6. Save: ~/Documents/Claude/Projects/<empresa>/_Areas/CCO/assets/final/
+```
+
+### Caso 2: Multi-aspect resize pra campanha 360
+```
+Input: 1 KV master (3:2 ratio típico)
+Output: 1:1 (Instagram post), 9:16 (Story/Reels), 16:9 (LP hero), 4:5 (Pinterest), banner 3:1 (OOH)
+
+Loop:
+For each aspect_ratio in [1:1, 9:16, 16:9, 4:5, 3:1]:
+  Tool: image_crop_and_resize
+  Args: { src, target_aspect: ratio, smart_crop: true }
+  Save: assets/final/<name>-<ratio>.jpg
+```
+
+### Caso 3: Animate hero
+```
+Input: imagem hero estática
+Tool: animate_design
+Args: { 
+  src, 
+  animation_type: "parallax" | "fade" | "subtle_motion",
+  duration: 3-5s,
+  output_format: "mp4" | "gif"
+}
 ```
 
 ## Boas práticas
 
-- **Não retocar em excesso.** Adobe MCP é poderoso mas pode "matar" a foto se você der 10 ajustes seguidos. Máximo 2-3.
-- **Order matters.** Sempre: recorte → cor → efeitos. Não: efeito → cor → recorte.
-- **Manter original.** Salvar versão antes de retoque, caso precise refazer.
+- **Adobe Express é "polish", não "criação"**: comece pelo Freepik/Higgsfield, refine no Adobe
+- **Batch ops > single ops**: se for 1 imagem só, abre o app. Pipeline MCP vale pra > 3 ops
+- **Save originais**: nunca substitua source. Sempre `<name>-final.png` em pasta separada
+- **Multi-aspect = sempre exigido** em campanha (D2C: pelo menos 1:1 e 9:16)
+- **Vector preferred** pra logo/icon: rasterize só no final
 
-## Quando NÃO usar Adobe
+## Fallback (modo manual)
 
-- Para design completo do zero → use `pptx-generator`, `web-artifacts-builder` ou Canva via outra integração
-- Para edição rápida de vídeo simples → `remotion` (programático) é mais rápido
+Se MCP off:
+```
+🟡 Adobe MCP não disponível. Manual:
+
+1. Abre https://express.adobe.com
+2. Login (Adobe ID)
+3. Upload <arquivo>
+4. Aplique: <lista de operações específicas>
+5. Export multi-aspect
+6. Salva em ~/Documents/Claude/Projects/<empresa>/_Areas/CCO/assets/final/
+7. Volta no chat com paths — eu sigo
+```
+
+## Cross com outras skills ZEUS-CO
+
+- `cco-art-director` aprova **antes** dos refinements (não refinar errado)
+- `cco-brand-guardian` valida cores/grain/treatment alinha brand
+- `cmo-growth-performance` se for creative pra ads (multi-aspect obrigatório)

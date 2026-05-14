@@ -1,58 +1,120 @@
-# Pipeline · Freepik
+# Pipeline · Freepik — EXECUTÁVEL
 
-> **Status:** MCP nativo já conectado no setup. Tools `mcp__freepik__*` disponíveis.
+> **Status**: MCP nativo conectado. Tools `mcp__freepik__*` disponíveis no Cowork desktop.
+> **Fallback**: se MCP off (Claude.ai web ou MCP desconectado), retornar instruction manual.
 
-## Quando o DESIGN-LAB (zeus-co-design-lab) aciona o Freepik
+## Quando o `design-lab-*` aciona Freepik
 
-O orquestrador chama o Freepik quando a skill em execução precisa de:
-- **Asset visual pronto** (foto, ilustração, ícone, vetor SVG)
-- **Imagem gerada por IA Mystic** (geração via texto, controle de estilo)
-- **Detecção de IA** (verificar se uma imagem é AI-generated)
+- `design-lab-image-generation` → busca assets stock OR gera via Mystic
+- `design-lab-poster-key-visual` → hero asset base pra KV
+- `design-lab-landing-page` → hero image LP, ícones, ilustrações
+- `design-lab-email-html` → header image
+- `design-lab-magazine-editorial` → assets pra spreads
 
-Não aciona o Freepik para vídeo, áudio ou design final — esses vão por outros pipelines.
-
-## Tools disponíveis
-
-| Tool                                           | Função                                                |
-|------------------------------------------------|-------------------------------------------------------|
-| `mcp__freepik__search_resources`               | Busca recursos (foto, vetor, PSD) por keyword         |
-| `mcp__freepik__search_icons`                   | Busca ícones específicos                              |
-| `mcp__freepik__get_resource_detail_by_id`      | Detalhes de um recurso (formatos, licença)            |
-| `mcp__freepik__get_resource_download_formats`  | Formatos disponíveis pra download                     |
-| `mcp__freepik__download_resource_by_id`        | Download direto do asset                              |
-| `mcp__freepik__download_icon_by_id`            | Download de ícone                                     |
-| `mcp__freepik__text_to_image_mystic_sync`      | Gerar imagem nova via Mystic (text-to-image)          |
-| `mcp__freepik__detect_ai_image`                | Verificar se imagem é AI-generated                    |
-
-## Fluxo recomendado
+## Detecção de ambiente (gracioso degradante)
 
 ```
-1. Skill ativa identifica necessidade visual:
-   ex: "preciso de foto de mesa de reunião executiva, tom warm, horizontal"
-
-2. DESIGN-LAB (zeus-co-design-lab) chama mcp__freepik__search_resources com:
-   - query: "executive meeting table warm light horizontal"
-   - filters: orientation=horizontal, type=photo
-
-3. Lê resultados (até 5 candidatos), avalia contra direção visual escolhida
-
-4. Se candidato OK → mcp__freepik__download_resource_by_id
-   Se nada bate → mcp__freepik__text_to_image_mystic_sync com prompt detalhado
-
-5. Asset entra na pasta da peça em construção, skill prossegue
+SE Bash tool disponível AND mcp__freepik__* carregado:
+   → modo EXECUTAR (chama tools direto)
+SE NÃO:
+   → modo INSTRUÇÃO (devolve passos pra Diego fazer manual)
 ```
 
-## Boas práticas
+## Tools disponíveis (verificar via ToolSearch se deferred)
 
-- **Direção visual primeiro.** Buscar "foto executivo" sem ter direção é convite a stock cliché. Use as 5 escolas (`padroes-core/03-directions-visuais.md`) para enriquecer a query.
-- **Mystic para hero shots.** Para a foto principal de uma peça, vale gastar uma geração Mystic com prompt detalhado, ao invés de pegar stock.
-- **Stock para auxiliares.** Ícones, texturas, padrões de fundo — busca direta.
-- **Verificar licença sempre.** O `get_resource_detail_by_id` retorna a licença — Freepik Premium vs Free importa.
+| Tool | Quando usar | Custo aprox |
+|---|---|---|
+| `mcp__freepik__search_resources` | Buscar fotos/ilustrações/vetores no banco | Inclusa subscription |
+| `mcp__freepik__search_icons` | Buscar ícones | Inclusa |
+| `mcp__freepik__get_resource_detail_by_id` | Detalhar 1 resource | Inclusa |
+| `mcp__freepik__get_resource_download_formats` | Formatos disponíveis | Inclusa |
+| `mcp__freepik__download_resource_by_id` | Download asset | Conta no quota |
+| `mcp__freepik__text_to_image_mystic_sync` | Gerar imagem via Mystic | Cobra créditos (cuidado) |
+| `mcp__freepik__detect_ai_image` | Validar se imagem é AI | Inclusa |
+| `mcp__freepik__download_icon_by_id` | Download ícone | Inclusa |
 
-## Pipeline mais comum no Zeus
+## Workflow executável padrão (5 passos)
 
-Para deck de cliente → busca Freepik por hero image + ícones para sub-slides + (opcional) Mystic para 1 frame específico que precisa ser único.
+### Passo 1 — Validar disponibilidade MCP
+```
+Tool: ToolSearch
+Query: "select:mcp__freepik__search_resources"
+SE retorna schema → MCP ok, prossegue
+SE não → fallback modo INSTRUÇÃO
+```
 
-Para LP → Mystic para hero shot + Freepik para ilustrações secundárias.
+### Passo 2 — Buscar candidatos
+```
+Tool: mcp__freepik__search_resources
+Args:
+  - term: "<termo do brief>"
+  - filters: { content_type, license, orientation, color_dominant }
+  - limit: 12
+```
 
-Para social carousel → Mystic gera todas as 5 imagens com prompt consistente.
+### Passo 3 — Apresentar pra Diego escolher
+```
+Output no chat:
+  - 4-6 thumbnails com ID + preview URL + license
+  - Diego escolhe 1-3 (com AskUserQuestion se interativo)
+```
+
+### Passo 4 — Download (só do escolhido)
+```
+Tool: mcp__freepik__download_resource_by_id
+Args:
+  - resource_id: <id escolhido>
+  - format: png/jpg/svg (depende do uso)
+```
+
+### Passo 5 — Save em path canônico
+```
+Path: ~/Documents/Claude/Projects/<empresa>/_Areas/CCO/assets/YYYY-MM-DD-<descricao>.png
+Append em _LEDGER.md da empresa: download Freepik <id> <license>
+```
+
+## Geração Mystic (alternativa search)
+
+Quando NÃO acha asset adequado na busca, OR brief precisa de imagem única:
+
+```
+Tool: mcp__freepik__text_to_image_mystic_sync
+Args:
+  - prompt: "<prompt estruturado: subject + style + composition + lighting + post>"
+  - aspect_ratio: "16:9" / "1:1" / "9:16"
+  - style: realism / illustration / 3d / etc
+  - resolution: 2k / 4k
+Custo: ~1-3 créditos por geração (verificar quota antes)
+```
+
+**Boas práticas Mystic**:
+- Prompt: 50-80 palavras, estruturado em ordem (subject → style → composition → lighting → post)
+- Sempre gerar **4 variants** primeiro (aspect ratio quadrado pra economia), refinar depois
+- Cross-check direção visual da skill (das 5: Editorial/Modern/Warm/Tech/Brutalist) antes de gerar
+
+## Fallback (modo INSTRUÇÃO — quando MCP off)
+
+Se ToolSearch não retorna `mcp__freepik__*`, devolver no chat:
+
+```
+🟡 Freepik MCP não disponível neste ambiente. Manual:
+
+1. Abre https://www.freepik.com em browser
+2. Busca: "<termo>"
+3. Filtros recomendados: <baseados no brief>
+4. Download: salva em ~/Documents/Claude/Projects/<empresa>/_Areas/CCO/assets/
+5. Volta no chat e cola path local — eu sigo daqui
+```
+
+## Cost guardrails (Diego sempre alerta)
+
+- Search/download asset normal → quota inclusa subscription (~1000/mês)
+- Mystic generation → **conta créditos**. Antes de gerar > 4 variants, perguntar Diego.
+- Premium assets → checa license antes (Editorial use only NÃO serve pra ad commercial)
+- Salvar IDs + license em `_LEDGER.md` da empresa pra audit trail
+
+## Cross com outras skills ZEUS-CO
+
+- `cco-art-director` valida visual antes do download virar deliverable
+- `cco-brand-guardian` cross-check fit com brand-guide
+- `clo-contratos` se license tem restrições legais relevantes
