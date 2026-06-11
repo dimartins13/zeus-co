@@ -1,0 +1,22 @@
+[
+  {"query": "preciso de um roteiro de reels sobre a nova funcionalidade do curso. a fonte é esse artigo https://exemplo.com/post e quero no tom desse perfil aqui https://instagram.com/p/abc123", "should_trigger": true},
+  {"query": "roteiriza esse video do youtube em formato reels pra mim, com timing em segundos e sugestao de b-roll por cena", "should_trigger": true},
+  {"query": "me faz um script de reel cena por cena pra divulgar o lancamento, no estilo do @nutricionista.fulano", "should_trigger": true},
+  {"query": "bora fazer um reels desse blog post, mesma vibe desse insta aqui ó", "should_trigger": true},
+  {"query": "quero um reels pronto pra postar: roteiro, legenda e umas hashtags, tudo baseado nesse texto que vou te mandar", "should_trigger": true},
+  {"query": "transforma essa materia num roteiro de reel de uns 30 segundos com hook forte no comeco", "should_trigger": true},
+  {"query": "preciso de 3 hooks diferentes e dps o roteiro completo pra um reel sobre produtividade pra quem estuda", "should_trigger": true},
+  {"query": "monta o roteiro do reel e ja sugere um audio trending que combine com o ritmo", "should_trigger": true},
+  {"query": "tenho esse post e o perfil de referencia de tom, gera o roteiro do reels e salva o registro pra nao repetir o que ja postei", "should_trigger": true},
+  {"query": "esse conteudo aqui vira melhor um reel do que um carrossel — me da o roteiro em video por favor", "should_trigger": true},
+  {"query": "cria um carrossel de instagram de 10 slides sobre os 5 erros mais comuns de quem ta comecando", "should_trigger": false},
+  {"query": "gera o video do reel pra mim com IA, ja com as cenas renderizadas", "should_trigger": false},
+  {"query": "analisa esse reel do concorrente frame a frame e me explica por que ele viralizou", "should_trigger": false},
+  {"query": "monta o calendario editorial de instagram do mes que vem, todos os formatos", "should_trigger": false},
+  {"query": "só me escreve uma legenda boa pro post que eu ja gravei e to subindo agora", "should_trigger": false},
+  {"query": "preciso de um roteiro pra um anuncio de CTV de 30 segundos pra rodar no youtube e na globoplay", "should_trigger": false},
+  {"query": "quero briefar um creator pra gravar um UGC nosso, monta o briefing pra ele", "should_trigger": false},
+  {"query": "me ajuda a configurar a loja no tiktok shop e subir o catalogo", "should_trigger": false},
+  {"query": "edita esse video que gravei no celular e corta os melhores momentos pra eu postar", "should_trigger": false},
+  {"query": "faz uma sequencia de stories pra promocao relampago de 24h, com enquete e contagem regressiva", "should_trigger": false}
+]

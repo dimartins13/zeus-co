@@ -182,6 +182,20 @@
       "source": "./plugins/zeus-co-design-lab",
       "category": "zeus-co",
       "version": "0.2.0"
+    },
+    {
+      "name": "zeus-co-humanlab",
+      "description": "Suite Human do Zeus-CO — 8 skills criativas premium que transformam input amador (foto de celular, texto solto, ideia crua, imagem com 'plastic look') em entregável de marketing com cara cinematográfica e humana. Skills - /human-image (Diretor de Fotografia, still cinematográfico via Nano Banana 2), /human-cinematic (vídeo cinematográfico completo - Script AI, character sheets, frames aprovados, product shots, ad vertical 9:16 15s), /human-dna (Maestro do DNA Criativo de marca, DNA.md + DNA.pdf + CLAUDE.md), /human-carrossel (News-to-Carrossel V2.5 diário automatizado + sob demanda via Routines Claude Desktop), /human-social (desdobra pasta texto+imagens em IG Feed/Stories + LinkedIn nativos), /human-team (OpenSquad - squads de agentes IA colaborativos), /human-motion (motion design Remotion/Three.js com câmera 3D, parallax, Quadruple Exit, sem voz), /human-upscale (retexturização fotorrealista 8K, mata plastic look IA). Stack - Higgsfield CLI + ffmpeg + jq + Pillow + Remotion + OpenSquad. Capability transversal - CCO/CMO/zeus-co-marketing invocam; empresas com produto físico (dope street, Crazyflips, Ventage) usam direto. Frases-gatilho: 'human image', 'human cinematic', 'human dna', 'human carrossel', 'human social', 'human team', 'human motion', 'human upscale', 'foto cinematográfica', 'ad cinema produto', 'DNA criativo marca', 'carrossel diário', 'desdobra pasta', 'squad de agentes', 'motion Remotion', 'retexturizar 8K', 'mata plastic look'.",
+      "source": "./plugins/zeus-co-humanlab",
+      "category": "zeus-co",
+      "version": "1.0.0"
+    },
+    {
+      "name": "zeus-co-teste-sync",
+      "description": "Plugin de teste de sincronizacao do marketplace zeus-co. Skill unica que responde teste-sync ok.",
+      "source": "./plugins/zeus-co-teste-sync",
+      "category": "zeus-co",
+      "version": "0.1.0"
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "name": "zeus-co-teste-sync",
+  "description": "Plugin de teste de sincronizacao do marketplace zeus-co. Skill unica que responde teste-sync ok. Use para 'teste sync', 'teste-sync'.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
+}
