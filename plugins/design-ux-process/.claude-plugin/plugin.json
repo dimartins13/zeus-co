@@ -1,0 +1,9 @@
+{
+  "name": "design-ux-process",
+  "description": "DESIGN-UX-PROCESS — processo completo de design (Owl-Listener/designer-skills, 96 sub-skills organizadas em 9 gateways): ux-research (pesquisa: personas, entrevistas, journey maps, JTBD), ux-strategy (IA, briefs, north star, service blueprint), ui-design-craft (hierarquia, grids, tipografia, cor, leis de UX), interaction-craft (micro-interações, loading, forms, onboarding), design-systems-craft (tokens, componentes, governança), prototyping-testing (wireframes, A/B, heurísticas), design-ops (crítica, review, handoff, QA), visual-critique (crítica estruturada em 7 dimensões), designer-toolkit (case studies, UX writing, rationale). Cada gateway indexa suas sub-skills e carrega só a necessária. Use SEMPRE pra: 'processo de design', 'UX research', 'persona', 'journey map', 'arquitetura de informação', 'wireframe', 'design system', 'handoff', 'crítica de design', 'heurísticas', 'usabilidade', 'UX writing'. Orquestrado por design-gestor.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
+}

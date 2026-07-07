@@ -196,6 +196,34 @@
       "source": "./plugins/zeus-co-teste-sync",
       "category": "zeus-co",
       "version": "0.1.0"
+    },
+    {
+      "name": "design-frontend",
+      "description": "DESIGN-FRONTEND — Camada 1 do Design Skills Pack (curadoria novitckii.com): 7 skills de frontend & UI. frontend-design (Anthropic, direção estética ousada), impeccable (Paul Bakaus, quality pass com 20 modos: audit, polish, animate, bolder, quieter, typeset), design-taste-frontend (anti-slop pra landing pages e portfolios), brandkit (brand boards premium: logo, paleta, tipografia), animate (Emil Kowalski, motion React/Next.js), design-motion-principles (auditor de motion, detecta AI-slop), theme-factory (10 temas prontos + geração de tokens CSS). Use SEMPRE pra: 'landing page', 'LP', 'site', 'interface', 'UI', 'frontend', 'redesign', 'design de tela', 'dashboard', 'app web', 'polir design', 'audit de design', 'animação de interface', 'micro-interação', 'tema visual', 'design tokens', 'brand board', 'kit de marca', 'tipografia', 'paleta de cores'. Orquestrado por design-gestor. Complementa zeus-co-design-lab (produção visual macro).",
+      "source": "./plugins/design-frontend",
+      "category": "design-skills",
+      "version": "0.1.0"
+    },
+    {
+      "name": "design-media",
+      "description": "DESIGN-MEDIA — Camada 2 do Design Skills Pack (curadoria novitckii.com): 6 skills de imagem generativa por código, 3D e vídeo. algorithmic-art (Anthropic, arte generativa p5.js: flow fields, partículas), remotion-production (vídeo programático completo: voiceover, música, captions — requer projeto Remotion + MCPs próprios), motion-design (fundamentos de motion), motion-design-critique (crítica de motion), blender-motion (Blender via MCP — requer Blender Lab MCP), aftereffects-motion (After Effects via MCP — requer AE MCP). Use SEMPRE pra: 'arte generativa', 'flow field', 'p5.js', 'vídeo programático', 'Remotion', 'motion design', 'animação 3D', 'Blender', 'After Effects', 'crítica de motion', 'vídeo com código'. Orquestrado por design-gestor. Pra geração de IMAGEM por IA use Higgsfield MCP (incl. Nano Banana e outros modelos), Freepik MCP, Adobe Express ou human-image — NÃO há skill de imagem Gemini aqui.",
+      "source": "./plugins/design-media",
+      "category": "design-skills",
+      "version": "0.1.0"
+    },
+    {
+      "name": "design-ai-ux",
+      "description": "DESIGN-AI-UX — Camadas 4-6 do Design Skills Pack (curadoria novitckii.com, skills Owl-Listener/ai-design-skills): 21 skills pra desenhar produtos de IA, prompts e confiança. Interação com IA (8): context-window-design, conversation-patterns, generative-ui, progressive-disclosure, multimodal-orchestration, mixed-initiative-flow, frustration-detection, feedback-loops. Arquitetura de prompt (7): system-prompt-structure, template-design, few-shot-patterns, chain-of-thought-design, constraint-specification, context-engineering, prompt-versioning. Comportamento (3): persona-architecture, tone-calibration, emotional-design. Confiança e segurança (3): guardrail-design, trust-calibration, transparency-patterns. Use SEMPRE pra: 'desenhar produto de IA', 'UX de chatbot', 'system prompt', 'arquitetura de prompt', 'persona do agente', 'tom do agente', 'guardrails', 'confiança do usuário', 'criar skill', 'melhorar prompt', 'few-shot', 'chain of thought', 'UI generativa', 'fluxo conversacional', 'design de agente'. Orquestrado por design-gestor. Complementa zeus-co-labs (prompt-architect) e zeus-co-factory (LEPs).",
+      "source": "./plugins/design-ai-ux",
+      "category": "design-skills",
+      "version": "0.1.0"
+    },
+    {
+      "name": "design-ux-process",
+      "description": "DESIGN-UX-PROCESS — processo completo de design (Owl-Listener/designer-skills, 96 sub-skills organizadas em 9 gateways): ux-research (pesquisa: personas, entrevistas, journey maps, JTBD), ux-strategy (IA, briefs, north star, service blueprint), ui-design-craft (hierarquia, grids, tipografia, cor, leis de UX), interaction-craft (micro-interações, loading, forms, onboarding), design-systems-craft (tokens, componentes, governança), prototyping-testing (wireframes, A/B, heurísticas), design-ops (crítica, review, handoff, QA), visual-critique (crítica estruturada em 7 dimensões), designer-toolkit (case studies, UX writing, rationale). Cada gateway indexa suas sub-skills e carrega só a necessária. Use SEMPRE pra: 'processo de design', 'UX research', 'persona', 'journey map', 'arquitetura de informação', 'wireframe', 'design system', 'handoff', 'crítica de design', 'heurísticas', 'usabilidade', 'UX writing'. Orquestrado por design-gestor.",
+      "source": "./plugins/design-ux-process",
+      "category": "design-skills",
+      "version": "0.1.0"
     }
   ]
 }

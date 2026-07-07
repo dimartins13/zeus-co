@@ -1,0 +1,9 @@
+{
+  "name": "design-media",
+  "description": "DESIGN-MEDIA — Camada 2 do Design Skills Pack (curadoria novitckii.com): 6 skills de imagem generativa por código, 3D e vídeo. algorithmic-art (Anthropic, arte generativa p5.js: flow fields, partículas), remotion-production (vídeo programático completo: voiceover, música, captions — requer projeto Remotion + MCPs próprios), motion-design (fundamentos de motion), motion-design-critique (crítica de motion), blender-motion (Blender via MCP — requer Blender Lab MCP), aftereffects-motion (After Effects via MCP — requer AE MCP). Use SEMPRE pra: 'arte generativa', 'flow field', 'p5.js', 'vídeo programático', 'Remotion', 'motion design', 'animação 3D', 'Blender', 'After Effects', 'crítica de motion', 'vídeo com código'. Orquestrado por design-gestor. Pra geração de IMAGEM por IA use Higgsfield MCP (incl. Nano Banana e outros modelos), Freepik MCP, Adobe Express ou human-image — NÃO há skill de imagem Gemini aqui.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  }
+}
