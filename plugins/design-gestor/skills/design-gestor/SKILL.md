@@ -36,13 +36,13 @@ Invoque skills via Skill tool na ordem listada. `[colchetes]` = opcional conform
 ### C. Identidade de marca / brand board
 1. [`brand-voice:discover-brand` → se materiais espalhados]
 2. `design-frontend:brandkit` → brand board premium (logo, paleta, tipografia)
-3. Geração de imagem: `human-image` (cinematográfico) OU Higgsfield MCP (incl. Nano Banana e outros modelos) OU Freepik/Adobe MCPs
+3. Geração de imagem: `design-media:image-director` (Creative Director — roteia pra Higgsfield/Freepik/Adobe ou entrega prompts) OU `human-image` (look cinematográfico premium)
 4. [`design-ux-process:visual-critique` → crítica estruturada do resultado]
 - Lembre: material de marca é patrimônio — salvar em `~/Documents/Claude/Projects/<Empresa>/`, nunca propor exclusão.
 
 ### D. Social / carrossel / KV / poster / editorial
 → Rotear pro **zeus-co-design-lab** (skills: design-lab-social-carousel, design-lab-poster-key-visual, design-lab-magazine-editorial, design-lab-email-html) — é a casa disso.
-+ Reforços: `design-frontend:theme-factory` (tema), `anthropic-skills:canvas-design` (PNG/PDF editável), `design-media:algorithmic-art` (fundos generativos), `zeus-co-marketing:instagram-carousel-builder`.
++ Reforços: `design-frontend:theme-factory` (tema), `anthropic-skills:canvas-design` (PNG/PDF editável), `design-media:image-director` (imagens da peça), `design-media:algorithmic-art` (fundos generativos), `zeus-co-marketing:instagram-carousel-builder`.
 
 ### E. Deck / apresentação
 → `zeus-co-design-lab:design-lab-deck` OU Gamma MCP (gerar) OU `anthropic-skills:pptx`.
@@ -95,7 +95,7 @@ Se a dependência não está disponível, ofereça a alternativa já conectada (
 ## Catálogo completo (referência rápida)
 
 - **design-frontend** (7): frontend-design · impeccable · design-taste-frontend · brandkit · animate · design-motion-principles · theme-factory
-- **design-media** (6): algorithmic-art · remotion-production · motion-design · motion-design-critique · blender-motion · aftereffects-motion — geração de imagem por IA: Higgsfield MCP (incl. Nano Banana), Freepik MCP, Adobe Express, human-image
+- **design-media** (7): image-director (geração de imagem: direção criativa + Higgsfield/Freepik/Adobe ou prompt-only) · algorithmic-art · remotion-production · motion-design · motion-design-critique · blender-motion · aftereffects-motion
 - **design-ai-ux** (21): context-window-design · conversation-patterns · generative-ui · progressive-disclosure · multimodal-orchestration · mixed-initiative-flow · frustration-detection · feedback-loops · system-prompt-structure · template-design · few-shot-patterns · chain-of-thought-design · constraint-specification · context-engineering · prompt-versioning · persona-architecture · tone-calibration · emotional-design · guardrail-design · trust-calibration · transparency-patterns
 - **design-ux-process** (9 gateways / 96 sub-skills): ux-research · ux-strategy · ui-design-craft · interaction-craft · design-systems-craft · prototyping-testing · design-ops · visual-critique · designer-toolkit
 - **Ecossistema existente**: zeus-co-design-lab (deck, LP, KV, carrossel, editorial, motion frames) · human-image (foto cinematográfica) · anthropic-skills (canvas-design, pptx, brand-guidelines) · MCPs: Figma, Adobe Express, Gamma, Freepik, Higgsfield
