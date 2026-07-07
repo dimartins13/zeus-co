@@ -224,6 +224,13 @@
       "source": "./plugins/design-ux-process",
       "category": "design-skills",
       "version": "0.1.0"
+    },
+    {
+      "name": "zeus-design",
+      "description": "DESIGN-GESTOR — orquestrador do Design Skills Pack (42 skills da curadoria novitckii.com em 4 plugins: design-frontend, design-media, design-ai-ux, design-ux-process) + integração com o ecossistema existente (zeus-co-design-lab, human-image, canvas-design, Figma MCP, Adobe Express, Gamma, Freepik, Higgsfield). Quando invocado, identifica o tipo de projeto (landing page, UI de app, marca, social, motion/vídeo, deck, produto de IA, skill/prompt) e monta o pipeline com as skills certas na ordem certa, incluindo quality pass final. Use SEMPRE que o Diego pedir: 'zeus-design', '/zeus-design', 'gestor de design', 'que skill de design usar', 'monta o pipeline de design', 'orquestra as skills de design', 'vou começar um projeto de design', 'preciso de design pra esse projeto', 'design pra [empresa/projeto]', 'qual o melhor fluxo de design'. Funciona em qualquer chat (Claude Code e Cowork).",
+      "source": "./plugins/zeus-design",
+      "category": "design-skills",
+      "version": "0.1.0"
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
-name: design-gestor
-description: "Orquestrador do Design Skills Pack. Identifica o tipo de projeto de design e monta o pipeline com as skills certas na ordem certa (dos plugins design-frontend, design-media, design-ai-ux, design-ux-process + ecossistema zeus-co-design-lab, human-image, Figma/Adobe/Freepik/Gamma MCPs). Use SEMPRE que o Diego pedir: 'design-gestor', 'gestor de design', 'que skill de design usar', 'monta o pipeline de design', 'orquestra as skills de design', 'começar projeto de design', 'design pra [empresa/projeto]', 'qual fluxo de design'. Funciona em qualquer chat, aqui e no Cowork."
+name: zeus-design
+description: "Orquestrador do Design Skills Pack. Identifica o tipo de projeto de design e monta o pipeline com as skills certas na ordem certa (dos plugins design-frontend, design-media, design-ai-ux, design-ux-process + ecossistema zeus-co-design-lab, human-image, Figma/Adobe/Freepik/Gamma MCPs). Use SEMPRE que o Diego pedir: 'zeus-design', 'gestor de design', 'que skill de design usar', 'monta o pipeline de design', 'orquestra as skills de design', 'começar projeto de design', 'design pra [empresa/projeto]', 'qual fluxo de design'. Funciona em qualquer chat, aqui e no Cowork."
 ---
 
 # Design Gestor — Orquestrador de Skills de Design
