@@ -7,7 +7,9 @@ updated: 2026-07-11
 
 # 🔌 Spec — Fase 3 (Ligações): como as skills usam a biblioteca
 
-**TL;DR:** Proposta de wiring entre os agentes existentes de Diego e `20-biblioteca/`. **Nada aqui foi ligado ainda** — é o desenho para Diego aprovar antes de eu tocar em qualquer skill ou no zeus-mem.
+**TL;DR:** Wiring entre os agentes de Diego e a biblioteca. **v1 LIGADA (2026-07-11):** plugin `zeus-co-universidade` publicado + skills CMO/CFO/CEO (orquestradores e chefes) instruídas a consultar `zeus-co-universidade:universidade` e citar ficha. Falta ainda: zeus-mem indexar por status, views Obsidian, e o piloto A/B em Cowork.
+
+> ⚠️ **Manutenção:** o plugin carrega uma CÓPIA da `20-biblioteca/`. Editar as fichas no Vault NÃO atualiza o Cowork sozinho — é preciso recopiar para o plugin e `git push`. (Candidato a automatizar: um script de sync Vault→plugin.)
 
 ## 1. Roteamento (o reitor)
 - O orquestrador da área (ex.: `marketing-orquestrador`, `cmo-orquestrador`) recebe a demanda e **lê só o `_MOC` da faculdade** (leve). Decide o(s) departamento(s) e ativa o especialista certo.
