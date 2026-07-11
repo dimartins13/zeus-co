@@ -1,0 +1,11 @@
+{
+  "name": "zeus-co-watch",
+  "description": "Capacidade de ASSISTIR vídeo do Zeus-CO — resolve a 'cegueira a vídeo' do Claude. Baixa o vídeo com yt-dlp (cookies do Chrome furam o muro anti-bot do YouTube), extrai frames auto-escalados com ffmpeg, e transcreve com legendas nativas PT/EN grátis OU faster-whisper LOCAL (~/.zeus-co/venv-whisper — grátis, privado, sem API key, áudio não sai da máquina). Entrega frames + transcript com timestamp pro Claude responder sobre o vídeo. Use SEMPRE que o Diego colar URL de vídeo (YouTube, TikTok, Instagram, Vimeo, X, Loom, Twitch e centenas de sites) OU apontar arquivo local (.mp4/.mov/.mkv/.webm) e perguntar, OU pedir 'assiste/vê/analisa/resume/transcreve esse vídeo', 'o que acontece no minuto X', 'que hook esse criador usou', '/watch'. Skill canônica de vídeo do Zeus-CO (substitui claude-video-vision). Cloud Whisper (Groq/OpenAI) fica dormente como fallback opcional.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeus-CO",
+    "url": "https://github.com/dimartins13/zeus-co"
+  },
+  "homepage": "https://github.com/bradautomates/claude-video",
+  "license": "MIT"
+}

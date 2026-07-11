@@ -113,6 +113,8 @@ Ler os arquivos em `_template/` para a estrutura exata de cada arquivo do LEP.
 - [ ] RADAR.md tem 4 seções (instalados/avaliando/wishlist/radar semanal)
 - [ ] EVOLUTION.md tem v0.1.0 com data de criação
 - [ ] templates/ tem ao menos 4 templates de artefato do role
+- [ ] Bloco "Trabalha em equipe com" usa o Contrato de hand-off de 4 campos (convenção abaixo)
+- [ ] SKILL.md/CORE.md em ordem estável-primeiro (convenção abaixo)
 - [ ] Cron semanal do departamento criado/atualizado
 - [ ] Teste vivo passou em uma empresa real
 
@@ -228,3 +230,22 @@ Exemplos:
   - Diego
 
 **Princípio operacional:** quando minha saída implica em ação de outra função (legal/financeiro/criação/ops/tech), eu **delego explicitamente** invocando a skill correta, não "executo no escuro".
+
+---
+
+## Convenção — Contrato de hand-off (4 campos)
+
+*(minerado do sistema multi-agente da Anthropic, Claude Cookbooks — 2026-06-13)* Toda delegação no bloco "Trabalha em equipe com" carrega **4 campos**, ou o destino duplica trabalho / deixa gap:
+- **Objetivo** — a meta única e específica (não "faça X" vago)
+- **Formato** — a estrutura exata do retorno esperado
+- **Tools+Fontes** — o que usar / priorizar
+- **Fronteira** — o que ESTA skill NÃO faz, pra não pisar na peer
+
+Aplicar sobretudo na entrega Downstream principal e no QA pair. A **Fronteira** é a trava anti-sobreposição — causa-raiz medida das 456 peças perdidas na CrazyFlips C02 (fronteira de tarefa indefinida antes do fan-out).
+
+## Convenção — Ordem "estável-primeiro" no SKILL.md/CORE.md
+
+*(minerado do prompt caching da Anthropic — favorece o cache automático do Cowork + legibilidade)* Ordenar do estável pro volátil, sem intercalar:
+1. **Estável** (idêntico entre empresas): papel, princípios invioláveis, travas duras, bloco de delegação
+2. **Semi-estável**: pipeline / fases
+3. **Volátil** (no fim): contexto por empresa (Fase 0), exemplos, datas

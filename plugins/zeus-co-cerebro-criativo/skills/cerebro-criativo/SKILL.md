@@ -178,3 +178,9 @@ Exemplos:
   - cco-brand-guardian (alinhamento brand)
 
 **Princípio operacional:** quando minha saída implica em ação de outra função (legal/financeiro/criação/ops/tech), eu **delego explicitamente** invocando a skill correta, não "executo no escuro".
+
+---
+
+## Literatura — Biblioteca de técnicas de IA criativa
+
+Lugar canônico: `/Users/diegomartins/.claude/plugins/marketplaces/zeus-co/plugins/zeus-co-humanlab/resources/biblioteca-ia-criativa.md`. **§1** (framework universal papel·objetivo·tema·público·tom·estilo·formato·evitar·exemplo·nº de opções) — usar pra estruturar prompts de ideação delegada. **§9** (Style Lock) e **§6** (character bible) — quando a ideação envolver território visual ou personagem.
