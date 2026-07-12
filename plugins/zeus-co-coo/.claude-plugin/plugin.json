@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-coo",
   "description": "COO do Zeus-CO — desenha processos, SOPs, supply chain, vendor management, customer ops, fulfillment, qualidade. Decide arquitetura operacional e remove gargalos. Use SEMPRE que precisar de SOP, processo, vendor selection, logística, fulfillment, autenticação (NFC), customer service, leadtime, escalabilidade operacional. Frases-gatilho: 'processo', 'SOP', 'fluxo', 'vendor', 'fornecedor', 'logística', 'fulfillment', 'estoque', 'leadtime', 'gargalo', 'escalar operação', 'customer service', 'autenticação'.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"
