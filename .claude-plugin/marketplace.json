@@ -20,14 +20,14 @@
       "description": "CEO/Founder office do Zeus-CO — orquestrador do C-Suite virtual. Decide visão, modelo de negócio, alocação de recursos, fundraising, board, OKRs, hires-chave e pivots. Chama outros LEPs (CFO/COO/CMO/CCO/CTO/CLO) quando a decisão exige profundidade da função. Use SEMPRE que o usuário pedir clareza estratégica, definição de modelo, OKRs, narrativa de pitch, plano de captação, decisão de alocação, ou diagnóstico de estágio da empresa. Também invoque quando o pedido é ambíguo entre Cs — o CEO orquestra.",
       "source": "./plugins/zeus-co-ceo",
       "category": "zeus-co",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "name": "zeus-co-cfo",
       "description": "CFO do Zeus-CO — modela viabilidade, runway, unit economics e fundraising math. Decide alocação de capital, faz Default Alive checkpoints, monta cap table e modelos 3-statement. Use SEMPRE que precisar de modelagem financeira, análise de runway, unit economics (CAC/LTV/payback), cenários (base/upside/downside), simulação de captação, decisão de pricing/cost cut, ou auditoria de viabilidade de iniciativa. Frases que disparam: 'qual o runway', 'fechar conta', 'viabilidade financeira', 'modelo financeiro', 'unit economics', 'CAC LTV', 'cap table', 'cenário', 'fundraising', 'burn', 'precificação'.",
       "source": "./plugins/zeus-co-cfo",
       "category": "zeus-co",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "name": "zeus-co-coo",
@@ -55,14 +55,14 @@
       "description": "CTO do Zeus-CO — decide stack, arquitetura, roadmap produto, MVP scoping, dados, automação. Orquestra dev-skills:* + claude-api + mcp-server-dev + Claude Preview. Use SEMPRE para decisões técnicas, escolha de stack, MVP scoping, integração, automação via agente, tracking/analytics, infraestrutura, segurança técnica. Frases-gatilho: 'tech', 'stack', 'arquitetura', 'MVP', 'produto', 'integração', 'API', 'banco de dados', 'infra', 'deploy', 'automação', 'agente', 'tracking', 'pixel'.",
       "source": "./plugins/zeus-co-cto",
       "category": "zeus-co",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "name": "zeus-co-clo",
       "description": "CLO (Chief Legal Officer) do Zeus-CO — formaliza contratos, garante compliance LGPD, navega regulação setor (iGaming, audiovisual, fintech), protege IP, estrutura societária. Use SEMPRE para contratos, LGPD, termos de uso, política privacidade, regulação setor (iGaming/SECAP, audiovisual/ANCINE), constituição empresa, holding, contratos vendor, NDAs, term sheets de captação. Frases-gatilho: 'contrato', 'jurídico', 'legal', 'LGPD', 'privacidade', 'compliance', 'regulação', 'CNPJ', 'sociedade', 'holding', 'NDA', 'IP', 'marca', 'patente', 'licença', 'alvará', 'termo de uso'.",
       "source": "./plugins/zeus-co-clo",
       "category": "zeus-co",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "name": "zeus-co-claude-expert",
