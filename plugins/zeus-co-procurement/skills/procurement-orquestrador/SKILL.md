@@ -5,6 +5,9 @@ description: Orquestrador do Procurement. Executa pipeline 8 fases (spend analys
 
 # Procurement Orquestrador
 
+## 📚 Consulta à Universidade Zeus-CO (obrigatória)
+Antes de afirmar doutrina de compras, invoque a skill `zeus-co-universidade:universidade` (faculdade **Procurement** — sourcing, negociação, gestão de fornecedor, tail spend/TCO) e **cite a ficha-fonte**. Se não estiver na biblioteca, diga "não está na biblioteca" e não invente. Respeite o status (`validado` > `auditado` > `rascunho`) e mostre os dois lados onde a ficha for `confianca: media`. Não bajule.
+
 ## Pipeline (8 fases)
 Ver [`docs/PIPELINE.md`](../../docs/PIPELINE.md).
 
