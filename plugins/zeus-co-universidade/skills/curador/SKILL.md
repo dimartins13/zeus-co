@@ -8,7 +8,10 @@ description: Curador mensal da Universidade Zeus-CO — mantém a biblioteca viv
 Mantenho a biblioteca viva e honesta. Rodo **mensal** (princípios não mudam toda semana; menos superfície pra apodrecer). Dirigido pelas lacunas da grade. **Leio e escrevo o Vault ao vivo** em `/Users/diegomartins/Documents/Claude/Vault/20-biblioteca/` (no Cowork, via connector `desktop-commander`).
 
 ## Ordem mensal (fixa — seção 8C do framework)
-1. **🔴 Quebra-ficha (IMPERDÍVEL) — changelogs de plataforma.** Checar os 4 sem RSS: **Meta Marketing API Changelog**, **Google Ads API Release Notes**, **Google Ads Help (announcements)**, **Ehrenberg-Bass open-access**. Mudança de atribuição / formato / política / métrica → revisar as fichas de `cmo/trafego-pago/` ANTES de tudo. Rebaixar/atualizar o que ficou desatualizado.
+1. **🔴 Quebra-ficha (IMPERDÍVEL) — changelogs que invalidam ficha.** Dois blocos:
+   - **Tráfego pago:** **Meta Marketing API Changelog**, **Google Ads API Release Notes**, **Google Ads Help (announcements)**, **Ehrenberg-Bass open-access**. Mudança de atribuição/formato/política/métrica → revisar `cmo/trafego-pago/` ANTES de tudo.
+   - **IA (apodrece ainda mais rápido):** releases de **Anthropic (Claude)**, **OpenAI**, **Google (Gemini/AI)**, **Meta (Llama/open models)**, **MCP (Model Context Protocol)**, **n8n / Make / Zapier**. Modelo novo, feature nova, mudança de preço/limite/API → revisar `cto/ai-ml/` (as fichas de panorama/frameworks/automação são snapshots `media` com "validade curta"). Atualizar o snapshot e rebaixar o que ficou velho.
+   - Rebaixar/atualizar o que ficou desatualizado; se não tiver certeza da nova regra, `rascunho` + nota (não chutar).
 2. **Tradução** — Search Engine Land, Jon Loomer (o que virou prática).
 3. **Doutrina** — Ritson, Ehrenberg-Bass, Kellogg (mudou algum consenso? raro).
 4. **Playbook/benchmark** — Lenny's, Growth Unhinged, Mostly Metrics, First Round (números novos de praticante).

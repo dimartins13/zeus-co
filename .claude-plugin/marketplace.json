@@ -209,7 +209,7 @@
       "description": "Universidade Zeus-CO — biblioteca de conhecimento com fonte, princípio e case que os especialistas consultam ANTES de opinar. 3 faculdades auditadas: CMO (marketing, growth, tráfego pago, publicidade com swipe files, branding), CFO (finanças de fundador, unit economics, runway/Default Alive, cap table), CEO (estratégia, PMF, liderança, sócios & governança). Cada afirmação cita a ficha-fonte; diz 'não está na biblioteca' quando não sabe; distingue consenso de disputa. Use SEMPRE para doutrina de marketing/finanças/gestão COM FONTE. Frases-gatilho: 'universidade', 'consulta a biblioteca', 'o que diz a doutrina', 'com fonte', 'ficha sobre', 'swipe de headline', 'big idea', 'é penetração ou lealdade', 'distintividade', 'unit economics', 'default alive', 'runway', 'acordo de sócios', 'tenho PMF', 'como escrever headline', 'régua anti-slop'.",
       "source": "./plugins/zeus-co-universidade",
       "category": "zeus-co",
-      "version": "0.3.0"
+      "version": "0.3.1"
     },
     {
       "name": "design-frontend",
