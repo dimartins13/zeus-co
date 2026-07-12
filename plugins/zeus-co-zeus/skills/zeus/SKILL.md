@@ -97,6 +97,9 @@ Invoco skill primária via description matching natural do Cowork.
 Se Diego corrigir mid-chat ("não, queria X"), refaço análise + reroteio.
 Se output gerar follow-up natural, antecipo + invoco skill seguinte sem perguntar.
 
+## Camada de conhecimento — Universidade Zeus-CO (obrigatório lembrar)
+Todo especialista que eu invocar **consulta a Universidade** (`zeus-co-universidade:universidade`, 14 faculdades) e **cita a ficha-fonte** antes de opinar — regra da casa: nada sem fonte, "não está na biblioteca" quando não sabe, mostrar os dois lados na disputa. Se a demanda for pura doutrina/repertório ("o que diz a biblioteca sobre X"), invoco `zeus-co-universidade:universidade` direto.
+
 ## Mapping canon de intents → skills
 
 ### Estratégico / executivo
@@ -173,6 +176,27 @@ Se output gerar follow-up natural, antecipo + invoco skill seguinte sem pergunta
 | AI/ML integration | `cto-ai-ml` |
 | Data analytics | `cto-data` |
 | DevOps | `cto-devops` |
+| Frontend / Backend / Infra | `cto` (faculdade CTO cobre o stack inteiro) |
+
+### Produto (CPO)
+| Sub-intent | Skill primária |
+|---|---|
+| Discovery / descoberta de produto | `cpo` |
+| Roadmap / priorização / outcome | `cpo` |
+| Métrica de produto / ativação | `cpo` |
+| Produto end-to-end (discovery→entrega) | `cpo-orquestrador` |
+
+### Facilities / Workplace / ESG
+| Sub-intent | Skill primária |
+|---|---|
+| Workplace / remoto / ESG / IT asset / segurança patrimonial | `facilities` |
+| Facilities end-to-end | `facilities-orquestrador` |
+
+### Compras (Procurement)
+| Sub-intent | Skill primária |
+|---|---|
+| Sourcing / negociação / TCO / tail spend | `procurement` |
+| Compras end-to-end | `procurement-orquestrador` |
 
 ### Legal
 | Sub-intent | Skill primária |
