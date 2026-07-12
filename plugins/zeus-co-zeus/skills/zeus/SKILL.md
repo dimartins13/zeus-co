@@ -193,6 +193,13 @@ Todo especialista que eu invocar **consulta a Universidade** (`zeus-co-universid
 | DevOps | `cto-devops` |
 | Frontend / Backend / Infra | `cto` (faculdade CTO cobre o stack inteiro) |
 
+### Inovação / Radar (CINO)
+| Sub-intent | Skill primária |
+|---|---|
+| Radar de **MERCADO/negócio** (concorrente, tendência, oportunidade no vertical) | `cino-radar-mercado` |
+| Radar de **SISTEMA** (ferramentas, MCPs, skills do Zeus-CO) | `zeus-co-scout` (Labs) |
+| Inovação de produto / modelo / disrupção | `cino-orquestrador` |
+
 ### Produto (CPO)
 | Sub-intent | Skill primária |
 |---|---|

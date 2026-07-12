@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-cino",
   "description": "CINO (Chief Innovation Officer) — inovação de produto + processo. 6 skills: cino (chief), cino-orquestrador, cino-research (discovery), cino-experimentation (lean experiments, MVPs, testes A/B macro), cino-tech-scouting (radar tech externo), cino-open-innovation (hackathons, parcerias acadêmicas, aceleradoras). Distinto de CTO (que executa) — CINO INVENTA o que CTO vai construir. Use SEMPRE pra inovação, discovery, MVP, experimentação, novo produto, tech scouting, parceria acadêmica, hackathon, open innovation, radar de tecnologia. Frases-gatilho: 'inovação', 'CINO', 'inovar', 'novo produto', 'descobrir', 'discovery', 'experimentar', 'MVP', 'teste A/B macro', 'lean', 'scout tech', 'tecnologia emergente', 'hackathon', 'parceria acadêmica', 'aceleradora', 'incubadora', 'open innovation', 'inventar'.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"
