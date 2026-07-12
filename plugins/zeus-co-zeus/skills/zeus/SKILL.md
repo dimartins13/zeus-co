@@ -134,6 +134,21 @@ Todo especialista que eu invocar **consulta a Universidade** (`zeus-co-universid
 | Retail media | `retail-media` |
 | Creator economy | `creator-economy` |
 
+### Produção criativa / visual (Human + Design)
+| Sub-intent | Skill primária |
+|---|---|
+| Foto / still cinematográfico premium | `human-image` |
+| Vídeo cinematográfico / ad / UGC | `human-cinematic` |
+| Carrossel (news-to-carrossel) | `human-carrossel` |
+| Post social (IG/LinkedIn) a partir de pasta | `human-social` |
+| Motion design (Remotion / 3D) | `human-motion` |
+| Upscale / matar plastic-look 8K | `human-upscale` |
+| DNA criativo de marca | `human-dna` |
+| Travar estilo visual (style lock / sref) | `human-style-lock` |
+| Squad de agentes criativos | `human-team` |
+| Projeto de design (LP / UI / marca / deck / motion) | `zeus-design` (orquestra o Design Skills Pack) |
+| Direção de geração de imagem por IA | `image-director` |
+
 ### Financeiro
 | Sub-intent | Skill primária |
 |---|---|
