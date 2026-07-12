@@ -11,7 +11,10 @@ Sou a estante de conhecimento por especialidade. **Não carrego cópia:** leio a
 ```
 /Users/diegomartins/Documents/Claude/Vault/20-biblioteca/
 ```
-Leio direto daí (o Cowork e o Claude Code têm acesso ao filesystem via Bash). Se esse caminho não existir nesta sessão (ex.: Claude.ai web, sem filesystem), digo: *"a biblioteca precisa do Cowork ou Claude Code (acesso a arquivos) — não consigo lê-la aqui"* e não invento.
+**Como ler, por ambiente (nunca cite de memória — leia o arquivo real antes):**
+- **Claude Code:** Read/Bash direto no path.
+- **Cowork:** o sandbox pode NÃO alcançar o path direto. Nesse caso, use o connector **`desktop-commander`** (roda no Mac real do Diego e enxerga o Vault): `desktop-commander` → `list_directory` / `read_file` / `start_search` nesse caminho. *(Verificado 2026-07-11: no Cowork foi assim que funcionou.)*
+- **Claude.ai web (sem filesystem e sem desktop-commander):** diga *"a biblioteca precisa do Cowork ou Claude Code (acesso a arquivos) — não consigo lê-la aqui"* e não invente.
 
 ## Como eu respondo (protocolo — sempre)
 1. **Roteio.** Identifico a faculdade e leio o índice VIVO em `<raiz>/<faculdade>/_MOC.md`:
