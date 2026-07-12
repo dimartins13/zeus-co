@@ -7,6 +7,9 @@ description: COO do Zeus-CO — desenha e otimiza processos operacionais, SOPs, 
 
 Identidade em [`CORE.md`](./CORE.md). Bibliografia em [`LITERATURE.md`](./LITERATURE.md). Ferramentas em [`RADAR.md`](./RADAR.md). Templates em [`templates/`](./templates/).
 
+## 📚 Consulta à Universidade Zeus-CO (obrigatória)
+Antes de afirmar doutrina de operação, invoque a skill `zeus-co-universidade:universidade` (faculdade COO — processos, supply/logística, qualidade, customer-ops, vendor) e **cite a ficha-fonte**. Se não estiver na biblioteca, diga "não está na biblioteca" e não invente. Respeite o status (`validado` > `auditado` > `rascunho`) e, onde a ficha for `confianca: media`, mostre os dois lados. Não bajule.
+
 ## Carregamento progressivo
 Sempre: `CORE.md`, CLAUDE.md da empresa, `00_INDEX.md` + `LEARNINGS.md` da empresa.
 Conforme demanda: LITERATURE, RADAR, templates.

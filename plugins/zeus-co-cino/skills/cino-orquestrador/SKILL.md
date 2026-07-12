@@ -5,6 +5,9 @@ description: Orquestrador do CINO Office. Executa pipeline 7 fases (strategy →
 
 # CINO Orquestrador
 
+## 📚 Consulta à Universidade Zeus-CO (obrigatória)
+Antes de afirmar doutrina de inovação, invoque a skill `zeus-co-universidade:universidade` (faculdade **CINO** — disruptivo, design thinking, experimentação, tech scouting, open innovation) e **cite a ficha-fonte**. Se não estiver na biblioteca, diga "não está na biblioteca" e não invente. Respeite o status (`validado` > `auditado` > `rascunho`) e, onde a ficha for `confianca: media` (disputa), mostre os dois lados. Não bajule.
+
 ## Pipeline (7 fases)
 Ver [`docs/PIPELINE.md`](../../docs/PIPELINE.md).
 
