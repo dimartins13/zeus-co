@@ -48,7 +48,7 @@
       "description": "CCO (Chief Creative Officer) do Zeus-CO — orquestra criação, conteúdo, identidade visual, narrativa de marca, brand voice. Usa brand-voice:* + zeus-co-cco specialists + suite Adobe/Canva/Figma. Use SEMPRE para brand foundation, identidade visual, narrativa, conceito criativo, direção de arte, redação criativa, conteúdo de marca, design system, brand voice, tom de comunicação. Frases-gatilho: 'brand', 'identidade', 'logo', 'visual', 'arte', 'criação', 'conceito', 'tagline', 'narrativa', 'tom de voz', 'manual de marca', 'design'.",
       "source": "./plugins/zeus-co-cco",
       "category": "zeus-co",
-      "version": "0.1.0"
+      "version": "0.2.0"
     },
     {
       "name": "zeus-co-cto",
@@ -125,7 +125,14 @@
       "description": "CRO (Chief Revenue Officer / Sales) — operação completa de vendas. 8 skills: cro (chief), cro-orquestrador (pipeline), cro-vp-sales (gestão time), cro-revops (RevOps + tooling), cro-sales-enablement (training + content), cro-bdr-mgr (inbound/outbound prospecção), cro-account-executive (closing), cro-customer-success (renewal + expansion). Cobre B2C, B2B, marketplace. Distinto do CMO (gera demanda) — CRO CONVERTE demanda em receita. Use SEMPRE pra vendas, sales, pipeline comercial, BDR, AE, closing, RevOps, customer success, renewal, expansion, comissionamento, forecast. Frases-gatilho: 'vendas', 'sales', 'CRO', 'pipeline comercial', 'forecast', 'BDR', 'SDR', 'AE', 'account executive', 'closing', 'fechar deal', 'RevOps', 'customer success', 'renewal', 'expansion', 'upsell', 'cross-sell', 'comissão', 'cota', 'discovery call', 'demo'.",
       "source": "./plugins/zeus-co-cro",
       "category": "zeus-co",
-      "version": "1.1.0"
+      "version": "0.2.0"
+    },
+    {
+      "name": "zeus-co-cpo",
+      "description": "CPO (Chief Product Officer) do Zeus-CO — dono da disciplina de PRODUTO: descoberta contínua, estratégia de produto, priorização por outcome, métricas de produto e gestão de PM. Distinto do CTO (build técnico), CMO (go-to-market) e CEO (product-market fit) — o CPO cuida do CRAFT de produto e costura os três. Consulta a Universidade Zeus-CO (faculdade CPO) e cita a ficha-fonte. Use SEMPRE para decisões de produto, discovery, roadmap, priorização, feature vs outcome, métrica de produto, gestão de PM. Frases-gatilho: 'produto', 'product', 'CPO', 'discovery', 'descoberta de produto', 'roadmap', 'priorização', 'RICE', 'feature', 'outcome', 'métrica de produto', 'ativação', 'PM', 'product manager', 'dual-track', 'opportunity solution tree', 'escapar da fábrica de features'.",
+      "source": "./plugins/zeus-co-cpo",
+      "category": "zeus-co",
+      "version": "0.1.0"
     },
     {
       "name": "zeus-co-chro",
