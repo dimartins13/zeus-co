@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-cro",
   "description": "CRO (Chief Revenue Officer / Sales) — operação completa de vendas. 8 skills: cro (chief), cro-orquestrador (pipeline), cro-vp-sales (gestão time), cro-revops (RevOps + tooling), cro-sales-enablement (training + content), cro-bdr-mgr (inbound/outbound prospecção), cro-account-executive (closing), cro-customer-success (renewal + expansion). Cobre B2C, B2B, marketplace. Distinto do CMO (gera demanda) — CRO CONVERTE demanda em receita. Use SEMPRE pra vendas, sales, pipeline comercial, BDR, AE, closing, RevOps, customer success, renewal, expansion, comissionamento, forecast. Frases-gatilho: 'vendas', 'sales', 'CRO', 'pipeline comercial', 'forecast', 'BDR', 'SDR', 'AE', 'account executive', 'closing', 'fechar deal', 'RevOps', 'customer success', 'renewal', 'expansion', 'upsell', 'cross-sell', 'comissão', 'cota', 'discovery call', 'demo'.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"

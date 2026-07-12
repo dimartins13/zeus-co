@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-cmo",
   "description": "CMO do Zeus-CO — Chief Marketing Officer com 9 specialists internas + orquestrador. Cobre as 8 sub-funções core (validadas por McKinsey, ScaleVP, Reforge, PMA, HBR, Gartner 2025): estratégia, branding, product marketing, growth/performance, CRM/lifecycle, pesquisa & insights, comunicação/PR, marketing ops/MarTech. Complementar ao plugin `zeus-co-marketing` (canais/táticas modernas: retail media, TikTok Shop, CTV, creator economy, etc). Use SEMPRE pra marketing, GTM, growth, branding, mídia, performance, CAC, LTV, funil, CRM, PR, MarTech. Frases-gatilho: 'marketing', 'CMO', 'growth', 'GTM', 'campanha', 'brand', 'positioning', 'aquisição', 'CAC', 'LTV', 'funil', 'lifecycle', 'CRM', 'product marketing', 'PR', 'imprensa', 'MarTech', 'attribution'.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"

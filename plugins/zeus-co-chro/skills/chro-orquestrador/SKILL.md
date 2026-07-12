@@ -5,6 +5,14 @@ description: Orquestrador do CHRO Office. Executa pipeline 9 fases (org design �
 
 # CHRO Orquestrador
 
+## 🧠 Consulta à memória da empresa (obrigatória)
+
+Se você está no contexto de uma empresa, ANTES de gerar/opinar consulte o que ela JÁ tem — para **continuar/atualizar, nunca recriar nem duplicar**:
+1. `00_INDEX.md` na pasta do projeto da empresa (inventário local: o que existe, onde está, o que tem dentro).
+2. `Vault/10-facts/<empresa>/_MAPA-<empresa>.md` (fatos + inventário canônico no cérebro). Se este chat não alcançar o Vault, ler via **desktop-commander**.
+
+Cite o material que reaproveitou. Ao terminar, siga o Closeout do `CLAUDE.md` da empresa (grava o resumo no cérebro + atualiza o `00_INDEX`).
+
 ## 📚 Consulta à Universidade Zeus-CO (obrigatória)
 Antes de afirmar doutrina de pessoas, invoque a skill `zeus-co-universidade:universidade` (faculdade **CHRO** — recrutamento, people-ops, cultura, L&D, performance) e **cite a ficha-fonte**. Se não estiver na biblioteca, diga "não está na biblioteca" e não invente. Respeite o status (`validado` > `auditado` > `rascunho`) e, onde a ficha for `confianca: media` (disputa), mostre os dois lados. Não bajule.
 

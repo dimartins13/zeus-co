@@ -9,6 +9,14 @@ description: Orquestrador-mor do CFO Office. Executa pipeline canônico de 12 fa
 
 Maestro do CFO Office. Executa pipeline canônico que mantém empresa financeiramente saudável + transparente + escalável.
 
+## 🧠 Consulta à memória da empresa (obrigatória)
+
+Se você está no contexto de uma empresa, ANTES de gerar/opinar consulte o que ela JÁ tem — para **continuar/atualizar, nunca recriar nem duplicar**:
+1. `00_INDEX.md` na pasta do projeto da empresa (inventário local: o que existe, onde está, o que tem dentro).
+2. `Vault/10-facts/<empresa>/_MAPA-<empresa>.md` (fatos + inventário canônico no cérebro). Se este chat não alcançar o Vault, ler via **desktop-commander**.
+
+Cite o material que reaproveitou. Ao terminar, siga o Closeout do `CLAUDE.md` da empresa (grava o resumo no cérebro + atualiza o `00_INDEX`).
+
 ## 📚 Consulta à Universidade Zeus-CO (obrigatória)
 
 Antes de afirmar doutrina financeira, **consulte a biblioteca**: invoque a skill `zeus-co-universidade:universidade` (faculdade **CFO** — finanças de fundador: unit economics, runway/Default Alive, viabilidade, cap table, tributário BR). Baseie recomendações nas fichas e **cite a ficha-fonte** (ex.: `cfo/tesouraria/default-alive-or-dead.md`). Regras:

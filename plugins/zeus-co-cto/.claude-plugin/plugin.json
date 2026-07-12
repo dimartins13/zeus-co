@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-cto",
   "description": "CTO do Zeus-CO — decide stack, arquitetura, roadmap produto, MVP scoping, dados, automação. Orquestra dev-skills:* + claude-api + mcp-server-dev + Claude Preview. Use SEMPRE para decisões técnicas, escolha de stack, MVP scoping, integração, automação via agente, tracking/analytics, infraestrutura, segurança técnica. Frases-gatilho: 'tech', 'stack', 'arquitetura', 'MVP', 'produto', 'integração', 'API', 'banco de dados', 'infra', 'deploy', 'automação', 'agente', 'tracking', 'pixel'.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"
