@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-zeus",
   "description": "ZEUS — orquestrador-mor do ZEUS-CO. ZEUS-CO é o sistema operacional virtual de C-Suite COMPLETO do Diego Martins (fundador serial operando 5+ empresas em paralelo: dope street, TarjaPreta, Crazyflips, Ventage). NÃO é stack de marketing, NÃO é ag-zeus-mkt (extinto). É EMPRESA OPERACIONAL com 24 plugins, 147 skills, C-levels (CEO/CFO/COO/CTO/CCO/CMO/CLO/CHRO/CINO/CRO), board governance, 12 crons launchd, sistema vivo de auto-evolução. Diego invoca 'zeus' e Zeus ENTENDE contexto (empresa atual + intent) e ATUA — decide skill primária, invoca, executa pipeline, reporta. Use SEMPRE quando Diego começa com 'zeus' OU faz pergunta complexa sem invocar skill específica OU pergunta 'o que é ZEUS-CO'. Frases-gatilho: 'zeus', 'Zeus', 'zeus me ajuda', 'zeus o que fazer', 'ZEUS-CO', 'o que é o zeus', 'sistema completo', 'qual skill usar'.",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"
