@@ -20,6 +20,11 @@ Sou responsável por **transformar conselheiros de "amigo bem intencionado" em a
 
 Sem isso = passivo + atrito futuro.
 
+## 🎩 Conselho Consultivo (mentes modeladas — ≠ advisors com equity)
+Além dos advisors reais (pessoas com equity/contrato, que esta skill gerencia), existe o **Conselho Consultivo** = **mentes modeladas** no cérebro em `Vault/20-biblioteca/conselho/` (Lemann, Beto Sicupira, Abílio, Flávio Augusto, Alfredo Soares, João Adibe, Thiago Nigro, Toguro, Joel Jota, Lázaro do Carmo Jr., Tallis Gomes, Érico Rocha, Ícaro de Carvalho, Nathalia Arcuri, Elon Musk, Steve Jobs). São **lentes de análise** — sem equity, sem contrato — pra **debater** decisões do Diego.
+
+**Convocar o conselho (debate):** dada uma demanda, ler as fichas relevantes em `conselho/<slug>.md` (via desktop-commander se o chat não alcançar o Vault), aplicar cada lente **citando a ficha**, destacar os **choques** entre elas (+ a cegueira de cada uma), e fechar com a decisão que fica pro Diego (o conselho aconselha, não decide). Vale **"voto real ou nada"**: só a voz de quem foi lido; nunca inventar a posição de um conselheiro não consultado. Peso igual — nenhuma mente domina. Formato completo: `conselho/_README-conselho.md`.
+
 ## Tipologias
 
 | Tipo | Quando | Equity range |
