@@ -20,49 +20,49 @@
       "description": "CEO/Founder office do Zeus-CO — orquestrador do C-Suite virtual. Decide visão, modelo de negócio, alocação de recursos, fundraising, board, OKRs, hires-chave e pivots. Chama outros LEPs (CFO/COO/CMO/CCO/CTO/CLO) quando a decisão exige profundidade da função. Use SEMPRE que o usuário pedir clareza estratégica, definição de modelo, OKRs, narrativa de pitch, plano de captação, decisão de alocação, ou diagnóstico de estágio da empresa. Também invoque quando o pedido é ambíguo entre Cs — o CEO orquestra.",
       "source": "./plugins/zeus-co-ceo",
       "category": "zeus-co",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "name": "zeus-co-cfo",
       "description": "CFO do Zeus-CO — modela viabilidade, runway, unit economics e fundraising math. Decide alocação de capital, faz Default Alive checkpoints, monta cap table e modelos 3-statement. Use SEMPRE que precisar de modelagem financeira, análise de runway, unit economics (CAC/LTV/payback), cenários (base/upside/downside), simulação de captação, decisão de pricing/cost cut, ou auditoria de viabilidade de iniciativa. Frases que disparam: 'qual o runway', 'fechar conta', 'viabilidade financeira', 'modelo financeiro', 'unit economics', 'CAC LTV', 'cap table', 'cenário', 'fundraising', 'burn', 'precificação'.",
       "source": "./plugins/zeus-co-cfo",
       "category": "zeus-co",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "name": "zeus-co-coo",
       "description": "COO do Zeus-CO — desenha processos, SOPs, supply chain, vendor management, customer ops, fulfillment, qualidade. Decide arquitetura operacional e remove gargalos. Use SEMPRE que precisar de SOP, processo, vendor selection, logística, fulfillment, autenticação (NFC), customer service, leadtime, escalabilidade operacional. Frases-gatilho: 'processo', 'SOP', 'fluxo', 'vendor', 'fornecedor', 'logística', 'fulfillment', 'estoque', 'leadtime', 'gargalo', 'escalar operação', 'customer service', 'autenticação'.",
       "source": "./plugins/zeus-co-coo",
       "category": "zeus-co",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "name": "zeus-co-cmo",
       "description": "CMO do Zeus-CO — Chief Marketing Officer com 9 specialists internas + orquestrador. Cobre as 8 sub-funções core (validadas por McKinsey, ScaleVP, Reforge, PMA, HBR, Gartner 2025): estratégia, branding, product marketing, growth/performance, CRM/lifecycle, pesquisa & insights, comunicação/PR, marketing ops/MarTech. Complementar ao plugin `zeus-co-marketing` (canais/táticas modernas: retail media, TikTok Shop, CTV, creator economy, etc). Use SEMPRE pra marketing, GTM, growth, branding, mídia, performance, CAC, LTV, funil, CRM, PR, MarTech. Frases-gatilho: 'marketing', 'CMO', 'growth', 'GTM', 'campanha', 'brand', 'positioning', 'aquisição', 'CAC', 'LTV', 'funil', 'lifecycle', 'CRM', 'product marketing', 'PR', 'imprensa', 'MarTech', 'attribution'.",
       "source": "./plugins/zeus-co-cmo",
       "category": "zeus-co",
-      "version": "0.2.0"
+      "version": "0.2.1"
     },
     {
       "name": "zeus-co-cco",
       "description": "CCO (Chief Creative Officer) do Zeus-CO — orquestra criação, conteúdo, identidade visual, narrativa de marca, brand voice. Usa brand-voice:* + zeus-co-cco specialists + suite Adobe/Canva/Figma. Use SEMPRE para brand foundation, identidade visual, narrativa, conceito criativo, direção de arte, redação criativa, conteúdo de marca, design system, brand voice, tom de comunicação. Frases-gatilho: 'brand', 'identidade', 'logo', 'visual', 'arte', 'criação', 'conceito', 'tagline', 'narrativa', 'tom de voz', 'manual de marca', 'design'.",
       "source": "./plugins/zeus-co-cco",
       "category": "zeus-co",
-      "version": "0.2.1"
+      "version": "0.2.2"
     },
     {
       "name": "zeus-co-cto",
       "description": "CTO do Zeus-CO — decide stack, arquitetura, roadmap produto, MVP scoping, dados, automação. Orquestra dev-skills:* + claude-api + mcp-server-dev + Claude Preview. Use SEMPRE para decisões técnicas, escolha de stack, MVP scoping, integração, automação via agente, tracking/analytics, infraestrutura, segurança técnica. Frases-gatilho: 'tech', 'stack', 'arquitetura', 'MVP', 'produto', 'integração', 'API', 'banco de dados', 'infra', 'deploy', 'automação', 'agente', 'tracking', 'pixel'.",
       "source": "./plugins/zeus-co-cto",
       "category": "zeus-co",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "name": "zeus-co-clo",
       "description": "CLO (Chief Legal Officer) do Zeus-CO — formaliza contratos, garante compliance LGPD, navega regulação setor (iGaming, audiovisual, fintech), protege IP, estrutura societária. Use SEMPRE para contratos, LGPD, termos de uso, política privacidade, regulação setor (iGaming/SECAP, audiovisual/ANCINE), constituição empresa, holding, contratos vendor, NDAs, term sheets de captação. Frases-gatilho: 'contrato', 'jurídico', 'legal', 'LGPD', 'privacidade', 'compliance', 'regulação', 'CNPJ', 'sociedade', 'holding', 'NDA', 'IP', 'marca', 'patente', 'licença', 'alvará', 'termo de uso'.",
       "source": "./plugins/zeus-co-clo",
       "category": "zeus-co",
-      "version": "0.1.1"
+      "version": "0.1.2"
     },
     {
       "name": "zeus-co-claude-expert",
@@ -108,59 +108,59 @@
     },
     {
       "name": "zeus-co-board",
-      "description": "Camada de board + founders + governance + advisors do Zeus-CO. Acima dos C-Levels. Skills: board-orquestrador (executa pipeline de governance), founders-office (decisões fundador-only), board-governance (constituição, estatuto, board meetings), board-advisors-management (advisory board, deals com advisors), board-pack-builder (deck mensal/trimestral pro board), decision-memo-author (formaliza decisões Type 1 irreversíveis estilo ADR), cap-table-keeper (cap table waterfall), equity-vesting-manager (vesting funcionários, equity grants, cliff). Princípio: board NÃO opera empresa — board APROVA estratégia + monitora performance + protege fundador. Founders office é onde Diego decide o que NÃO delegar.",
+      "description": "Camada de board + founders + governance + advisors do Zeus-CO. Acima dos C-Levels. Skills: board-orquestrador (executa pipeline de governance), founders-office (decisões fundador-only), board-governance (constituição, estatuto, board meetings), board-advisors-management (advisory board, deals com advisors), board-pack-builder (deck mensal/trimestral pro board), decision-memo-author (formaliza decisões Type 1 irreversíveis estilo ADR), conselho (convoca o Conselho Consultivo — 18 mentes reais tipo Lemann/Jobs/Bezos/Munger debatendo uma decisão em mesa redonda, peso igual, voto real ou nada), cap-table-keeper (cap table waterfall), equity-vesting-manager (vesting funcionários, equity grants, cliff). Princípio: board NÃO opera empresa — board APROVA estratégia + monitora performance + protege fundador. Founders office é onde Diego decide o que NÃO delegar.",
       "source": "./plugins/zeus-co-board",
       "category": "zeus-co",
-      "version": "0.2.0"
+      "version": "1.0.4"
     },
     {
       "name": "zeus-co-zeus",
       "description": "ZEUS — orquestrador-mor do ZEUS-CO. ZEUS-CO é o sistema operacional virtual de C-Suite COMPLETO do Diego Martins (fundador serial operando 5+ empresas em paralelo: dope street, TarjaPreta, Crazyflips, Ventage). NÃO é stack de marketing, NÃO é ag-zeus-mkt (extinto). É EMPRESA OPERACIONAL com 24 plugins, 147 skills, C-levels (CEO/CFO/COO/CTO/CCO/CMO/CLO/CHRO/CINO/CRO), board governance, 12 crons launchd, sistema vivo de auto-evolução. Diego invoca 'zeus' e Zeus ENTENDE contexto (empresa atual + intent) e ATUA — decide skill primária, invoca, executa pipeline, reporta. Use SEMPRE quando Diego começa com 'zeus' OU faz pergunta complexa sem invocar skill específica OU pergunta 'o que é ZEUS-CO'. Frases-gatilho: 'zeus', 'Zeus', 'zeus me ajuda', 'zeus o que fazer', 'ZEUS-CO', 'o que é o zeus', 'sistema completo', 'qual skill usar'.",
       "source": "./plugins/zeus-co-zeus",
       "category": "zeus-co",
-      "version": "1.2.2"
+      "version": "1.2.3"
     },
     {
       "name": "zeus-co-cro",
       "description": "CRO (Chief Revenue Officer / Sales) — operação completa de vendas. 8 skills: cro (chief), cro-orquestrador (pipeline), cro-vp-sales (gestão time), cro-revops (RevOps + tooling), cro-sales-enablement (training + content), cro-bdr-mgr (inbound/outbound prospecção), cro-account-executive (closing), cro-customer-success (renewal + expansion). Cobre B2C, B2B, marketplace. Distinto do CMO (gera demanda) — CRO CONVERTE demanda em receita. Use SEMPRE pra vendas, sales, pipeline comercial, BDR, AE, closing, RevOps, customer success, renewal, expansion, comissionamento, forecast. Frases-gatilho: 'vendas', 'sales', 'CRO', 'pipeline comercial', 'forecast', 'BDR', 'SDR', 'AE', 'account executive', 'closing', 'fechar deal', 'RevOps', 'customer success', 'renewal', 'expansion', 'upsell', 'cross-sell', 'comissão', 'cota', 'discovery call', 'demo'.",
       "source": "./plugins/zeus-co-cro",
       "category": "zeus-co",
-      "version": "0.2.0"
+      "version": "1.1.1"
     },
     {
       "name": "zeus-co-cpo",
       "description": "CPO (Chief Product Officer) do Zeus-CO — dono da disciplina de PRODUTO: descoberta contínua, estratégia de produto, priorização por outcome, métricas de produto e gestão de PM. Distinto do CTO (build técnico), CMO (go-to-market) e CEO (product-market fit) — o CPO cuida do CRAFT de produto e costura os três. Consulta a Universidade Zeus-CO (faculdade CPO) e cita a ficha-fonte. Use SEMPRE para decisões de produto, discovery, roadmap, priorização, feature vs outcome, métrica de produto, gestão de PM. Frases-gatilho: 'produto', 'product', 'CPO', 'discovery', 'descoberta de produto', 'roadmap', 'priorização', 'RICE', 'feature', 'outcome', 'métrica de produto', 'ativação', 'PM', 'product manager', 'dual-track', 'opportunity solution tree', 'escapar da fábrica de features'.",
       "source": "./plugins/zeus-co-cpo",
       "category": "zeus-co",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "name": "zeus-co-chro",
       "description": "CHRO (Chief Human Resources Officer) — People Ops completo. 6 skills: chro (chief), chro-orquestrador, chro-recruiting (talent acquisition), chro-people-ops (payroll, benefícios, onboarding), chro-learning-development (L&D, career paths), chro-culture (cultura, all-hands, comunicação interna). Cobre CLT + PJ + sócio. Use SEMPRE pra RH, people ops, recrutamento, contratação, cultura, L&D, onboarding, benefícios, folha de pagamento, carreira, all-hands. Frases-gatilho: 'RH', 'CHRO', 'people ops', 'recrutar', 'contratar', 'onboarding', 'benefícios', 'CLT', 'PJ', 'cultura', 'L&D', 'aprendizado', 'carreira', 'plano de cargos', 'all-hands', 'feedback', 'demitir', 'turnover', 'engagement'. Cross com clo-trabalhista (legal) e cfo-controller (folha).",
       "source": "./plugins/zeus-co-chro",
       "category": "zeus-co",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "zeus-co-procurement",
       "description": "Procurement (Compras estratégicas) — distinto de COO supply (estoque) e COO vendor (gestão fornecedor dia-a-dia). Foco: SOURCING estratégico + negociação + gestão de categoria. 5 skills: procurement (chief), procurement-orquestrador, procurement-strategic-sourcing (RFP/RFQ), procurement-category-mgr (categoria específica), procurement-tail-spend (compras pequenas automatizadas via AI/cards). Cross com cfo-ap-specialist (pagamento) e coo-vendor (relacionamento). Use SEMPRE pra compras estratégicas, sourcing, RFP, RFQ, negociação com fornecedor, categoria de compra, tail spend. Frases-gatilho: 'compras', 'procurement', 'sourcing', 'RFP', 'RFQ', 'fornecedor estratégico', 'categoria', 'tail spend', 'negociação fornecedor', 'contrato fornecedor', 'cotação', 'reduzir custo compras', 'consolidar compras', 'centralizar fornecedor'.",
       "source": "./plugins/zeus-co-procurement",
       "category": "zeus-co",
-      "version": "0.2.0"
+      "version": "1.1.0"
     },
     {
       "name": "zeus-co-facilities",
       "description": "Facilities / Workplace Experience — espaço físico + IT asset + remote stipend + safety + ESG + soft services + real estate. 10 skills: facilities (chief), facilities-orquestrador, facilities-workspace (escritório/coworking/hub-and-spoke), facilities-workplace-experience (WEx software, ABW, neighborhoods), facilities-it-asset (hardware lifecycle), facilities-remote-program (home stipend, ergonomia, política híbrida), facilities-safety-security (EHS, NR brasileiras, CIPA, acesso), facilities-sustainability-esg (Scope 1+2, LEED/BREEAM/GBC, carbon accounting), facilities-vendor-soft-services (cleaning, catering, recepção, SLA), facilities-real-estate (portfolio físico, leases). Use SEMPRE pra escritório, coworking, hardware, equipment, home office stipend, ergonomia, NR, segurança trabalho, ESG do espaço, sustentabilidade, fornecedor de prédio, contrato aluguel, WEx, neighborhoods, hub-and-spoke. Frases-gatilho: 'facilities', 'workplace', 'escritório', 'coworking', 'WeWork', 'home office stipend', 'notebook', 'laptop', 'hardware', 'BYOD', 'NR', 'CIPA', 'EHS', 'segurança no trabalho', 'LEED', 'BREEAM', 'pegada de carbono', 'ESG escritório', 'limpeza', 'catering', 'recepção', 'aluguel', 'lease', 'hub-and-spoke', 'Robin', 'Envoy', 'Workwize', 'Deel IT', 'ergonomia'.",
       "source": "./plugins/zeus-co-facilities",
       "category": "zeus-co",
-      "version": "0.2.0"
+      "version": "1.1.0"
     },
     {
       "name": "zeus-co-cino",
       "description": "CINO (Chief Innovation Officer) — inovação de produto + processo. 6 skills: cino (chief), cino-orquestrador, cino-research (discovery), cino-experimentation (lean experiments, MVPs, testes A/B macro), cino-tech-scouting (radar tech externo), cino-open-innovation (hackathons, parcerias acadêmicas, aceleradoras). Distinto de CTO (que executa) — CINO INVENTA o que CTO vai construir. Use SEMPRE pra inovação, discovery, MVP, experimentação, novo produto, tech scouting, parceria acadêmica, hackathon, open innovation, radar de tecnologia. Frases-gatilho: 'inovação', 'CINO', 'inovar', 'novo produto', 'descobrir', 'discovery', 'experimentar', 'MVP', 'teste A/B macro', 'lean', 'scout tech', 'tecnologia emergente', 'hackathon', 'parceria acadêmica', 'aceleradora', 'incubadora', 'open innovation', 'inventar'.",
       "source": "./plugins/zeus-co-cino",
       "category": "zeus-co",
-      "version": "1.1.1"
+      "version": "1.1.2"
     },
     {
       "name": "zeus-co-entrepreneurship",
@@ -181,7 +181,7 @@
       "description": "Plugin complementar ao zeus-co-cmo — contém o pipeline canônico de marketing (11 fases) + 13 Channel Skills (canais/táticas específicas). NÃO são LEPs com anatomia completa — são execution skills despachadas pelo CMO. Channel Skills: marketing-orquestrador (executa pipeline), retail-media, tiktok-shop, ctv-streaming-ads, creator-economy, marketing-afiliados, live-commerce, live-marketing, marketing-promocional, ai-generative-creative, instagram-carousel-builder, processo-criativo-pesquisa, video-vision-analysis. Princípio: criação SEMPRE olha pra DENTRO primeiro (arquivos da empresa, Fase 0 obrigatória), depois pra FORA (mercado, processos premiados), AÍ cria. Use SEMPRE pra campanha multi-canal, pipeline marketing, retail media (Mercado Ads/Amazon Ads), TikTok Shop, CTV/streaming ads, creator economy, programa afiliados, live commerce, ativação física BTL, sampling/promoção, AI generative creative em escala, instagram carousels, análise de vídeo. Frases-gatilho: 'campanha completa', 'do brief ao analytics', 'pipeline marketing', 'retail media', 'TikTok Shop', 'CTV', 'streaming ads', 'creator economy', 'UGC', 'afiliados', 'live commerce', 'ativação', 'BTL', 'sampling', 'sorteio', 'AI creative', 'Midjourney em escala', 'video analysis', 'frames de vídeo'.",
       "source": "./plugins/zeus-co-marketing",
       "category": "zeus-co",
-      "version": "1.2.0"
+      "version": "1.3.0"
     },
     {
       "name": "zeus-co-design-lab",
@@ -195,7 +195,7 @@
       "description": "Suite Human do Zeus-CO — 9 skills criativas premium que transformam input amador (foto de celular, texto solto, ideia crua, imagem com 'plastic look') em entregável de marketing com cara cinematográfica e humana. Skills - /human-image (Diretor de Fotografia, still cinematográfico via Nano Banana 2), /human-cinematic (vídeo cinematográfico completo - Script AI, character sheets, frames aprovados, product shots, ad vertical 9:16 15s), /human-dna (Maestro do DNA Criativo de marca, DNA.md + DNA.pdf + CLAUDE.md), /human-carrossel (News-to-Carrossel V2.5 diário automatizado + sob demanda via Routines Claude Desktop), /human-social (desdobra pasta texto+imagens em IG Feed/Stories + LinkedIn nativos), /human-style-lock (decodifica referência visual em receita de estilo replicável, 7 componentes + tokens por gerador), /human-team (OpenSquad - squads de agentes IA colaborativos), /human-motion (motion design Remotion/Three.js com câmera 3D, parallax, Quadruple Exit, sem voz), /human-upscale (retexturização fotorrealista 8K, mata plastic look IA). Stack - Higgsfield CLI + ffmpeg + jq + Pillow + Remotion + OpenSquad. Capability transversal - CCO/CMO/zeus-co-marketing invocam; empresas com produto físico (dope street, Crazyflips, Ventage) usam direto. Frases-gatilho: 'human image', 'human cinematic', 'human dna', 'human carrossel', 'human social', 'human team', 'human motion', 'human upscale', 'foto cinematográfica', 'ad cinema produto', 'DNA criativo marca', 'carrossel diário', 'desdobra pasta', 'squad de agentes', 'motion Remotion', 'retexturizar 8K', 'mata plastic look'.",
       "source": "./plugins/zeus-co-humanlab",
       "category": "zeus-co",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "zeus-co-teste-sync",
