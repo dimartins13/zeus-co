@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-clo",
   "description": "CLO (Chief Legal Officer) do Zeus-CO — formaliza contratos, garante compliance LGPD, navega regulação setor (iGaming, audiovisual, fintech), protege IP, estrutura societária. Use SEMPRE para contratos, LGPD, termos de uso, política privacidade, regulação setor (iGaming/SECAP, audiovisual/ANCINE), constituição empresa, holding, contratos vendor, NDAs, term sheets de captação. Frases-gatilho: 'contrato', 'jurídico', 'legal', 'LGPD', 'privacidade', 'compliance', 'regulação', 'CNPJ', 'sociedade', 'holding', 'NDA', 'IP', 'marca', 'patente', 'licença', 'alvará', 'termo de uso'.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"

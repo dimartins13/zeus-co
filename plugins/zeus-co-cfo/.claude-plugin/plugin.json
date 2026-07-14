@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-cfo",
   "description": "CFO do Zeus-CO — modela viabilidade, runway, unit economics e fundraising math. Decide alocação de capital, faz Default Alive checkpoints, monta cap table e modelos 3-statement. Use SEMPRE que precisar de modelagem financeira, análise de runway, unit economics (CAC/LTV/payback), cenários (base/upside/downside), simulação de captação, decisão de pricing/cost cut, ou auditoria de viabilidade de iniciativa. Frases que disparam: 'qual o runway', 'fechar conta', 'viabilidade financeira', 'modelo financeiro', 'unit economics', 'CAC LTV', 'cap table', 'cenário', 'fundraising', 'burn', 'precificação'.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"

@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-cpo",
   "description": "CPO (Chief Product Officer) do Zeus-CO — dono da disciplina de PRODUTO: descoberta contínua, estratégia de produto, priorização por outcome, métricas de produto e gestão de PM. Distinto do CTO (build técnico), CMO (go-to-market) e CEO (product-market fit) — o CPO cuida do CRAFT de produto e costura os três. Consulta a Universidade Zeus-CO (faculdade CPO) e cita a ficha-fonte. Use SEMPRE para decisões de produto, discovery, roadmap, priorização, feature vs outcome, métrica de produto, gestão de PM. Frases-gatilho: 'produto', 'product', 'CPO', 'discovery', 'descoberta de produto', 'roadmap', 'priorização', 'RICE', 'feature', 'outcome', 'métrica de produto', 'ativação', 'PM', 'product manager', 'dual-track', 'opportunity solution tree', 'escapar da fábrica de features'.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Zeus-CO",
     "url": "https://github.com/dimartins13/zeus-co"

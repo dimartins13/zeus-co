@@ -18,7 +18,7 @@ Convoco o **Conselho Consultivo**: 18 mentes reais modeladas com **fonte documen
 1. **Ler o manual da cadeira:** `Vault/20-biblioteca/conselho/_README-conselho.md` (roster + regras). Se este chat não alcançar o Vault, ler via **desktop-commander**.
 2. **Escolher as lentes relevantes** pra demanda (3–6 costuma ser o ideal; todas se o Diego pedir "conselho completo"). Diversidade proposital: incluir pelo menos 1 lente que provavelmente DISCORDA.
 3. **Ler as fichas escolhidas** e aplicar cada lente à demanda, **citando a ficha e a fonte** — inclusive a cegueira relevante.
-4. **Contexto da empresa primeiro:** se a demanda é de uma empresa, ler antes o `00_INDEX.md` da pasta + `Vault/10-facts/<empresa>/_MAPA-<empresa>.md` (regra da memória — não opinar no vácuo).
+4. **Contexto da empresa primeiro:** se a demanda é de uma empresa, ler antes o `00_INDEX.md` da pasta do projeto (memória local — não opinar no vácuo).
 5. **Montar o debate:**
    - **Onde convergem** (e por quê).
    - **⚔️ Onde se CHOCAM** — o ouro: explicitar o trade-off real por trás da discordância.
@@ -44,4 +44,4 @@ Consultados (lidos de verdade): [nomes]  ·  Não consultados: [nomes ou "—"]
 - Doutrina técnica de área (marketing, finanças...) → C-level da área consulta a Universidade (`zeus-co-universidade:universidade`); o conselho é pra **decisões de negócio com múltiplos ângulos**, não pra tarefa técnica.
 
 ## Fim de sessão
-Se o debate gerou decisão/insight durável: closeout no cérebro (`Vault/11-runs/<empresa>/` via desktop-commander) + `_LEDGER.md` da empresa, conforme o CLAUDE.md dela.
+Se o debate gerou decisão/insight durável: registre o closeout **na pasta do projeto** (`_LEDGER.md` + nota em `_Areas/`), conforme o CLAUDE.md da empresa (memória é local, não no Vault).

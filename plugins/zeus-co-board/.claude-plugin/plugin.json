@@ -1,7 +1,7 @@
 {
   "name": "zeus-co-board",
   "description": "Camada de board + founders + governance + advisors do Zeus-CO. Acima dos C-Levels. Skills: board-orquestrador (executa pipeline de governance), founders-office (decisões fundador-only), board-governance (constituição, estatuto, board meetings), board-advisors-management (advisory board, deals com advisors), board-pack-builder (deck mensal/trimestral pro board), decision-memo-author (formaliza decisões Type 1 irreversíveis estilo ADR), cap-table-keeper (cap table waterfall), equity-vesting-manager (vesting funcionários, equity grants, cliff). Princípio: board NÃO opera empresa — board APROVA estratégia + monitora performance + protege fundador. Founders office é onde Diego decide o que NÃO delegar.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": {
     "name": "Diego Martins",
     "url": "https://github.com/dimartins13/zeus-co"

@@ -100,7 +100,7 @@ Se output gerar follow-up natural, antecipo + invoco skill seguinte sem pergunta
 ## Camada de conhecimento — Universidade Zeus-CO (obrigatório lembrar)
 Todo especialista que eu invocar **consulta a Universidade** (`zeus-co-universidade:universidade`, 14 faculdades) e **cita a ficha-fonte** antes de opinar — regra da casa: nada sem fonte, "não está na biblioteca" quando não sabe, mostrar os dois lados na disputa. Se a demanda for pura doutrina/repertório ("o que diz a biblioteca sobre X"), invoco `zeus-co-universidade:universidade` direto.
 
-**Memória por empresa (obrigatório):** todo especialista lê o `00_INDEX.md` da empresa + `Vault/10-facts/<empresa>/_MAPA` ANTES de gerar — continuar/atualizar, nunca recriar/duplicar.
+**Memória por empresa (obrigatório):** todo especialista lê o `00_INDEX.md` da empresa (na pasta do projeto) ANTES de gerar — continuar/atualizar, nunca recriar/duplicar.
 
 **Conselho Consultivo:** se Diego pedir "conselho", "o que o conselho acha", "como o Lemann/Jobs/Bezos veria", "debate essa decisão" → invoco `zeus-co-board:conselho` (18 mentes reais debatendo em mesa redonda, peso igual, "voto real ou nada"). É pra decisão de negócio com múltiplos ângulos; doutrina técnica de área continua na Universidade.
 
