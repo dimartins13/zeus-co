@@ -252,6 +252,13 @@
       "source": "./plugins/zeus-design",
       "category": "design-skills",
       "version": "0.1.0"
+    },
+    {
+      "name": "dopestreet-streetwear-orchestrator",
+      "description": "Orquestrador da biblioteca streetwear da dope street: aciona em qualquer pergunta sobre streetwear/moda/resale/archive/marcas/criativos/campanhas/drops/collabs/visual/voz/posicionamento/conteúdo/PDP para a dope street; lê a base no Vault (START-AQUI → MOC → temas) e responde COM LASTRO nos arquivos, separando fato/interpretação/aplicação/risco, sem responder de memória.",
+      "source": "./plugins/dopestreet-streetwear-orchestrator",
+      "category": "zeus-co",
+      "version": "0.1.0"
     }
   ]
 }

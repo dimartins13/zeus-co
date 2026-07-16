@@ -1,0 +1,6 @@
+{
+  "name": "dopestreet-streetwear-orchestrator",
+  "description": "Orquestrador da biblioteca streetwear da dope street — lê a base no Vault (começando por START-AQUI) e responde com lastro nos arquivos sobre streetwear, marcas, resale, archive fashion, campanhas, visual, voz, conteúdo e aplicação à dope street. Nunca de memória.",
+  "version": "0.1.0",
+  "author": {"name": "Diego Martins", "url": "https://github.com/dimartins13/zeus-co"}
+}
