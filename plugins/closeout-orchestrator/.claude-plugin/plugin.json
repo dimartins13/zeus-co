@@ -1,0 +1,6 @@
+{
+  "name": "closeout-orchestrator",
+  "description": "Fechamento manual de memória de QUALQUER projeto: quando Diego diz que está contente e quer gravar pro próximo chat, detecta o(s) projeto(s), inventaria mudanças, cria run-note em Vault/11-runs (fallback local), atualiza 00_INDEX/_LEDGER quando seguro, marca fatos/deltas sem sobrescrever canônicos sensíveis, e responde com recibo. Global, nunca específico de empresa.",
+  "version": "0.1.0",
+  "author": {"name": "Diego Martins", "url": "https://github.com/dimartins13/zeus-co"}
+}
