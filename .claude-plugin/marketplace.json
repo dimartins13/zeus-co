@@ -265,7 +265,7 @@
       "description": "Fechamento manual de memória de qualquer projeto (global). Diego diz que está contente com um ponto → detecta projeto(s), inventaria mudanças, cria run-note em Vault/11-runs/<projeto> (fallback local se sem Vault), atualiza 00_INDEX/_LEDGER quando seguro, marca FATO/DELTA sem sobrescrever canônico sensível, e devolve recibo. Não commita, não deleta. Gatilhos: closeout, fecha a conversa, fecha o dia, grava pro próximo chat.",
       "source": "./plugins/closeout-orchestrator",
       "category": "zeus-co",
-      "version": "0.1.0"
+      "version": "0.1.1"
     }
   ]
 }

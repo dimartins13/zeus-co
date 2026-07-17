@@ -14,13 +14,14 @@ Fechamento **sob demanda** quando o Diego está contente com um ponto e quer gra
 
 ## 1. Detectar o(s) projeto(s) afetado(s)
 Combine sinais: (a) diretório atual; (b) arquivos citados na conversa; (c) caminhos modificados recentemente (`git status`/mtime); (d) nomes de projeto que o Diego mencionou. **Se >1 projeto → listar todos e tratar cada um separadamente** (uma run-note por projeto).
+**NÃO é projeto (nunca fechar):** o symlink `Projects/Universidade-Conselho/` (é a doutrina do Vault, só leitura — aparece cheia mas não é projeto), pastas de sistema de nível topo (`_Modelo`, `_Arquivo`, qualquer `_*`) e o próprio Vault.
 
 ## 2. Inventário rápido
 Arquivos novos/modificados relevantes desde o último closeout ou nas últimas 24–36h:
 - extensões: `.md .html .pdf .docx .pptx .xlsx .csv`;
 - estruturais: `CLAUDE.md 00_INDEX.md _LEDGER.md LEARNINGS.md BACKLOG.md`;
 - artefatos: `_Publish/ _Areas/ research/ outputs/`.
-Ignorar ruído: `.git/ .obsidian/` caches, builds, `node_modules/`, logs, mídia pesada não editada à mão.
+Ignorar ruído: `.git/ .obsidian/` caches, builds, `node_modules/`, logs, mídia pesada não editada à mão, **dumps de backup/publicação arquivada** (`*/Backup/`, `*/backups/`, `_Publicacoes/*/`), e qualquer caminho atravessando o symlink `Universidade-Conselho/`. Contar artefatos de conteúdo — nunca enumerar pastas de asset/backup.
 
 ## 3. Classificar impacto (por mudança)
 artefato novo · atualização de artefato · **decisão/fato durável** · **mudança de posicionamento/modelo/preço/identidade/estratégia** · rascunho/temporário · ruído.
